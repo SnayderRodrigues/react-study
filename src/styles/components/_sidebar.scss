@@ -1,0 +1,18 @@
+#sidebar {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--bg-color-secondary);
+  border-radius: var(--container-border-radius);
+  position: relative;
+  padding: 3rem 0;
+}
+
+.title {
+  // color: var(--text-color);
+  background-color: var(--bg-color-secondary);
+  border-radius: var(--card-border-radius);
+  padding: 0.8rem 1.2rem;
+}
