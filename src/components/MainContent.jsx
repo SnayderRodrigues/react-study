@@ -4,7 +4,6 @@ import About from "./About";
 import Work from "./Work";
 import Collections from "./Collections";
 import Awards from "./Awards";
-import Testemonials from "./Testemonials";
 import Contact from "./Contact";
 
 const MainContent = () => {
@@ -15,7 +14,6 @@ const MainContent = () => {
       <Work />
       <Collections />
       <Awards />
-      <Testemonials />
       <Contact />
     </main>
   );

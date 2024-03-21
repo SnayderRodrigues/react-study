@@ -13,6 +13,9 @@ const Hero = () => {
           <a href="" className="button hero__button">
             Hire me
           </a>
+          <a href="" className="button hero__button">
+            See My Work
+          </a>
         </div>
       </div>
     </section>

@@ -95,3 +95,9 @@ textarea:focus-visible {
   height: 1px;
   overflow: hidden;
 }
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}

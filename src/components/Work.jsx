@@ -17,8 +17,9 @@ const Work = () => {
           <img src={Cats} alt="" className="work__image-5" />
         </div>
         <a href="">
-          <h3>
-            SEE MORE PROJECTS <FaLongArrowAltRight />
+          <h3 className="link">
+            SEE MORE PROJECTS
+            <FaLongArrowAltRight />
           </h3>
         </a>
       </div>

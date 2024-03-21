@@ -18,10 +18,18 @@
       // color: var(--green);
     }
   }
-  // &__button-wrapper {
-  //   // display: flex;
-  // }
+  &__button-wrapper {
+    display: flex;
+    gap: 2rem;
+  }
   &__button {
     font-size: 2rem;
+  }
+  &__button:last-child {
+    background-color: rgba(136, 212, 44, 0.3);
+
+    &::after {
+      background: var(--green);
+    }
   }
 }

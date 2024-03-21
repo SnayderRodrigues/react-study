@@ -1,0 +1,26 @@
+.footer {
+  color: var(--text-color-2);
+  background-color: var(--black);
+
+  a {
+    color: var(--text-color-2);
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 3rem;
+    padding: 4rem 0 2rem;
+  }
+  &__logo-wrapper {
+    grid-column: span 6 / span 6;
+  }
+  &__navigation {
+    grid-column: span 3 / span 3;
+  }
+  &__social {
+    grid-column: span 3 / span 3;
+  }
+  &__copyright {
+    margin-top: 7rem;
+  }
+}

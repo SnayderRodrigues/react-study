@@ -1,3 +1,13 @@
 .about {
   padding: 0 0 120px;
+
+  &__image-wrapper {
+    margin-bottom: 2rem;
+  }
+  &__description {
+    p {
+      margin-bottom: 2rem;
+      max-width: 60ch;
+    }
+  }
 }

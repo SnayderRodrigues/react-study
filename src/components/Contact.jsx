@@ -1,11 +1,26 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
   return (
     <section id="contact" className="contact">
-      <div className="wrapper contact__wrapper"></div>
+      <div className="wrapper contact__wrapper">
+        <div className="contact__headline">
+          <h2>
+            HAVE A PROJECT IN MIND?
+          </h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+            ipsam cupiditate adipisci molestiae dolores libero at ad incidunt
+            vitae quos praesentium distinctio ratione, facilis atque tempora ex
+            obcaecati est? Dolore?
+          </p>
+          <a href="" className="button link">
+            Get in touch
+          </a>
+        </div>
+      </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

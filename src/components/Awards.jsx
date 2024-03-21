@@ -5,9 +5,14 @@ const Awards = () => {
   return (
     <section id="awards" className="awards">
       <div className="wrapper awards__wrapper">
-        <h2 className="awards__title">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </h2>
+        <div className="awards__title-wrapper">
+          <h2 className="awards__title">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </h2>
+          <a href="" className="button link">
+            See more <FaLongArrowAltRight />
+          </a>
+        </div>
         <div className="awards__content">
           <div className="awards__card">
             <h3>Award Name Example</h3>
@@ -17,7 +22,7 @@ const Awards = () => {
               ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
               fugiat!
             </p>
-            <a href="">
+            <a href="" className="link">
               Learn More <FaLongArrowAltRight />
             </a>
           </div>
@@ -29,7 +34,7 @@ const Awards = () => {
               ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
               fugiat!
             </p>
-            <a href="">
+            <a href="" className="link">
               Learn More <FaLongArrowAltRight />
             </a>
           </div>
@@ -41,7 +46,7 @@ const Awards = () => {
               ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
               fugiat!
             </p>
-            <a href="">
+            <a href="" className="link">
               Learn More <FaLongArrowAltRight />
             </a>
           </div>
@@ -53,7 +58,7 @@ const Awards = () => {
               ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
               fugiat!
             </p>
-            <a href="">
+            <a href="" className="link">
               Learn More <FaLongArrowAltRight />
             </a>
           </div>
