@@ -1,11 +1,14 @@
 .hero {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   background-color: var(--bg-color);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 
+  &__wrapper {
+    margin-bottom: 120px;
+  }
   &__headline {
     margin-bottom: 4rem;
 

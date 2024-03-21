@@ -1,0 +1,24 @@
+.collections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 120px 0 0;
+
+//   &__title {
+//     margin-bottom: 2rem;
+//   }
+  &__image-wrapper-1 {
+    display: flex;
+    gap: 2rem;
+    margin-left: -200px;
+  }
+  &__image-wrapper-2 {
+    display: flex;
+    gap: 2rem;
+    margin-left: -100px;
+  }
+  &__image {
+    width: 600px;
+    object-fit: cover;
+  }
+}

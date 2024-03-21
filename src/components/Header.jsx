@@ -5,19 +5,29 @@ const Header = () => {
     <header id="header" className="header">
       <div className="wrapper">
         <nav className="header__navbar">
-          <a href="#" className="header__logo"></a>
+          <a href="#" className="header__logo">
+            HENRY A.
+          </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">
-              <a href="">Home</a>
+              <a href="" className="header__navbar-link">
+                Home
+              </a>
             </li>
             <li className="header__navbar-li">
-              <a href="">About</a>
+              <a href="" className="header__navbar-link">
+                About
+              </a>
             </li>
             <li className="header__navbar-li">
-              <a href="">Work</a>
+              <a href="" className="header__navbar-link">
+                Work
+              </a>
             </li>
             <li className="header__navbar-li">
-              <a href="">Collections</a>
+              <a href="" className="header__navbar-link">
+                Awards
+              </a>
             </li>
           </ul>
           <a href="" className="button">

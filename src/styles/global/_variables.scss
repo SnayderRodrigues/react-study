@@ -1,7 +1,7 @@
 :root {
   --font-stack: "Be Vietnam Pro", sans-serif;
   --text-color: #000;
-  --text-color-secondary: #a6a6a6;
+  --text-color-2: #f5f9f5;
   --bg-color: rgb(245, 249, 245);
   --bg-color-secondary: #1d1d1d;
   --container-border-radius: 10px;
@@ -11,6 +11,7 @@
     rgba(250, 82, 82, 1) 0%,
     rgba(221, 36, 118, 1) 100%
   );
+  --section-pd: 120px 0 120px;
 
   --yellow: #fff7e5;
   --green: #88d42c;

@@ -1,4 +1,14 @@
 .work {
+  color: var(--text-color-2);
+  background-color: var(--black);
+  padding: 120px 0;
+  border-radius: 1.125rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
   &__image-wrapper {
     width: 100%;
   }
@@ -6,5 +16,34 @@
     width: 100%;
     height: 800px;
     object-fit: cover;
+  }
+  &__grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-bottom: -200px;
+  }
+  &__image-2 {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 800px;
+    object-fit: cover;
+  }
+  &__image-3 {
+    grid-area: 1 / 2 / 2 / 3;
+    height: 600px;
+    object-fit: cover;
+  }
+  &__image-4 {
+    grid-area: 2 / 1 / 3 / 2;
+    height: 600px;
+    object-fit: cover;
+  }
+  &__image-5 {
+    grid-area: 2 / 2 / 3 / 3;
+    height: 800px;
+    object-fit: cover;
+    margin-top: -200px;
   }
 }

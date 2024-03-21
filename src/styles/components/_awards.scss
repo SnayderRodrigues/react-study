@@ -1,0 +1,18 @@
+.awards {
+  padding: var(--section-pd);
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  &__title {
+    width: 50%;
+  }
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
