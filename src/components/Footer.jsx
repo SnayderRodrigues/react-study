@@ -18,7 +18,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer__navigation">
-          <ul>
+          <ul className="footer__navigation-ul">
             <li>
               <a href="">Home</a>
             </li>
@@ -36,9 +36,9 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer__social">
+        <div className="footer__socials">
           <span>My Socials</span>
-          <ul>
+          <ul className="footer__socials-ul">
             <li>
               <a href="" className="link">
                 <FaLinkedinIn /> LinkedIn
