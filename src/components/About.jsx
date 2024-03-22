@@ -1,5 +1,5 @@
 import React from "react";
-import Cats from "../img/IMG_20200407_163224926_HDR-01.jpeg";
+import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="wrapper about__wrapper">
         <div className="about__image-wrapper">
-          <img src={Cats} alt="" className="about__image" />
+          <img src={Author} alt="" className="about__image" />
         </div>
         <div className="about__description">
           <h2>ABOUT ME</h2>
