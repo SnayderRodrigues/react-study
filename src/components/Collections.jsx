@@ -1,7 +1,15 @@
-import React from "react";
+import { useLayoutEffect } from "react";
 import Cats from "../img/IMG_20200407_163224926_HDR-01.jpeg";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Collections = () => {
+  useLayoutEffect(() => {
+    gsap.to(".collections__image-wrapper-1", {
+      x: 0
+    });
+  }, []);
+
   return (
     <section id="collections" className="collections">
       <div className="wrapper collections-wrapper">

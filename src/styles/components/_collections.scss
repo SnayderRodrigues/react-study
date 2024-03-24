@@ -10,12 +10,14 @@
   &__image-wrapper-1 {
     display: flex;
     gap: 2rem;
-    margin-left: -200px;
+    // margin-left: -200px;
+    transform: translateX(-200px);
   }
   &__image-wrapper-2 {
     display: flex;
     gap: 2rem;
-    margin-left: -100px;
+    // margin-left: -100px;
+    transform: translateX(-100px);
   }
   &__image {
     width: 600px;
