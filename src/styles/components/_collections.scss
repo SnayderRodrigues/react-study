@@ -11,13 +11,13 @@
     display: flex;
     gap: 2rem;
     // margin-left: -200px;
-    transform: translateX(-200px);
+    transform: translateX(-300px);
   }
   &__image-wrapper-2 {
     display: flex;
     gap: 2rem;
-    // margin-left: -100px;
-    transform: translateX(-100px);
+    margin-left: -500px;
+    transform: translateX(200px);
   }
   &__image {
     width: 600px;

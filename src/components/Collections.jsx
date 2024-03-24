@@ -5,9 +5,37 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Collections = () => {
   useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     gsap.to(".collections__image-wrapper-1", {
-      x: 0
+      x: 0,
+      scrollTrigger: {
+        trigger: ".collections__image-wrapper-1",
+        // markers: true,
+        scrub: true,
+      },
     });
+
+    return () => {
+      gsap.killTweensOf(".collections__image-wrapper-1");
+    };
+  }, []);
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".collections__image-wrapper-2", {
+      x: 0,
+      scrollTrigger: {
+        trigger: ".collections__image-wrapper-2",
+        // markers: true,
+        scrub: true,
+      },
+    });
+
+    return () => {
+      gsap.killTweensOf(".collections__image-wrapper-2");
+    };
   }, []);
 
   return (
