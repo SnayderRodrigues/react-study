@@ -1,14 +1,33 @@
-import React from "react";
+import { useLayoutEffect } from "react";
 import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const About = () => {
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".about__image-wrapper", {
+      width: "100%",
+      scrollTrigger: {
+        trigger: ".about__image-wrapper",
+        // markers: true,
+        scrub: true,
+      },
+    });
+
+    return () => {
+      gsap.killTweensOf(".about__image-wrapper");
+    };
+  }, []);
+
   return (
     <section id="about" className="about">
+      <div className="wrapper about__image-wrapper">
+        <img src={Author} alt="" className="about__image" />
+      </div>
       <div className="wrapper about__wrapper">
-        <div className="about__image-wrapper">
-          <img src={Author} alt="" className="about__image" />
-        </div>
         <div className="about__description">
           <h2>ABOUT ME</h2>
           <p>
