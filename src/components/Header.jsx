@@ -26,7 +26,7 @@ const Header = () => {
             </li>
             <li className="header__navbar-li">
               <a href="" className="header__navbar-link">
-                Awards
+                Expertise
               </a>
             </li>
           </ul>

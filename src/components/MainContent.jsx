@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./Hero";
 import About from "./About";
 import Work from "./Work";
+import Expertise from "./Expertise";
 import Collections from "./Collections";
 import Awards from "./Awards";
 import Contact from "./Contact";
@@ -12,6 +13,7 @@ const MainContent = () => {
       <Hero />
       <About />
       <Work />
+      <Expertise />
       <Collections />
       <Awards />
       <Contact />

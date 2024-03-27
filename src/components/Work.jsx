@@ -8,6 +8,18 @@ const Work = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    // gsap.to(".work", {
+    //   scale: 1,
+    //   borderRadius: "1.125rem",
+    //   scrollTrigger: {
+    //     trigger: ".work",
+    //     // markers: true,
+    //     scrub: true,
+    //     start: "0% 70%",
+    //     end: "30% 70%",
+    //   },
+    // });
+
     gsap.to(".work__image-1", {
       opacity: 1,
       scrollTrigger: {
@@ -56,6 +68,7 @@ const Work = () => {
       gsap.killTweensOf(".work__image-3");
       gsap.killTweensOf(".work__image-4");
       gsap.killTweensOf(".work__image-5");
+      // gsap.killTweensOf(".work");
     };
   }, []);
 

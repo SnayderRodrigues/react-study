@@ -14,7 +14,7 @@ const Footer = () => {
               HENRY <br />
               ANDERSON
             </h2>
-            <h3>PRO PHOTOGRAPHER</h3>
+            <h3>PHOTOGRAPHER</h3>
           </a>
         </div>
         <div className="footer__navigation">
@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="" className="link button">
-                Awards
+                Expertise
               </a>
             </li>
             <li>
@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
             <li>
               <a href="" className="link button">
-                <FaXTwitter /> X (Twitter)
+                <FaXTwitter /> X
               </a>
             </li>
           </ul>

@@ -1,0 +1,38 @@
+.expertise {
+  color: var(--text-color-3);
+  background-color: var(--blue-shade);
+  padding: 120px 0 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      margin-bottom: 4rem;
+    }
+  }
+  &__cards-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    width: 100%;
+    cursor: grab;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+
+    a {
+      background-color: var(--blue-shade);
+      margin-bottom: 2rem;
+    }
+    h3 {
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+  }
+}

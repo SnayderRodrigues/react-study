@@ -1,5 +1,7 @@
 .about {
-  padding: 0 0 120px;
+  color: var(--text-color-3);
+  background-color: var(--bg-color);
+  padding: 0;
 
   &__image-wrapper {
     margin-bottom: 4rem;
@@ -11,9 +13,28 @@
     }
   }
   &__description {
+    margin-bottom: 4rem;
+
     p {
       margin-bottom: 2rem;
       max-width: 60ch;
     }
+  }
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card-number {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  &__card-title {
+    font-size: 1.125rem;
   }
 }

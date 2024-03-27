@@ -7,6 +7,17 @@ const Collections = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    gsap.to(".collections", {
+      scale: 0.8,
+      scrollTrigger: {
+        trigger: ".collections",
+        // markers: true,
+        scrub: true,
+        start: "100% 40%",
+        end: "150% 70%",
+      },
+    });
+
     gsap.to(".collections__image-wrapper-1", {
       x: 0,
       scrollTrigger: {
@@ -17,6 +28,7 @@ const Collections = () => {
     });
 
     return () => {
+      gsap.killTweensOf(".collections");
       gsap.killTweensOf(".collections__image-wrapper-1");
     };
   }, []);

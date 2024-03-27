@@ -8,6 +8,17 @@ const About = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    gsap.to(".about", {
+      backgroundColor: "#ebf8ff",
+      scrollTrigger: {
+        trigger: ".about",
+        // markers: true,
+        scrub: true,
+        start: "0% 70%",
+        end: "100% 70%",
+      },
+    });
+
     gsap.to(".about__image-wrapper", {
       width: "100%",
       scrollTrigger: {
@@ -20,6 +31,7 @@ const About = () => {
     });
 
     return () => {
+      gsap.killTweensOf(".about");
       gsap.killTweensOf(".about__image-wrapper");
     };
   }, []);
@@ -48,6 +60,24 @@ const About = () => {
             Read more about me
             <FaLongArrowAltRight />
           </a>
+        </div>
+        <div className="about__cards">
+          <div className="about__card">
+            <span className="about__card-number">11+</span>
+            <span className="about__card-title">Years of experience</span>
+          </div>
+          <div className="about__card">
+            <span className="about__card-number">250+</span>
+            <span className="about__card-title">Projects completed</span>
+          </div>
+          <div className="about__card">
+            <span className="about__card-number">230+</span>
+            <span className="about__card-title">Happy customers</span>
+          </div>
+          <div className="about__card">
+            <span className="about__card-number">14+</span>
+            <span className="about__card-title">Countries vised for work</span>
+          </div>
         </div>
       </div>
     </section>
