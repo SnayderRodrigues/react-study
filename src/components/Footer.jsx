@@ -20,19 +20,29 @@ const Footer = () => {
         <div className="footer__navigation">
           <ul className="footer__navigation-ul">
             <li>
-              <a href="">Home</a>
+              <a href="" className="link button">
+                Home
+              </a>
             </li>
             <li>
-              <a href="">About</a>
+              <a href="" className="link button">
+                About
+              </a>
             </li>
             <li>
-              <a href="">Work</a>
+              <a href="" className="link button">
+                Work
+              </a>
             </li>
             <li>
-              <a href="">Awards</a>
+              <a href="" className="link button">
+                Awards
+              </a>
             </li>
             <li>
-              <a href="">Contact</a>
+              <a href="" className="link button">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -40,23 +50,23 @@ const Footer = () => {
           <span>My Socials</span>
           <ul className="footer__socials-ul">
             <li>
-              <a href="" className="link">
-                <FaLinkedinIn /> LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="" className="link">
+              <a href="" className="link button">
                 <FaInstagram /> Instagram
               </a>
             </li>
             <li>
-              <a href="" className="link">
+              <a href="" className="link button">
+                <FaLinkedinIn /> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="" className="link button">
                 <FaUnsplash /> Unsplash
               </a>
             </li>
             <li>
-              <a href="" className="link">
-                <FaXTwitter /> X
+              <a href="" className="link button">
+                <FaXTwitter /> X (Twitter)
               </a>
             </li>
           </ul>

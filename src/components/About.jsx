@@ -14,6 +14,8 @@ const About = () => {
         trigger: ".about__image-wrapper",
         // markers: true,
         scrub: true,
+        start: "0% 70%",
+        end: "100% 70%",
       },
     });
 
@@ -30,6 +32,12 @@ const About = () => {
       <div className="wrapper about__wrapper">
         <div className="about__description">
           <h2>ABOUT ME</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+            recusandae sapiente debitis placeat cumque necessitatibus? Quia ab
+            assumenda deleniti velit eos, pariatur harum sunt ad, atque est
+            optio incidunt ratione.
+          </p>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
             recusandae sapiente debitis placeat cumque necessitatibus? Quia ab
