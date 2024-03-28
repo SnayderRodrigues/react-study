@@ -1,15 +1,16 @@
 .about {
-  color: var(--text-color-3);
-  background-color: var(--bg-color);
   padding: 0;
 
   &__image-wrapper {
+    border-radius: 1.125rem;
     margin-bottom: 4rem;
+    overflow: hidden;
 
     img {
       width: 100%;
       max-height: 800px;
       object-fit: cover;
+      border-radius: 0;
     }
   }
   &__description {

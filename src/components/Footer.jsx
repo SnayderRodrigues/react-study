@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="footer__logo-wrapper">
           <a href="" className="footer__logo">
             <h2>
-              HENRY <br />
-              ANDERSON
+              [Name] <br />
+              Studio
             </h2>
-            <h3>PHOTOGRAPHER</h3>
+            <h3>Photo & Videography</h3>
           </a>
         </div>
         <div className="footer__navigation">
@@ -47,7 +47,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer__socials">
-          <span>My Socials</span>
+          <span>Our Socials</span>
           <ul className="footer__socials-ul">
             <li>
               <a href="" className="link button">
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="wrapper footer__copyright">
-        <span>© 2024 Henry Anderson. All rights reserved.</span>
+        <span>© 2024 [Name] Studio. All rights reserved.</span>
       </div>
     </footer>
   );

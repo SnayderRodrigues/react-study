@@ -6,17 +6,21 @@ const Hero = () => {
       <div className="wrapper hero__wrapper">
         <div className="hero__headline">
           <h1>
-            <span>Photographer</span> <br />
-            Henry Anderson.
+            [Name] Studio
+            <br />
+            <span>Photo & Videography</span>
           </h1>
-          <p>Award-winning travel and landscape photographer based in UK 📍</p>
+          <p>
+            Award-winning travel and landscape photo & videography studio based
+            in UK. 📍
+          </p>
         </div>
         <div className="hero__button-wrapper">
           <a href="" className="button hero__button">
-            Contact me
+            Contact Us
           </a>
           <a href="" className="button hero__button">
-            See my work
+            See our work
           </a>
         </div>
       </div>

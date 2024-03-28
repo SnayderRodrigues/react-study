@@ -1,15 +1,14 @@
 import { useLayoutEffect } from "react";
-import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const About = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".about", {
-      backgroundColor: "#ebf8ff",
       scrollTrigger: {
         trigger: ".about",
         // markers: true,
@@ -21,6 +20,7 @@ const About = () => {
 
     gsap.to(".about__image-wrapper", {
       width: "100%",
+      borderRadius: 0,
       scrollTrigger: {
         trigger: ".about__image-wrapper",
         // markers: true,
@@ -43,7 +43,7 @@ const About = () => {
       </div>
       <div className="wrapper about__wrapper">
         <div className="about__description">
-          <h2>ABOUT ME</h2>
+          <h2>ABOUT US</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
             recusandae sapiente debitis placeat cumque necessitatibus? Quia ab
@@ -57,7 +57,7 @@ const About = () => {
             optio incidunt ratione.
           </p>
           <a href="" className="button link">
-            Read more about me
+            Read more about us
             <FaLongArrowAltRight />
           </a>
         </div>

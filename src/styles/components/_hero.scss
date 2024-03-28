@@ -27,13 +27,11 @@
     font-size: 1.625rem;
   }
   &__button:last-child {
-    background-color: var(--blue-shade);
+    color: var(--text-color);
+    background: var(--green-shade);
 
     &:hover {
-      color: var(--text-color);
-    }
-    &::after {
-      background: var(--green);
+      color: var(--text-color-2);
     }
   }
 }

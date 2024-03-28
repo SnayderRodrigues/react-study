@@ -1,5 +1,7 @@
 import { useLayoutEffect } from "react";
-import { FaLongArrowAltRight, FaTree } from "react-icons/fa";
+import { FaLongArrowAltRight, FaPaintRoller } from "react-icons/fa";
+import { FaMountainSun, FaFortAwesome, FaPersonHiking } from "react-icons/fa6";
+
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -26,7 +28,7 @@ const Expertise = () => {
   return (
     <section id="expertise" className="expertise">
       <div className="wrapper expertise__wrapper">
-        <h2>WHAT I DO</h2>
+        <h2>WHAT WE DO</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
           quia architecto atque sequi nemo sit commodi sapiente cum illum,
@@ -35,9 +37,9 @@ const Expertise = () => {
         </p>
         <div className="expertise__cards-wrapper">
           <div className="expertise__card">
-            <a href="" className="button link">
-              <FaTree />
-            </a>
+            <span>
+              <FaMountainSun />
+            </span>
             <h3>Category</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
@@ -45,9 +47,9 @@ const Expertise = () => {
             </p>
           </div>
           <div className="expertise__card">
-            <a href="" className="button link">
-              <FaTree />
-            </a>
+            <span>
+              <FaPersonHiking />
+            </span>
             <h3>Category</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
@@ -55,9 +57,9 @@ const Expertise = () => {
             </p>
           </div>
           <div className="expertise__card">
-            <a href="" className="button link">
-              <FaTree />
-            </a>
+            <span>
+              <FaFortAwesome />
+            </span>
             <h3>Category</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
@@ -65,9 +67,9 @@ const Expertise = () => {
             </p>
           </div>
           <div className="expertise__card">
-            <a href="" className="button link">
-              <FaTree />
-            </a>
+            <span>
+              <FaPaintRoller />
+            </span>
             <h3>Category</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi

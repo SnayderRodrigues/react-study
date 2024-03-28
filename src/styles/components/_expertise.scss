@@ -1,6 +1,4 @@
 .expertise {
-  color: var(--text-color-3);
-  background-color: var(--blue-shade);
   padding: 120px 0 0;
 
   &__wrapper {
@@ -19,15 +17,14 @@
     flex-wrap: nowrap;
     gap: 1rem;
     width: 100%;
-    cursor: grab;
   }
   &__card {
     display: flex;
     flex-direction: column;
     width: 380px;
 
-    a {
-      background-color: var(--blue-shade);
+    span {
+      font-size: 1.625rem;
       margin-bottom: 2rem;
     }
     h3 {

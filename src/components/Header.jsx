@@ -21,11 +21,11 @@ const Header = () => {
       <div className="wrapper">
         <nav className="header__navbar">
           <a href="#" className="header__logo">
-            HENRY A.
+            [Name] Studio
           </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">
-              <a href="" className="header__navbar-link">
+              <a href="" className="header__navbar-link active-page">
                 Home
               </a>
             </li>
