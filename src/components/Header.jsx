@@ -1,6 +1,21 @@
 import React from "react";
 
 const Header = () => {
+  let lastScrollTop = 0;
+
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+      header.classList.add("header-scroll");
+    } else {
+      header.classList.remove("header-scroll");
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  });
+
   return (
     <header id="header" className="header">
       <div className="wrapper">
