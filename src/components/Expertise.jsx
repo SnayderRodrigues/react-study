@@ -28,7 +28,7 @@ const Expertise = () => {
   return (
     <section id="expertise" className="expertise">
       <div className="wrapper expertise__wrapper">
-        <h2>WHAT WE DO</h2>
+        <h2>OUR EXPERTISE</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
           quia architecto atque sequi nemo sit commodi sapiente cum illum,

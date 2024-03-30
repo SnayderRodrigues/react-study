@@ -8,15 +8,15 @@ const About = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".about", {
-      scrollTrigger: {
-        trigger: ".about",
-        // markers: true,
-        scrub: true,
-        start: "0% 70%",
-        end: "100% 70%",
-      },
-    });
+    // gsap.to(".about", {
+    //   scrollTrigger: {
+    //     trigger: ".about",
+    //     // markers: true,
+    //     scrub: true,
+    //     start: "0% 70%",
+    //     end: "100% 70%",
+    //   },
+    // });
 
     gsap.to(".about__image-wrapper", {
       width: "100%",
@@ -31,7 +31,7 @@ const About = () => {
     });
 
     return () => {
-      gsap.killTweensOf(".about");
+      // gsap.killTweensOf(".about");
       gsap.killTweensOf(".about__image-wrapper");
     };
   }, []);
@@ -43,7 +43,33 @@ const About = () => {
       </div>
       <div className="wrapper about__wrapper">
         <div className="about__description">
-          <h2>ABOUT US</h2>
+          <h2>
+            We capture, craft, and deliver world-class visual content for
+            forward-thinking brands.
+          </h2>
+
+          <div className="about__cards">
+            <div className="about__card">
+              <span className="about__card-number">11+</span>
+              <span className="about__card-title">Years of experience</span>
+            </div>
+            <div className="about__card">
+              <span className="about__card-number">250+</span>
+              <span className="about__card-title">Projects completed</span>
+            </div>
+            <div className="about__card">
+              <span className="about__card-number">230+</span>
+              <span className="about__card-title">Happy customers</span>
+            </div>
+            <div className="about__card">
+              <span className="about__card-number">14+</span>
+              <span className="about__card-title">
+                Countries vised for work
+              </span>
+            </div>
+          </div>
+
+          <h2>WE LOVE WHAT WE DO</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
             recusandae sapiente debitis placeat cumque necessitatibus? Quia ab
@@ -60,24 +86,6 @@ const About = () => {
             Read more about us
             <FaLongArrowAltRight />
           </a>
-        </div>
-        <div className="about__cards">
-          <div className="about__card">
-            <span className="about__card-number">11+</span>
-            <span className="about__card-title">Years of experience</span>
-          </div>
-          <div className="about__card">
-            <span className="about__card-number">250+</span>
-            <span className="about__card-title">Projects completed</span>
-          </div>
-          <div className="about__card">
-            <span className="about__card-number">230+</span>
-            <span className="about__card-title">Happy customers</span>
-          </div>
-          <div className="about__card">
-            <span className="about__card-number">14+</span>
-            <span className="about__card-title">Countries vised for work</span>
-          </div>
         </div>
       </div>
     </section>

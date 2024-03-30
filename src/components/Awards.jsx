@@ -7,7 +7,7 @@ const Awards = () => {
       <div className="wrapper awards__wrapper">
         <div className="awards__title-wrapper">
           <h2 className="awards__title">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Lorem ipsum dolor sit amet consectetur.
           </h2>
           <a href="" className="button link">
             See more <FaLongArrowAltRight />
