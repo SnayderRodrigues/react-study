@@ -4,6 +4,13 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const Awards = () => {
   return (
     <section id="awards" className="awards">
+      <div className="awards__carousel-title">
+        <h2>AWARDS•</h2>
+        <h2 className="h2-gray">AWARDS•</h2>
+        <h2>AWARDS•</h2>
+        <h2 className="h2-gray">AWARDS•</h2>
+        <h2>AWARDS•</h2>
+      </div>
       <div className="wrapper awards__wrapper">
         <div className="awards__title-wrapper">
           <h2 className="awards__title">

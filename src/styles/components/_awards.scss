@@ -1,6 +1,14 @@
 .awards {
   padding: 120px 0 0;
 
+  &__carousel-title {
+    display: flex;
+    margin-bottom: 120px;
+
+    .h2-gray {
+      color: #b3b3b3;
+    }
+  }
   &__wrapper {
     display: flex;
     align-items: flex-start;
