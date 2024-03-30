@@ -21,7 +21,7 @@ const Header = () => {
       <div className="wrapper">
         <nav className="header__navbar">
           <a href="#" className="header__logo">
-            [Name] Studio
+            [<span>Array</span>] Studio
           </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">

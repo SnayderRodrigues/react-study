@@ -44,11 +44,11 @@ const About = () => {
       <div className="wrapper about__wrapper">
         <div className="about__description">
           <h2>
-            We capture, craft, and deliver world-class visual content for
-            forward-thinking brands.
+            We capture, craft, and deliver <span>world-class</span> visual
+            content for forward-thinking brands.
           </h2>
 
-          <div className="about__cards">
+          <div className="about__cards-wrapper">
             <div className="about__card">
               <span className="about__card-number">11+</span>
               <span className="about__card-title">Years of experience</span>

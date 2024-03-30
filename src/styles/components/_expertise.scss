@@ -6,8 +6,9 @@
     flex-direction: column;
     align-items: flex-start;
 
-    p {
-      max-width: 60ch;
+    & > p {
+      font-size: 2rem;
+      max-width: 40ch;
       margin-bottom: 4rem;
     }
   }
@@ -18,6 +19,7 @@
     flex-wrap: nowrap;
     gap: 1rem;
     width: 100%;
+    margin-bottom: 4rem;
   }
   &__card {
     display: flex;

@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer__logo-wrapper">
           <a href="" className="footer__logo">
             <h2>
-              [Name] <br />
+              [<span>Array</span>] <br />
               Studio
             </h2>
             <h3>Photo & Videography</h3>
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="wrapper footer__copyright">
-        <span>© 2024 [Name] Studio. All rights reserved.</span>
+        <span>© 2024 [Array] Studio. All rights reserved.</span>
       </div>
     </footer>
   );

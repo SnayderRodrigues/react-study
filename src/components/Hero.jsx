@@ -6,9 +6,9 @@ const Hero = () => {
       <div className="wrapper hero__wrapper">
         <div className="hero__headline">
           <h1>
-            [Name] Studio
+            [<span>Array</span>] Studio
             <br />
-            <span>Photo & Videography</span>
+            Photo & Videography
           </h1>
           <p>
             Award-winning travel and landscape photo & videography studio based

@@ -15,6 +15,14 @@
   &__logo-wrapper {
     grid-column: span 6 / span 6;
   }
+  &__logo {
+    span {
+        background: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  }
   &__navigation {
     grid-column: span 3 / span 3;
   }
