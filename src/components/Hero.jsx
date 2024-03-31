@@ -4,15 +4,22 @@ import { gsap } from "gsap";
 
 const Hero = () => {
   useLayoutEffect(() => {
-    gsap.to(".word-hidden", {
-      y: 0,
+    gsap.to(".hero-word-hidden", {
+      x: 0,
       stagger: 0.05,
-      delay: 0.2,
+      delay: 0.3,
+      duration: 0.1,
+    });
+
+    gsap.to(".hero-span-hidden", {
+      opacity: 1,
+      stagger: 0.05,
+      delay: 0.3,
       duration: 0.1,
     });
 
     return () => {
-      gsap.killTweensOf(".word-hidden");
+      gsap.killTweensOf(".hero-word-hidden");
     };
   }, []);
 
@@ -21,11 +28,12 @@ const Hero = () => {
       <div className="wrapper hero__wrapper">
         <div className="hero__headline">
           <h1>
-            <div className="word-hidden">
-              [<span>Array</span>] Studio
-              <br />
-              Photo & Videography
-            </div>
+            <span className="hero-span-opaque">[</span>
+            <span className="hero-word-hidden">
+              <span className="highlight hero-span-hidden">Array</span>] Studio
+            </span>
+            <br />
+            Photo & Videography
           </h1>
           <p>
             Award-winning travel and landscape photo & videography studio based

@@ -2,21 +2,12 @@ import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
+import AboutUsPhoto from "../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const About = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
-    // gsap.to(".about", {
-    //   scrollTrigger: {
-    //     trigger: ".about",
-    //     // markers: true,
-    //     scrub: true,
-    //     start: "0% 70%",
-    //     end: "100% 70%",
-    //   },
-    // });
 
     gsap.to(".about__image-wrapper", {
       width: "100%",
@@ -44,8 +35,23 @@ const About = () => {
       },
     });
 
+    gsap.to(".card-hidden", {
+      y: 0,
+      stagger: 0.1,
+      delay: 0,
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".card-hidden",
+        // markers: true,
+        // scrub: true,
+        start: "0% 90%",
+        end: "100% 90%",
+      },
+    });
+
     return () => {
       gsap.killTweensOf(".line-hidden");
+      gsap.killTweensOf(".card-hidden");
       gsap.killTweensOf(".about__image-wrapper");
     };
   }, []);
@@ -56,7 +62,7 @@ const About = () => {
         <img src={Author} alt="" className="about__image" />
       </div>
       <div className="wrapper about__wrapper">
-        <div className="about__description">
+        
           <div className="about__headline">
             <h2>
               <span className="line-hidden">
@@ -77,19 +83,19 @@ const About = () => {
           </div>
 
           <div className="about__cards-wrapper">
-            <div className="about__card">
+            <div className="about__card card-hidden">
               <span className="about__card-number">11+</span>
               <span className="about__card-title">Years of experience</span>
             </div>
-            <div className="about__card">
+            <div className="about__card card-hidden">
               <span className="about__card-number">250+</span>
               <span className="about__card-title">Projects completed</span>
             </div>
-            <div className="about__card">
+            <div className="about__card card-hidden">
               <span className="about__card-number">230+</span>
               <span className="about__card-title">Happy customers</span>
             </div>
-            <div className="about__card">
+            <div className="about__card card-hidden">
               <span className="about__card-number">14+</span>
               <span className="about__card-title">
                 Countries vised for work
@@ -98,23 +104,43 @@ const About = () => {
           </div>
 
           <h2>WE LOVE WHAT WE DO</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-            recusandae sapiente debitis placeat cumque necessitatibus? Quia ab
-            assumenda deleniti velit eos, pariatur harum sunt ad, atque est
-            optio incidunt ratione.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-            recusandae sapiente debitis placeat cumque necessitatibus? Quia ab
-            assumenda deleniti velit eos, pariatur harum sunt ad, atque est
-            optio incidunt ratione.
-          </p>
-          <a href="" className="button link">
-            Read more about us
-            <FaLongArrowAltRight />
-          </a>
-        </div>
+          <div className="about__content-wrapper">
+            <div className="about__content-description">
+              <div className="about__content-text-1">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                  recusandae sapiente debitis placeat cumque necessitatibus? Quia
+                  ab assumenda deleniti velit.
+                </p>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+                  recusandae sapiente debitis placeat cumque necessitatibus?
+                </p>
+                <a href="" className="button link">
+                  Read more about us
+                  <FaLongArrowAltRight />
+                </a>
+              </div>
+              <div className="about__content-text-2">
+                <div>
+                  <span>100%</span>
+                  <h3>Example text</h3>
+                </div>
+                <div>
+                  <span>100%</span>
+                  <h3>Example text</h3>
+                </div>
+                <div>
+                  <span>100%</span>
+                  <h3>Example text</h3>
+                </div>
+              </div>
+            </div>
+            <div className="about__content-image">
+              <img src={AboutUsPhoto} alt="" />
+            </div>
+          </div>
+        
       </div>
     </section>
   );

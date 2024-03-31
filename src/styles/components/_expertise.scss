@@ -1,5 +1,7 @@
+@use "../util/" as u;
+
 .expertise {
-  padding: 120px 0;
+  padding: var(--section-pd);
 
   &__wrapper {
     display: flex;
@@ -7,7 +9,7 @@
     align-items: flex-start;
 
     & > p {
-      font-size: 2rem;
+      font-size: u.rem(26);
       max-width: 40ch;
       margin-bottom: 4rem;
     }

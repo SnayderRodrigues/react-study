@@ -1,13 +1,13 @@
 .work {
-  padding: 120px 0 0;
+  padding: var(--section-pd);
 
   &__wrapper {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
   }
   &__image-wrapper {
     width: 100%;
+    margin-bottom: 2rem;
   }
   &__image-1 {
     width: 100%;
@@ -20,7 +20,7 @@
     grid-template-rows: repeat(2, 1fr);
     row-gap: 2rem;
     column-gap: 2rem;
-    margin-bottom: -200px;
+    margin-bottom: calc(2rem - 200px);
   }
   &__image-2 {
     grid-area: 1 / 1 / 2 / 2;

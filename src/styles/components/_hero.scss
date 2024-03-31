@@ -16,8 +16,10 @@
     margin-bottom: 3rem;
 
     h1 {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      span {
+      overflow: hidden;
+      // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+      .highlight {
         background: var(--gradient);
         background-clip: text;
         -webkit-background-clip: text;
@@ -43,9 +45,17 @@
       color: var(--text-color-2);
     }
   }
-  .word-hidden {
+  .hero-word-hidden {
     display: inline-block;
-    transform: translateY(100%);
+    transform: translateX(-300px);
     transition: transform 300ms linear;
+  }
+  .hero-span-hidden {
+    opacity: 0;
+  }
+  .hero-span-opaque {
+    background-color: var(--bg-color);
+    position: relative;
+    z-index: 1;
   }
 }

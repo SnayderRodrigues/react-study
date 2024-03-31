@@ -1,9 +1,11 @@
+@use "../util/" as u;
+
 .about {
   padding: 0;
 
   &__image-wrapper {
     border-radius: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
     overflow: hidden;
 
     img {
@@ -13,16 +15,11 @@
       border-radius: 0;
     }
   }
-  &__description {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     margin-bottom: 4rem;
 
-    p {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      max-width: 40ch;
-    }
     h2:last-of-type {
       margin-bottom: 4rem;
     }
@@ -31,6 +28,7 @@
     display: inline-block;
     text-align: center;
     margin-bottom: 8rem;
+
     h2 {
       line-height: 1.2;
       margin-bottom: 0;
@@ -47,7 +45,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8rem;
+    margin-bottom: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   &__card {
     display: flex;
@@ -61,8 +60,49 @@
   &__card-title {
     font-size: 1.125rem;
   }
+  &__content-wrapper {
+    display: flex;
+    gap: 4rem;
+  }
+  &__content-description {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__content-text-1 {
+    p {
+      font-size: u.rem(26);
+      margin-bottom: 2rem;
+      // max-width: 40ch;
+    }
+  }
+  &__content-text-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 2rem;
+      border-bottom: 1.5px solid var(--green);
+
+      span {
+        font-size: u.rem(56);
+      }
+    }
+  }
+  &__content-image {
+    width: 55%;
+  }
   .line-hidden {
     display: inline-block;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+  }
+  .card-hidden {
     transform: translateY(100%);
     transition: transform 300ms linear;
   }
