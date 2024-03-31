@@ -9,6 +9,7 @@ import AboutPage from "./pages/about/AboutPage.jsx";
 import WorkPage from "./pages/work/WorkPage.jsx";
 import ExpertisePage from "./pages/expertise/ExpertisePage.jsx";
 import ContactPage from "./pages/contact/ContactPage.jsx";
+import ErrorPage from "./pages/error/ErrorPage.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
