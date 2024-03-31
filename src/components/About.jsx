@@ -30,8 +30,22 @@ const About = () => {
       },
     });
 
+    gsap.to(".line-hidden", {
+      y: 0,
+      stagger: 0.1,
+      delay: 0,
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: ".line-hidden",
+        // markers: true,
+        // scrub: true,
+        start: "0% 90%",
+        end: "100% 90%",
+      },
+    });
+
     return () => {
-      // gsap.killTweensOf(".about");
+      gsap.killTweensOf(".line-hidden");
       gsap.killTweensOf(".about__image-wrapper");
     };
   }, []);
@@ -43,10 +57,24 @@ const About = () => {
       </div>
       <div className="wrapper about__wrapper">
         <div className="about__description">
-          <h2>
-            We capture, craft, and deliver <span>world-class</span> visual
-            content for forward-thinking brands.
-          </h2>
+          <div className="about__headline">
+            <h2>
+              <span className="line-hidden">
+                <span className="word-hidden">We capture,</span>{" "}
+                <span className="word-hidden">craft,</span>{" "}
+                <span className="word-hidden">and deliver</span>
+              </span>{" "}
+            </h2>
+            <h2>
+              <div className="line-hidden">
+                <span className="highlight">world-class</span> visual content
+                for
+              </div>
+            </h2>
+            <h2>
+              <span className="line-hidden">forward-thinking brands.</span>
+            </h2>
+          </div>
 
           <div className="about__cards-wrapper">
             <div className="about__card">

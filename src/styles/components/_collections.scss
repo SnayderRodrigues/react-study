@@ -21,11 +21,12 @@
   &__image-wrapper-2 {
     display: flex;
     gap: 2rem;
-    margin-left: -500px;
-    transform: translateX(200px);
+    // margin-left: -500px;
+    transform: translateX(0px);
   }
   &__image {
-    width: 600px;
+    min-width: 570px;
+    height: 340px;
     object-fit: cover;
   }
 }

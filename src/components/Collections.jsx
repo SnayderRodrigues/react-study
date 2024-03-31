@@ -8,7 +8,7 @@ const Collections = () => {
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".collections__image-wrapper-1", {
-      x: 0,
+      x: "-200px",
       scrollTrigger: {
         trigger: ".collections__image-wrapper-1",
         // markers: true,
@@ -16,16 +16,8 @@ const Collections = () => {
       },
     });
 
-    return () => {
-      gsap.killTweensOf(".collections__image-wrapper-1");
-    };
-  }, []);
-
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
     gsap.to(".collections__image-wrapper-2", {
-      x: 0,
+      x: "-100px",
       scrollTrigger: {
         trigger: ".collections__image-wrapper-2",
         // markers: true,
@@ -34,6 +26,7 @@ const Collections = () => {
     });
 
     return () => {
+      gsap.killTweensOf(".collections__image-wrapper-1");
       gsap.killTweensOf(".collections__image-wrapper-2");
     };
   }, []);
