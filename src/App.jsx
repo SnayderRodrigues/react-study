@@ -1,8 +1,9 @@
 import Header from "./components/Header";
-import MainContent from "./components/MainContent";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
+
+import { Outlet } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -17,9 +18,10 @@ function App() {
   }, []);
 
   return (
+    //moved MainContent to pages/home/HomePage.jsx
     <>
       <Header />
-      <MainContent />
+      <Outlet />
       <Footer />
     </>
   );
