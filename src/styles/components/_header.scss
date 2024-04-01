@@ -53,17 +53,24 @@
       z-index: 1;
     }
   }
-  &__navbar-link.active-page {
-    display: flex;
-    width: fit-content;
+  .active-page {
     color: var(--text-color-2);
-    background: var(--gradient);
-    border: none;
-    border-radius: 999px;
-    overflow: hidden;
-    position: relative;
-    text-decoration: none;
-    z-index: 1;
+
+    &::after {
+      transform: translate(0, 0);
+    }
+    a {
+      display: flex;
+      width: fit-content;
+      color: var(--text-color-2);
+      background: var(--gradient);
+      border: none;
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+      text-decoration: none;
+      z-index: 1;
+    }
   }
 }
 

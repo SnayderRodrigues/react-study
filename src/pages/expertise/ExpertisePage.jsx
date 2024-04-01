@@ -1,10 +1,13 @@
 import React from "react";
+import "./expertisepage.scss";
 
 const ExpertisePage = () => {
   return (
-    <div>
-      <h1>ExpertisePage</h1>
-    </div>
+    <section className="expertisePage">
+      <div className="wrapper expertisePage__wrapper ">
+        <h1>ExpertisePage</h1>
+      </div>
+    </section>
   );
 };
 

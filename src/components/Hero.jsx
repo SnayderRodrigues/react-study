@@ -25,7 +25,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="hero">
+    <section className="hero" id="hero">
       <div className="wrapper hero__wrapper">
         <div className="hero__headline">
           <h1>

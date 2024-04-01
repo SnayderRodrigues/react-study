@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -9,7 +9,7 @@ const Footer = () => {
     <footer id="footer" className="footer">
       <div className="wrapper footer__wrapper">
         <div className="footer__logo-wrapper">
-          <a href="" className="footer__logo">
+          <a href="/" className="footer__logo">
             <h2>
               [<span>Array</span>] <br />
               Studio
@@ -20,29 +20,29 @@ const Footer = () => {
         <div className="footer__navigation">
           <ul className="footer__navigation-ul">
             <li>
-              <a href="" className="link button">
+              <a href="/" className="link button">
                 Home
               </a>
             </li>
             <li>
-              <a href="" className="link button">
+              <Link to="about" className="link button">
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="link button">
+              <Link to="work" className="link button">
                 Work
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="link button">
+              <Link to="expertise" className="link button">
                 Expertise
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="" className="link button">
+              <Link to="contact" className="link button">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

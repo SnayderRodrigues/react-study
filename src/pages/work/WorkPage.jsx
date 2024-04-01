@@ -1,10 +1,13 @@
 import React from "react";
+import "./workpage.scss";
 
 const WorkPage = () => {
   return (
-    <div>
-      <h1>WorkPage</h1>
-    </div>
+    <section className="workPage">
+      <div className="wrapper workPage__wrapper ">
+        <h1>WorkPage</h1>
+      </div>
+    </section>
   );
 };
 
