@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   let lastScrollTop = 0;
@@ -25,29 +25,29 @@ const Header = () => {
           </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">
-              <a href="/" className="header__navbar-link active-page">
+              <Link to="/" className="header__navbar-link active-page">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="header__navbar-li">
-              <a href="about" className="header__navbar-link">
+              <Link to="about" className="header__navbar-link">
                 About
-              </a>
+              </Link>
             </li>
             <li className="header__navbar-li">
-              <a href="work" className="header__navbar-link">
+              <Link to="work" className="header__navbar-link">
                 Work
-              </a>
+              </Link>
             </li>
             <li className="header__navbar-li">
-              <a href="expertise" className="header__navbar-link">
+              <Link to="expertise" className="header__navbar-link">
                 Expertise
-              </a>
+              </Link>
             </li>
           </ul>
-          <a href="contact" className="button">
+          <Link to="contact" className="button">
             Contact
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

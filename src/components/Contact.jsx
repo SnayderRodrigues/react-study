@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 // import { useLayoutEffect } from "react";
 // import { gsap } from "gsap";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -34,10 +35,10 @@ const Contact = () => {
             vitae quos praesentium distinctio ratione, facilis atque tempora ex
             obcaecati est? Dolore?
           </p>
-          <a href="" className="button link">
+          <Link to="contact" className="button link">
             Get in touch
             <FaLongArrowAltRight />
-          </a>
+          </Link>
         </div>
       </div>
     </section>

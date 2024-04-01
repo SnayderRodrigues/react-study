@@ -1,4 +1,5 @@
 import { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
@@ -116,10 +117,10 @@ const About = () => {
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
                   recusandae sapiente debitis placeat cumque necessitatibus?
                 </p>
-                <a href="" className="button link">
+                <Link to="about" className="button link">
                   Read more about us
                   <FaLongArrowAltRight />
-                </a>
+                </Link>
               </div>
               <div className="about__content-text-2">
                 <div>

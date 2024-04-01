@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom";
 import { useLayoutEffect } from "react";
-import { FaLongArrowAltRight, FaPaintRoller } from "react-icons/fa";
-import { FaMountainSun, FaFortAwesome, FaPersonHiking } from "react-icons/fa6";
-
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaLongArrowAltRight, FaPaintRoller } from "react-icons/fa";
+import { FaMountainSun, FaFortAwesome, FaPersonHiking } from "react-icons/fa6";
 
 const Expertise = () => {
   //   useLayoutEffect(() => {
@@ -77,10 +77,10 @@ const Expertise = () => {
             </p>
           </div>
         </div>
-        <a href="" className="button link">
+        <Link to="expertise" className="button link">
           Learn more
           <FaLongArrowAltRight />
-        </a>
+        </Link>
       </div>
     </section>
   );

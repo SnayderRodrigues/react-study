@@ -1,4 +1,5 @@
 import { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -94,9 +95,9 @@ const Awards = () => {
             </p>
           </div>
         </div>
-        <a href="" className="button link">
+        <Link to="about" className="button link">
           See all awards <FaLongArrowAltRight />
-        </a>
+        </Link>
       </div>
     </section>
   );

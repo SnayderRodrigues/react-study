@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useLayoutEffect } from "react";
 import { gsap } from "gsap";
 
@@ -41,12 +42,12 @@ const Hero = () => {
           </p>
         </div>
         <div className="hero__button-wrapper">
-          <a href="" className="button hero__button">
+          <Link to="contact" className="button hero__button">
             Contact Us
-          </a>
-          <a href="" className="button hero__button">
+          </Link>
+          <Link to="work" className="button hero__button">
             See our work
-          </a>
+          </Link>
         </div>
       </div>
     </section>

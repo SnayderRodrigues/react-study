@@ -1,4 +1,5 @@
 import { useLayoutEffect } from "react";
+import { Link } from "react-router-dom";
 import Photo1 from "../img/jakob-owens-vQJkhe0EAIg-unsplash.webp";
 import Photo2 from "../img/jenn-wood-MdQlczZR9sU-unsplash_1.webp";
 import Photo3 from "../img/clint-mckoy-PVlSUz_g31c-unsplash_1.webp";
@@ -77,10 +78,10 @@ const Work = () => {
           <img src={Photo4} alt="" className="work__image-4" />
           <img src={Photo5} alt="" className="work__image-5" />
         </div>
-        <a href="" className="button link">
+        <Link to="work" className="button link">
           See full portfolio
           <FaLongArrowAltRight />
-        </a>
+        </Link>
       </div>
     </section>
   );
