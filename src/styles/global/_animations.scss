@@ -1,0 +1,17 @@
+@use "../util/" as u;
+
+.gsap__father {
+  overflow: hidden;
+}
+
+.gsap__fadeInUp-about {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 300ms linear, opacity 300ms linear;
+}
+
+.gsap__fadeInUp-work {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: transform 300ms linear, opacity 300ms linear;
+}

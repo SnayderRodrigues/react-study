@@ -1,26 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
-  let lastScrollTop = 0;
+  const location = useLocation();
 
-  window.addEventListener("scroll", function () {
-    const header = document.getElementById("header");
-    const currentScroll = window.scrollY;
-
-    if (currentScroll > lastScrollTop) {
-      header.classList.add("header-scroll");
-    } else {
-      header.classList.remove("header-scroll");
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  });
-
-  const [activePage, setActivePage] = useState("home");
-
-  const handleSetActivePage = (page) => {
-    setActivePage(page);
+  // Função para verificar se o usuário está na rota "/about"
+  const isHomePage = () => {
+    return location.pathname === "/";
+  };
+  const isAboutPage = () => {
+    return location.pathname === "/about";
+  };
+  const isWorkPage = () => {
+    return location.pathname === "/work";
+  };
+  const isExpertisePage = () => {
+    return location.pathname === "/expertise";
+  };
+  const isContactPage = () => {
+    return location.pathname === "/contact";
   };
 
   return (
@@ -28,57 +27,47 @@ const Header = () => {
       <div className="wrapper">
         <nav className="header__navbar">
           <a href="/" className="header__logo">
-            [<span>Array</span>] Studio
+            [<span className="highlight">Array</span>] Studio
           </a>
           <ul className="header__navbar-ul">
-            <li
-              className={`header__navbar-li ${
-                activePage === "home" ? "active-page" : ""
-              }`}
-            >
+            <li className="header__navbar-li">
               <Link
                 to="/"
-                className="header__navbar-link"
-                onClick={() => handleSetActivePage("home")}
+                className={`${
+                  isHomePage() ? "active-page" : ""
+                } header__navbar-link`}
               >
                 Home
               </Link>
             </li>
-            <li
-              className={`header__navbar-li ${
-                activePage === "about" ? "active-page" : ""
-              }`}
-            >
+            <li className="header__navbar-li">
               <Link
                 to="/about"
-                className="header__navbar-link"
-                onClick={() => handleSetActivePage("about")}
+                id="about-page"
+                // className={isAboutPage() ? "active-page" : ""}
+                className={`${
+                  isAboutPage() ? "active-page" : ""
+                } header__navbar-link`}
               >
                 About
               </Link>
             </li>
-            <li
-              className={`header__navbar-li ${
-                activePage === "work" ? "active-page" : ""
-              }`}
-            >
+            <li className="header__navbar-li">
               <Link
                 to="/work"
-                className="header__navbar-link"
-                onClick={() => handleSetActivePage("work")}
+                className={`${
+                  isWorkPage() ? "active-page" : ""
+                } header__navbar-link`}
               >
                 Work
               </Link>
             </li>
-            <li
-              className={`header__navbar-li ${
-                activePage === "expertise" ? "active-page" : ""
-              }`}
-            >
+            <li className="header__navbar-li">
               <Link
                 to="/expertise"
-                className="header__navbar-link"
-                onClick={() => handleSetActivePage("expertise")}
+                className={`${
+                  isExpertisePage() ? "active-page" : ""
+                } header__navbar-link`}
               >
                 Expertise
               </Link>
@@ -86,10 +75,9 @@ const Header = () => {
           </ul>
           <Link
             to="contact"
-            className={`button ${
-              activePage === "contact" ? "active-page" : ""
-            }`}
-            onClick={() => handleSetActivePage("contact")}
+            className={`${
+              isContactPage() ? "active-page" : ""
+            } header__navbar-link button`}
           >
             Contact
           </Link>

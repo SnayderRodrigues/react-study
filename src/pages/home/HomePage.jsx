@@ -1,12 +1,22 @@
 import React from 'react'
-import MainContent from "../../components/MainContent";
+import Hero from "../../components/Hero";
+import About from "../../components/About";
+import Work from "../../components/Work";
+import Expertise from "../../components/Expertise";
+import Awards from "../../components/Awards";
+import Contact from "../../components/Contact";
 
 const HomePage = () => {
   return (
-    <>
-      <MainContent />
-    </>
-  )
+    <main id="main-content">
+      <Hero />
+      <About />
+      <Work />
+      <Expertise />
+      <Awards />
+      <Contact />
+    </main>
+  );
 }
 
 export default HomePage

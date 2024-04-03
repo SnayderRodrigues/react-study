@@ -3,20 +3,29 @@
 .awards {
   padding: var(--section-pd);
 
-  &__carousel-title {
+  &__carousel-container {
     display: flex;
     margin-bottom: 12rem;
+  }
+  &__span-container-1,
+  &__span-container-2 {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    animation: loop-left 10s infinite linear;
 
     & > span {
-      font-size: u.rem(98);
+      font-size: u.rem(68);
       font-weight: 900;
       margin-bottom: 0;
     }
-    .span-highlight {
-      background: var(--gradient);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+  }
+  @keyframes loop-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
     }
   }
   &__wrapper {
@@ -39,6 +48,7 @@
     display: flex;
     gap: 2rem;
     margin-bottom: 2rem;
+    overflow: hidden;
   }
   &__card {
     display: flex;
@@ -52,5 +62,10 @@
     display: inline-block;
     transform: translateY(100%);
     transition: transform 300ms linear;
+  }
+  .awards-card-hidden {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 300ms linear, opacity 300ms linear;
   }
 }

@@ -1,60 +1,44 @@
-import { useLayoutEffect } from "react";
 import { Link } from "react-router-dom";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Awards = () => {
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.to(".awards-line-hidden", {
-      y: 0,
-      stagger: 0.1,
-      delay: 0,
-      duration: 0.1,
-      scrollTrigger: {
-        trigger: ".awards-line-hidden",
-        // markers: true,
-        // scrub: true,
-        start: "0% 90%",
-        end: "100% 90%",
-      },
-    });
-
-    return () => {
-      gsap.killTweensOf(".awards-line-hidden");
-    };
-  }, []);
 
   return (
     <section id="awards" className="awards">
-      <div className="awards__carousel-title">
-        <span>AWARDS•</span>
-        <span className="span-highlight">AWARDS•</span>
-        <span>AWARDS•</span>
-        <span className="span-highlight">AWARDS•</span>
-        <span>AWARDS•</span>
+      <div className="awards__carousel-container">
+        <div className="awards__span-container-1">
+          <span>•AWARDS•</span>
+          <span className="highlight">•AWARDS•</span>
+          <span>•AWARDS•</span>
+          <span className="highlight">•AWARDS•</span>
+        </div>
+        <div className="awards__span-container-2">
+          <span>•AWARDS•</span>
+          <span className="highlight">•AWARDS•</span>
+          <span>•AWARDS•</span>
+          <span className="highlight">•AWARDS•</span>
+        </div>
       </div>
       <div className="wrapper awards__wrapper">
         <div className="awards__title-wrapper">
           <h2 className="awards__title">
-            <span className="awards-line-hidden">
+            <span>
               While our focus is on client success,
             </span>{" "}
           </h2>
           <h2 className="awards__title">
-            <span className="awards-line-hidden">
+            <span>
               we’re proud to have our work
             </span>{" "}
           </h2>
           <h2 className="awards__title">
-            <span className="awards-line-hidden">
-              continually recognised by the best of
+            <span>
+              continually <span className="highlight">recognised</span> by the
+              best of
             </span>{" "}
           </h2>
           <h2 className="awards__title">
-            <span className="awards-line-hidden">the best.</span>
+            <span>the best.</span>
           </h2>
         </div>
         <div className="awards__content">

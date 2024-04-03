@@ -1,29 +1,8 @@
 import { Link } from "react-router-dom";
-import { useLayoutEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaLongArrowAltRight, FaPaintRoller } from "react-icons/fa";
 import { FaMountainSun, FaFortAwesome, FaPersonHiking } from "react-icons/fa6";
 
 const Expertise = () => {
-  //   useLayoutEffect(() => {
-  //     gsap.registerPlugin(ScrollTrigger);
-
-  //     gsap.to(".expertise__cards-wrapper", {
-  //       position: "fixed",
-  //       scrollTrigger: {
-  //         trigger: ".expertise__cards-wrapper",
-  //         // markers: true,
-  //         scrub: true,
-  //         start: "0% 50%",
-  //         end: "100% 50%",
-  //       },
-  //     });
-
-  //     return () => {
-  //       gsap.killTweensOf(".expertise__cards-wrapper");
-  //     };
-  //   }, []);
 
   return (
     <section id="expertise" className="expertise">

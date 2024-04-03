@@ -16,12 +16,9 @@
     grid-column: span 6 / span 6;
   }
   &__logo {
-    span {
-        background: var(--gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
+    h2 {
+      overflow: hidden;
+    }
   }
   &__navigation {
     grid-column: span 3 / span 3;
@@ -66,4 +63,14 @@
   &__copyright {
     margin-top: 7rem;
   }
+  // .footer-span-opaque {
+  //   background-color: var(--black);
+  //   position: relative;
+  //   z-index: 1;
+  // }
+  // .footer-word-hidden {
+  //   display: inline-block;
+  //   transform: translateX(-248px);
+  //   transition: transform 500ms linear;
+  // }
 }

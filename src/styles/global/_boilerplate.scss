@@ -101,6 +101,13 @@ textarea:focus-visible {
   gap: 8px;
 }
 
+.highlight {
+  background: var(--gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;

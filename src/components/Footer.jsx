@@ -5,13 +5,18 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaUnsplash } from "react-icons/fa";
 
 const Footer = () => {
+
   return (
     <footer id="footer" className="footer">
       <div className="wrapper footer__wrapper">
         <div className="footer__logo-wrapper">
           <a href="/" className="footer__logo">
             <h2>
-              [<span>Array</span>] <br />
+              <span className="footer-span-opaque">[</span>
+              <span className="footer-word-hidden">
+                <span className="highlight">Array</span>]
+              </span>{" "}
+              <br />
               Studio
             </h2>
             <h3>Photo & Videography</h3>

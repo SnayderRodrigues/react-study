@@ -15,17 +15,6 @@
   &__headline {
     margin-bottom: 3rem;
 
-    h1 {
-      overflow: hidden;
-      // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
-      .highlight {
-        background: var(--gradient);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-    }
     p {
       font-size: 1.125rem;
     }
@@ -44,18 +33,5 @@
     &:hover {
       color: var(--text-color-2);
     }
-  }
-  .hero-word-hidden {
-    display: inline-block;
-    transform: translateX(-300px);
-    transition: transform 300ms linear;
-  }
-  .hero-span-hidden {
-    opacity: 0;
-  }
-  .hero-span-opaque {
-    background-color: var(--bg-color);
-    position: relative;
-    z-index: 1;
   }
 }

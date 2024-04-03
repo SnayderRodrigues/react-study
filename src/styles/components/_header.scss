@@ -14,13 +14,6 @@
     font-size: 2rem;
     letter-spacing: -1px;
     font-weight: 900;
-
-    span {
-      background: var(--gradient);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
   &__navbar {
     display: flex;
@@ -54,22 +47,19 @@
     }
   }
   .active-page {
+    display: flex;
+    width: fit-content;
     color: var(--text-color-2);
+    background: var(--gradient);
+    border: none;
+    border-radius: 999px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
 
     &::after {
       transform: translate(0, 0);
-    }
-    a {
-      display: flex;
-      width: fit-content;
-      color: var(--text-color-2);
-      background: var(--gradient);
-      border: none;
-      border-radius: 999px;
-      overflow: hidden;
-      position: relative;
-      text-decoration: none;
-      z-index: 1;
     }
   }
 }
