@@ -1,6 +1,62 @@
 @use "../../styles/util/" as u;
 
-.aboutPage {
+.aboutPageHero {
   height: 100vh;
-  margin-top: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    max-width: 10ch;
+  }
+}
+
+.aboutPageMission {
+  padding: 12rem 0;
+
+  &__headline {
+    display: inline-block;
+    font-size: u.rem(76);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.aboutPageHistory {
+  color: var(--text-color-2);
+  background-color: var(--black);
+  padding: 12rem 0;
+
+  &__headline {
+    display: inline-block;
+    font-size: u.rem(76);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.aboutPageCarousel {
+  padding: 12rem 0;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2.5rem;
+
+    .image-small {
+      width: 490px;
+      height: 360px;
+      object-fit: cover;
+    }
+    .image-medium {
+      width: 490px;
+      height: 490px;
+      object-fit: cover;
+    }
+  }
 }

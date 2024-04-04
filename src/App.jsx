@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
 import { Outlet } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
   return (
     //moved MainContent to pages/home/HomePage.jsx
     <>
+      <ScrollToTop />
       <Header />
       <Outlet />
       <Footer />
