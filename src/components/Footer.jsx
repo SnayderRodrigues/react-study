@@ -13,8 +13,8 @@ const Footer = () => {
         <div className="contact__headline">
           <span>Your Story, Our Lens:</span>
           <Link to="contact">
-            Let's Create <IoMdArrowForward />
-            Something Extraordinary{" "}
+            Let's create <IoMdArrowForward />
+            something extraordinary
           </Link>
         </div>
         <div className="contact__information">
@@ -43,7 +43,9 @@ const Footer = () => {
               [<span className="highlight">Array</span>] Studio
             </span>
           </a>
-          <span>© 2024 Array Studio. All rights reserved.</span>
+          <span>
+            &copy; {new Date().getFullYear()} Array Studio. All rights reserved.
+          </span>
         </div>
         <div className="footer__socials">
           <span>

@@ -4,6 +4,7 @@ import About from './About';
 import Work from "./Work";
 import Expertise from "./Expertise";
 import Awards from "./Awards";
+import Testemonials from './Testemonials';
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       <Work />
       <Expertise />
       <Awards />
+      <Testemonials />
     </main>
   );
 }

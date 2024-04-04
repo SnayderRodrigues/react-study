@@ -1,7 +1,7 @@
 @use "../util/" as u;
 
 .awards {
-  padding: 12rem 0;
+  padding: var(--section-pd);
 
   &__carousel-container {
     display: flex;
@@ -15,7 +15,7 @@
     animation: loop-left 10s infinite linear;
 
     & > span {
-      font-size: u.rem(68);
+      font-size: u.rem(76);
       font-weight: 900;
       margin-bottom: 0;
     }
@@ -38,9 +38,7 @@
   }
   &__title {
     display: inline-block;
-    font-size: u.rem(76);
     font-weight: 500;
-    line-height: 1.2;
     margin-bottom: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }

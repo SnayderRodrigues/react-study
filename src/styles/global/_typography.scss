@@ -5,7 +5,7 @@ h2,
 h3 {
   font-family: var(--font-stack);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 h1 {
@@ -26,7 +26,7 @@ h2 {
   font-size: clamp(
     u.rem(32),
     1.2241379310344829rem + 3.3103448275862064vw,
-    u.rem(98)
+    u.rem(76)
   );
   margin-bottom: 4rem;
 }
