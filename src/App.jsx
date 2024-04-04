@@ -7,7 +7,10 @@ import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
-    const lenis = new Lenis();
+    const lenis = new Lenis({
+      duration: 0.8,
+      wheelMultiplier: 0.8,
+    });
 
     function raf(time) {
       lenis.raf(time);
@@ -18,7 +21,6 @@ function App() {
   }, []);
 
   return (
-    //moved MainContent to pages/home/HomePage.jsx
     <>
       <ScrollToTop />
       <Header />

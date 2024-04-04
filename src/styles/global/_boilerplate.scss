@@ -40,7 +40,11 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  border-radius: 1.125rem;
+  border-radius: var(--card-br);
+}
+
+svg {
+  transition: transform 300ms linear;
 }
 
 input {

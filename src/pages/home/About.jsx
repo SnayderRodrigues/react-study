@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 // import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
-import PresentationVideo from "../assets/presentation-video.mp4";
-import AboutUsPhoto from "../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
+import PresentationVideo from "../../assets/presentation-video.mp4";
+import AboutUsPhoto from "../../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const About = () => {

@@ -1,10 +1,9 @@
 import React from 'react'
-import Hero from "../../components/Hero";
-import About from "../../components/About";
-import Work from "../../components/Work";
-import Expertise from "../../components/Expertise";
-import Awards from "../../components/Awards";
-import Contact from "../../components/Contact";
+import Hero from "./Hero";
+import About from './About';
+import Work from "./Work";
+import Expertise from "./Expertise";
+import Awards from "./Awards";
 
 const HomePage = () => {
   return (
@@ -14,7 +13,6 @@ const HomePage = () => {
       <Work />
       <Expertise />
       <Awards />
-      <Contact />
     </main>
   );
 }

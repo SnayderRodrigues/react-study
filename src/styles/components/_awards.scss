@@ -1,7 +1,7 @@
 @use "../util/" as u;
 
 .awards {
-  padding: var(--section-pd);
+  padding: 12rem 0;
 
   &__carousel-container {
     display: flex;

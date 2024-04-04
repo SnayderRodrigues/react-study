@@ -12,6 +12,9 @@ const AboutPage = () => {
       </section>
       <section className="aboutPageMission">
         <div className="wrapper aboutPageMission__wrapper">
+          <div className="aboutPageMission__image-wrapper">
+            <img src={Cat} alt="" />
+          </div>
           <h2 className="aboutPageMission__headline">
             <span className="highlight">Lorem ipsum</span> dolor sit amet
             consectetur adipisicing elit. Minima magnam deserunt optio molestiae
@@ -35,6 +38,44 @@ const AboutPage = () => {
             consectetur adipisicing elit. Minima magnam deserunt optio molestiae
             possimus quam dolores dolor.
           </h2>
+          <div className="aboutPageClients__cards-wrapper">
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Cat} alt="" />
+            </div>
+          </div>
         </div>
       </section>
       <section className="aboutPageHistory">

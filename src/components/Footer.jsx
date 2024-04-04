@@ -3,56 +3,53 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaUnsplash } from "react-icons/fa";
+import { FaAsterisk } from "react-icons/fa";
+import { IoMdArrowForward } from "react-icons/io";
 
 const Footer = () => {
-
   return (
     <footer id="footer" className="footer">
+      <div className="wrapper contact__wrapper">
+        <div className="contact__headline">
+          <span>Your Story, Our Lens:</span>
+          <Link to="contact">
+            Let's Create <IoMdArrowForward />
+            Something Extraordinary{" "}
+          </Link>
+        </div>
+        <div className="contact__information">
+          <div>
+            <span>
+              <FaAsterisk />
+              Reach Us
+            </span>
+            <span>999 999 999</span>
+            <span>contact@arraystudio.com</span>
+          </div>
+          <div>
+            <span>
+              <FaAsterisk />
+              Address
+            </span>
+            <span>999 Example Avenue,</span>
+            <span>London AAA 000, UK</span>
+          </div>
+        </div>
+      </div>
       <div className="wrapper footer__wrapper">
         <div className="footer__logo-wrapper">
           <a href="/" className="footer__logo">
-            <h2>
-              <span className="footer-span-opaque">[</span>
-              <span className="footer-word-hidden">
-                <span className="highlight">Array</span>]
-              </span>{" "}
-              <br />
-              Studio
-            </h2>
-            <h3>Photo & Videography</h3>
+            <span>
+              [<span className="highlight">Array</span>] Studio
+            </span>
           </a>
-        </div>
-        <div className="footer__navigation">
-          <ul className="footer__navigation-ul">
-            <li>
-              <a href="/" className="link button">
-                Home
-              </a>
-            </li>
-            <li>
-              <Link to="about" className="link button">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link to="work" className="link button">
-                Work
-              </Link>
-            </li>
-            <li>
-              <Link to="expertise" className="link button">
-                Expertise
-              </Link>
-            </li>
-            <li>
-              <Link to="contact" className="link button">
-                Contact
-              </Link>
-            </li>
-          </ul>
+          <span>© 2024 Array Studio. All rights reserved.</span>
         </div>
         <div className="footer__socials">
-          <span>Our Socials</span>
+          <span>
+            <FaAsterisk />
+            Our Socials
+          </span>
           <ul className="footer__socials-ul">
             <li>
               <a href="" className="link button">
@@ -76,9 +73,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="wrapper footer__copyright">
-        <span>© 2024 [Array] Studio. All rights reserved.</span>
       </div>
     </footer>
   );

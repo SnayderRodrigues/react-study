@@ -19,7 +19,6 @@ const Header = () => {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
   });
 
-  // Função para verificar se o usuário está na rota "/about"
   const isHomePage = () => {
     return location.pathname === "/";
   };
@@ -58,7 +57,6 @@ const Header = () => {
               <Link
                 to="/about"
                 id="about-page"
-                // className={isAboutPage() ? "active-page" : ""}
                 className={`${
                   isAboutPage() ? "active-page" : ""
                 } header__navbar-link`}

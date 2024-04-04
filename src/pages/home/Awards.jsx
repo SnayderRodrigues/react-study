@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaPlus } from "react-icons/fa";
 
 const Awards = () => {
-
   return (
     <section id="awards" className="awards">
       <div className="awards__carousel-container">
@@ -22,14 +21,10 @@ const Awards = () => {
       <div className="wrapper awards__wrapper">
         <div className="awards__title-wrapper">
           <h2 className="awards__title">
-            <span>
-              While our focus is on client success,
-            </span>{" "}
+            <span>While our focus is on client success,</span>{" "}
           </h2>
           <h2 className="awards__title">
-            <span>
-              we’re proud to have our work
-            </span>{" "}
+            <span>we’re proud to have our work</span>{" "}
           </h2>
           <h2 className="awards__title">
             <span>
@@ -80,7 +75,7 @@ const Awards = () => {
           </div>
         </div>
         <Link to="about" className="button link">
-          See all awards <FaLongArrowAltRight />
+          See all awards <FaPlus />
         </Link>
       </div>
     </section>
