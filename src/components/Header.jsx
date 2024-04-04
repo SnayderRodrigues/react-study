@@ -3,7 +3,21 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Header = () => {
+  let lastScrollTop = 0;
   const location = useLocation();
+
+  window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScrollTop) {
+      header.classList.add("header-scroll");
+    } else {
+      header.classList.remove("header-scroll");
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+  });
 
   // Função para verificar se o usuário está na rota "/about"
   const isHomePage = () => {
