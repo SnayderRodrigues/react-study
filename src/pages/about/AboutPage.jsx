@@ -1,6 +1,7 @@
 import React from "react";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import "./aboutpage.scss";
+import TeamCard from "./TeamCard";
 
 const AboutPage = () => {
   return (
@@ -96,30 +97,14 @@ const AboutPage = () => {
             possimus quam dolores dolor.
           </h2>
           <div className="aboutPageTeam__cards-wrapper">
-            <div className="aboutPageTeam__card">
-              <div>
-                <span>[Name Example]</span>
-                <span>Office Example</span>
-              </div>
-            </div>
-            <div className="aboutPageTeam__card">
-              <div>
-                <span>[Name Example]</span>
-                <span>Office Example</span>
-              </div>
-            </div>
-            <div className="aboutPageTeam__card">
-              <div>
-                <span>[Name Example]</span>
-                <span>Office Example</span>
-              </div>
-            </div>
-            <div className="aboutPageTeam__card">
-              <div>
-                <span>[Name Example]</span>
-                <span>Office Example</span>
-              </div>
-            </div>
+            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example"/>
           </div>
         </div>
       </section>

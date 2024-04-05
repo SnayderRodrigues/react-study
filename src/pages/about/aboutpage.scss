@@ -71,7 +71,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--blue);
+    background-color: var(--green-shade);
     border-radius: var(--card-br);
     aspect-ratio: 1/1;
 
@@ -95,7 +95,7 @@
 }
 
 .aboutPageTeam {
-  padding: 12rem 0;
+  padding: var(--section-pd);
 
   &__headline {
     display: inline-block;
@@ -104,13 +104,15 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   &__cards-wrapper {
+    align-items: flex-start;
+    justify-content: space-between;
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
     grid-gap: clamp(1.25rem, 1.3227513228vw, 1.6625rem);
     gap: clamp(1.25rem, 1.3227513228vw, 1.6625rem);
   }
   &__card {
-    width: 430px;
+    // width: 430px;
     height: 530px;
     background-image: url(../../img/IMG_20200407_163224926_HDR-01.jpeg);
     background-position: center;
@@ -127,9 +129,16 @@
       align-items: center;
       justify-content: left;
       width: fit-content;
-      background-color: var(--blue);
-      padding: 4px;
+      background-color: var(--green-shade);
+      padding: 8px;
       border-radius: 999px;
+
+      span:first-child {
+        background-color: var(--green);
+        padding: 8px;
+        border-radius: 999px;
+        margin-right: 8px;
+      }
     }
   }
 }
