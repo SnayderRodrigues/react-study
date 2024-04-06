@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaLongArrowAltRight, FaPaintRoller } from "react-icons/fa";
-import { FaMountainSun, FaFortAwesome, FaPersonHiking } from "react-icons/fa6";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaMountainSun } from "react-icons/fa6";
 
 const Expertise = () => {
 
@@ -27,7 +27,7 @@ const Expertise = () => {
           </div>
           <div className="expertise__card">
             <span>
-              <FaPersonHiking />
+              <FaMountainSun />
             </span>
             <h3>Category</h3>
             <p>
@@ -37,7 +37,7 @@ const Expertise = () => {
           </div>
           <div className="expertise__card">
             <span>
-              <FaFortAwesome />
+              <FaMountainSun />
             </span>
             <h3>Category</h3>
             <p>
@@ -47,7 +47,47 @@ const Expertise = () => {
           </div>
           <div className="expertise__card">
             <span>
-              <FaPaintRoller />
+              <FaMountainSun />
+            </span>
+            <h3>Category</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              explicabo minima corrupti quia, repudiandae officia quos ullam.
+            </p>
+          </div>
+          <div className="expertise__card">
+            <span>
+              <FaMountainSun />
+            </span>
+            <h3>Category</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              explicabo minima corrupti quia, repudiandae officia quos ullam.
+            </p>
+          </div>
+          <div className="expertise__card">
+            <span>
+              <FaMountainSun />
+            </span>
+            <h3>Category</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              explicabo minima corrupti quia, repudiandae officia quos ullam.
+            </p>
+          </div>
+          <div className="expertise__card">
+            <span>
+              <FaMountainSun />
+            </span>
+            <h3>Category</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              explicabo minima corrupti quia, repudiandae officia quos ullam.
+            </p>
+          </div>
+          <div className="expertise__card">
+            <span>
+              <FaMountainSun />
             </span>
             <h3>Category</h3>
             <p>

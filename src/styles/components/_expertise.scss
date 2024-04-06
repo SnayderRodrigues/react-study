@@ -10,17 +10,16 @@
 
     & > p {
       font-size: u.rem(26);
-      max-width: 40ch;
-      margin-bottom: 4rem;
+      max-width: 60ch;
+      margin-bottom: 8rem;
     }
   }
   &__cards-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    width: 100%;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
+    column-gap: 1rem;
+    row-gap: 6rem;
     margin-bottom: 4rem;
   }
   &__card {
@@ -30,11 +29,18 @@
 
     span {
       font-size: 1.625rem;
+      padding-bottom: 2rem;
+      border-bottom: 1.5px solid var(--green-shade);
       margin-bottom: 2rem;
     }
     h3 {
-      font-weight: 400;
-      margin-bottom: 1rem;
+      font-size: u.rem(26);
+      font-weight: 500;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: var(--text-color-3);
+      font-size: u.rem(20);
     }
   }
 }
