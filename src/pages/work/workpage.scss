@@ -1,6 +1,6 @@
 @use "../../styles/util/" as u;
 
-.workPage__hero {
+.workPage-hero {
   height: 80vh;
   display: flex;
   align-items: center;
@@ -13,19 +13,19 @@
   }
 }
 
-.workPage__works {
+.workPage-works {
   padding: 0 0 4rem;
 
-  &-wrapper {
+  &__wrapper {
     display: flex;
     flex-direction: column;
     // gap: 2rem;
   }
-  &__works-wrapper {
+  &__grid-wrapper {
     display: grid;
     gap: 2rem;
   }
-  &__works-full {
+  &__grid-full {
     display: grid;
     grid-template-areas: "a";
     position: relative;
@@ -39,25 +39,35 @@
     span {
       position: absolute;
       bottom: 4%;
-      left: 4%;
+      left: 3%;
       z-index: 1;
     }
   }
-  &__works-half {
+  &__grid-half {
     display: grid;
     grid-template-areas: "a b";
     grid-auto-columns: minmax(0, 1fr);
     gap: 2rem;
-    margin-bottom: 2rem;  
+    margin-bottom: 2rem;
   }
-  &__works-half-1, &__works-half-2 {
+  &__grid-half-1,
+  &__grid-half-2 {
     position: relative;
 
     span {
       position: absolute;
       bottom: 4%;
-      left: 4%;
+      left: 3%;
       z-index: 1;
     }
+  }
+  &__button {
+    display: flex;
+    width: fit-content;
+    padding: 12px 22px 12px;
+    color: var(--text-color);
+    font-weight: 600;
+    background-color: var(--green);
+    border-radius: 999px;
   }
 }

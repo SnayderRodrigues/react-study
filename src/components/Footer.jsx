@@ -7,6 +7,9 @@ import { FaAsterisk } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 
 const Footer = () => {
+
+  // const contactLink = (e) => e.target.textContent = "Let's create something extraordinary!";
+
   return (
     <footer id="footer" className="footer">
       <div className="wrapper contact__wrapper">
@@ -16,6 +19,10 @@ const Footer = () => {
             Let's create <IoMdArrowForward />
             something extraordinary
           </Link>
+          {/* <Link to="contact" onClick={(e) => contactLink(e)}>
+            Let's create <IoMdArrowForward />
+            something extraordinary
+          </Link> */}
         </div>
         <div className="contact__information">
           <div>

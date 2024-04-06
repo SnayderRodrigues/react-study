@@ -24,12 +24,17 @@ const AboutPage = () => {
         </div>
       </section>
       <section className="aboutPageCarousel">
-        <div className="aboutPageCarousel__wrapper">
+        <div className="aboutPageCarousel__wrapper-1">
           <img src={Cat} alt="" className="image-small" />
           <img src={Cat} alt="" className="image-medium" />
           <img src={Cat} alt="" className="image-small" />
           <img src={Cat} alt="" className="image-medium" />
+        </div>
+        <div className="aboutPageCarousel__wrapper-2">
           <img src={Cat} alt="" className="image-small" />
+          <img src={Cat} alt="" className="image-medium" />
+          <img src={Cat} alt="" className="image-small" />
+          <img src={Cat} alt="" className="image-medium" />
         </div>
       </section>
       <section className="aboutPageClients">
