@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { FaPlus } from "react-icons/fa";
+import { AiOutlinePlus } from "react-icons/ai";
+
 
 const Awards = () => {
   return (
@@ -75,7 +76,7 @@ const Awards = () => {
           </div>
         </div>
         <Link to="about" className="button link">
-          See all awards <FaPlus />
+          See all awards <AiOutlinePlus />
         </Link>
       </div>
     </section>

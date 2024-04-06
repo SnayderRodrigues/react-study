@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 // import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
 import PresentationVideo from "../../assets/presentation-video.mp4";
 import AboutUsPhoto from "../../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { IoMdArrowForward } from "react-icons/io";
 
 const About = () => {
   return (
@@ -65,23 +65,23 @@ const About = () => {
               </p>
               <Link to="about" className="button link">
                 Read more about us
-                <FaLongArrowAltRight />
+                <IoMdArrowForward />
               </Link>
             </div>
             <div className="about__content-text-2">
               <div>
-                <span>100%</span>
-                <h3>Example text</h3>
+                <span>11+</span>
+                <span>Years of experience</span>
               </div>
 
               <div>
-                <span>100%</span>
-                <h3>Example text</h3>
+                <span>250+</span>
+                <span>Projects completed</span>
               </div>
 
               <div>
-                <span>100%</span>
-                <h3>Example text</h3>
+                <span>230+</span>
+                <span>Happy customers</span>
               </div>
             </div>
           </div>

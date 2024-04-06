@@ -83,8 +83,11 @@
       padding-bottom: 2rem;
       border-bottom: 1.5px solid var(--green);
 
-      span {
+      span:first-child {
         font-size: u.rem(56);
+      }
+      span:last-child {
+        font-size: u.rem(26);
       }
     }
   }

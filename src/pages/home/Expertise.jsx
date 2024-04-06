@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { IoMdArrowForward } from "react-icons/io";
 import { FaMountainSun } from "react-icons/fa6";
 
 const Expertise = () => {
@@ -98,7 +98,7 @@ const Expertise = () => {
         </div>
         <Link to="expertise" className="button link">
           Learn more
-          <FaLongArrowAltRight />
+          <IoMdArrowForward />
         </Link>
       </div>
     </section>

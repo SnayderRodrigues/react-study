@@ -40,7 +40,6 @@
     grid-template-columns: repeat(4, minmax(auto, 1fr));
     column-gap: 1rem;
     row-gap: 6rem;
-    margin-bottom: 12rem;
   }
   &__card {
     display: flex;
@@ -61,5 +60,49 @@
       color: var(--text-color-3);
       font-size: u.rem(20);
     }
+  }
+}
+
+.expertisePage-ending {
+  padding: 0 0 6rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 12rem;
+  }
+  &__image-wrapper {
+    max-width: 50%;
+  }
+  &__text-wrapper {
+    max-width: 35%;
+
+    h3 {
+      font-size: u.rem(56);
+      margin-bottom: 2rem;
+    }
+    p {
+      color: var(--text-color-3);
+      font-size: u.rem(20);
+    }
+  }
+  &__cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: u.rem(76);
+    }
+  }
+  &__button {
+    padding: 44px;
+    font-size: u.rem(56);
   }
 }

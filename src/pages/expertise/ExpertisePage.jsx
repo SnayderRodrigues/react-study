@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./expertisepage.scss";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+import { IoMdArrowForward } from "react-icons/io";
 import { FaMountainSun } from "react-icons/fa6";
 
 const ExpertisePage = () => {
@@ -110,7 +112,79 @@ const ExpertisePage = () => {
           </div>
         </div>
       </section>
-      <section className="expertisePage-ending"></section>
+      <section className="expertisePage-ending">
+        <div className="wrapper expertisePage-ending__wrapper">
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Example expertise text</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat consequatur, temporibus omnis itaque, sed quis
+                consequuntur sequi maxime incidunt modi enim quae. Praesentium
+                dolorum ducimus quae doloremque possimus, esse earum.
+              </p>
+            </div>
+          </div>
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Example expertise text</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat consequatur, temporibus omnis itaque, sed quis
+                consequuntur sequi maxime incidunt modi enim quae. Praesentium
+                dolorum ducimus quae doloremque possimus, esse earum.
+              </p>
+            </div>
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+          </div>
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Example expertise text</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat consequatur, temporibus omnis itaque, sed quis
+                consequuntur sequi maxime incidunt modi enim quae. Praesentium
+                dolorum ducimus quae doloremque possimus, esse earum.
+              </p>
+            </div>
+          </div>
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Example expertise text</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quaerat consequatur, temporibus omnis itaque, sed quis
+                consequuntur sequi maxime incidunt modi enim quae. Praesentium
+                dolorum ducimus quae doloremque possimus, esse earum.
+              </p>
+            </div>
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+          </div>
+          <div className="expertisePage-ending__cta">
+            <span>
+              Need a <span className="highlight">expert team</span> <br /> on
+              your next project? <br /> Let's talk.
+            </span>
+            <Link
+              to="/contact"
+              className="button link expertisePage-ending__button"
+            >
+              Get in touch
+              <IoMdArrowForward />
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };
