@@ -75,7 +75,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
   }
   &__image-wrapper {
     max-width: 50%;
@@ -96,6 +96,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 4rem;
 
     span {
       font-size: u.rem(76);
