@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { IoMdArrowForward } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -7,23 +8,20 @@ const Hero = () => {
       <div className="wrapper hero__wrapper">
         <div className="hero__headline">
           <h1>
-            <span>
-              [<span className="highlight hero-span-hidden">Array</span>] Studio
-            </span>
-            <br />
-            Photo & Videography
+            Producing <br />{" "}
+            <span className="highlight hero-span-hidden">Extraordinary</span>{" "}
+            Visuals
           </h1>
-          <p>
-            Award-winning travel and landscape photo & videography studio based
-            in UK. 📍
-          </p>
+          <p>Award-winning photo & video studio based in UK. 📍</p>
         </div>
         <div className="hero__button-wrapper">
-          <Link to="contact" className="button hero__button">
-            Contact Us
+          <Link to="contact" className="button hero__button link">
+            Contact us
+            <IoMdArrowForward />
           </Link>
-          <Link to="work" className="button hero__button">
+          <Link to="work" className="button hero__button link">
             See our work
+            <IoMdArrowForward />
           </Link>
         </div>
       </div>

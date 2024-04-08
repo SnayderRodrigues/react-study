@@ -1,5 +1,5 @@
 import React from "react";
-import "./contactpage.scss";
+// import "./contactpage.scss";
 import { FaAsterisk } from "react-icons/fa";
 
 const ContactPage = () => {
@@ -41,7 +41,7 @@ const ContactPage = () => {
               </label>
               <input
                 type="text"
-                placeholder="company name"
+                placeholder="Company name"
                 aria-required="true"
               />
             </div>
@@ -50,7 +50,7 @@ const ContactPage = () => {
                 What's your phone number?<span className="highlight">*</span>
               </label>
               <input
-                type="text"
+                type="number"
                 placeholder="Your phone number"
                 aria-required="true"
               />
@@ -60,7 +60,7 @@ const ContactPage = () => {
                 What's your email address?<span className="highlight">*</span>
               </label>
               <input
-                type="text"
+                type="email"
                 placeholder="Your email address"
                 aria-required="true"
               />

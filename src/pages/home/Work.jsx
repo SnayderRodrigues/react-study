@@ -11,7 +11,7 @@ const Work = () => {
   return (
     <section id="work" className="work">
       <div className="wrapper work__wrapper">
-        <h2>SELECTED WORK</h2>
+        <h2>FEATURED CREATIONS</h2>
         <div className="work__image-wrapper">
           <img src={Photo1} alt="" className="work__image-1" />
         </div>

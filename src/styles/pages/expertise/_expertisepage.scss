@@ -1,4 +1,4 @@
-@use "../../styles/util/" as u;
+@use "../../../styles/util/" as u;
 
 .expertisePage-hero {
   height: 80vh;
@@ -103,7 +103,7 @@
     }
   }
   &__button {
-    padding: 44px;
+    padding: 44px!important;
     font-size: u.rem(56);
   }
 }

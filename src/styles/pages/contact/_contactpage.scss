@@ -1,7 +1,7 @@
-@use "../../styles/util/" as u;
+@use "../../../styles/util/" as u;
 
 .contactPage {
-  margin: 12rem 0 6rem;
+  padding: 12rem 0 6rem;
 
   // &__wrapper {
 
@@ -85,9 +85,6 @@
       appearance: none;
       border-radius: 0;
     }
-    input:focus {
-      border-bottom: 2px solid var(--green);
-    }
   }
   &__form-full {
     grid-column: 1 / -1;
@@ -116,9 +113,6 @@
       border-radius: clamp(0.625rem, 0.6613756614vw, 0.83125rem);
       resize: none;
       margin-top: 1em;
-    }
-    textarea:focus {
-      border: 2px solid var(--green);
     }
   }
 }

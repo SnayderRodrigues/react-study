@@ -1,0 +1,30 @@
+.aboutPageTeam__card {
+  // width: 430px;
+  height: 530px;
+  background-image: url(../../src/img/IMG_20200407_163224926_HDR-01.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--card-br);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 16px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    background-color: var(--green-shade);
+    padding: 8px;
+    border-radius: 999px;
+
+    span:first-child {
+      background-color: var(--green);
+      padding: 8px;
+      border-radius: 999px;
+      margin-right: 8px;
+    }
+  }
+}

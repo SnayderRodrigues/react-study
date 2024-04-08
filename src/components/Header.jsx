@@ -40,7 +40,8 @@ const Header = () => {
       <div className="wrapper">
         <nav className="header__navbar">
           <a href="/" className="header__logo">
-            [<span className="highlight">Array</span>] Studio
+            {"["}<span className="highlight">Array</span>{"]"}
+            <span className="slide-up">Studio</span>
           </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">

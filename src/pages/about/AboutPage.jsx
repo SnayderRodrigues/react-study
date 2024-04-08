@@ -1,7 +1,7 @@
 import React from "react";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
-import "./aboutpage.scss";
-import TeamCard from "./TeamCard";
+// import "./aboutpage.scss";
+import TeamCard from "../../components/TeamCard";
 
 const AboutPage = () => {
   return (

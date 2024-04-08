@@ -50,7 +50,7 @@ const About = () => {
           </div>
         </div>
 
-        <h2>WE LOVE WHAT WE DO</h2>
+        <h2>OUR PASSION IS IN EVERY FRAME</h2>
         <div className="about__content-wrapper">
           <div className="about__content-description">
             <div className="about__content-text-1">
