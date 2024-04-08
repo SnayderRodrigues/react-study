@@ -1,6 +1,116 @@
 @use "../../styles/util/" as u;
 
 .contactPage {
-  height: 100vh;
-  margin-top: 12rem;
+  margin: 12rem 0 6rem;
+  
+  // &__wrapper {
+    
+    // }
+    &__form {
+      background-color: var(--white);
+      border-radius: 2rem;
+      padding: 6rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 1fr));
+      align-items: flex-start;
+      grid-gap: clamp(3.125rem, 3.3068783069vw, 4.15625rem)
+        clamp(1.25rem, 1.3227513228vw, 1.6625rem);
+      gap: clamp(3.125rem, 3.3068783069vw, 4.15625rem)
+        clamp(1.25rem, 1.3227513228vw, 1.6625rem);
+    
+      button {
+        font-size: u.rem(26);
+        justify-content: center;
+        width: 100%;
+        grid-column: 1 / -1;
+      }
+    }
+  &__form-headline {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    grid-column: 1 / -1;
+
+    & > span {
+      font-size: u.rem(20);
+      margin-bottom: 2rem;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        font-size: u.rem(20);
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        font-weight: 500;
+
+        &:hover {
+          cursor: pointer;
+          background: var(--gradient);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+
+        svg {
+          color: var(--green);
+        }
+      }
+    }
+  }
+  &__form-half {
+    grid-column: span 1;
+
+    label {
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 1em 0;
+      font-size: inherit;
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: 0;
+    }
+  }
+  &__form-full {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    span {
+      color: var(--text-color-4);
+      margin-bottom: 1rem;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 0.8em;
+      font-size: inherit;
+      border: none;
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      border-radius: clamp(0.625rem, 0.6613756614vw, 0.83125rem);
+      resize: none;
+      margin-top: 1em;
+    }
+    textarea:focus {
+      border: 2px solid var(--green);
+    }
+  }
 }

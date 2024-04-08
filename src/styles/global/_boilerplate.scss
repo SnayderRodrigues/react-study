@@ -99,6 +99,11 @@ textarea:focus-visible {
   overflow: hidden;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 .link {
   display: flex;
   align-items: center;
