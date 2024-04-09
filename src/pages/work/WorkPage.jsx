@@ -1,6 +1,7 @@
 import React from "react";
 // import "./workpage.scss";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+import Cta from "../../components/Cta";
 
 const WorkPage = () => {
   return (
@@ -81,6 +82,7 @@ const WorkPage = () => {
           
         </div>
       </section>
+      <Cta />
     </main>
   );
 };

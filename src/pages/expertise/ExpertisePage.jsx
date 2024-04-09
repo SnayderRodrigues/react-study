@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // import "./expertisepage.scss";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
-import { IoMdArrowForward } from "react-icons/io";
 import { FaMountainSun } from "react-icons/fa6";
+import Cta from "../../components/Cta";
 
 const ExpertisePage = () => {
   return (
@@ -172,6 +171,7 @@ const ExpertisePage = () => {
           </div>
         </div>
       </section>
+      <Cta />
     </main>
   );
 };

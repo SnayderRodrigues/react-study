@@ -5,6 +5,7 @@ import Work from "./Work";
 import Expertise from "./Expertise";
 import Awards from "./Awards";
 import Testemonials from './Testemonials';
+import Cta from "../../components/Cta";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
       <Expertise />
       <Awards />
       <Testemonials />
+      <Cta />
     </main>
   );
 }

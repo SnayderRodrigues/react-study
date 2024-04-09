@@ -40,15 +40,14 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
-    & > .button {
-      margin-left: 8rem;
-    }
   }
   &__navbar-ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) ;
     background-color: var(--white);
     padding: 8px;
     border-radius: 999px;

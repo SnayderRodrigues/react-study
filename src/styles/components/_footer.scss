@@ -34,12 +34,16 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        transition: color 200ms linear;
 
+        svg {
+          transform: translateX(8px);
+        }
         &:hover {
           color: var(--green);
 
           svg {
-            transform: translateX(16px);
+            transform: translateX(20px);
           }
         }
       }
