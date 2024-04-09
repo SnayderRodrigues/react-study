@@ -11,7 +11,9 @@
   }
 
   &__button {
-    padding: 44px !important;
+    padding: 44px;
     font-size: u.rem(56);
+    // background-color: var(--green);
+    // color: var(--text-color);
   }
 }

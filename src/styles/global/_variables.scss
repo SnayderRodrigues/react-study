@@ -1,18 +1,16 @@
 :root {
   --font-stack: "Be Vietnam Pro", sans-serif;
+  
   --text-color: #0f1d07;
   --text-color-2: #f5f9f5;
   --text-color-3: #070035b3;
   --text-color-4: #a7aaa7;
-  --bg-color: rgb(245, 249, 245);
-  --bg-color-secondary: #1d1d1d;
-  --container-border-radius: 10px;
-  --card-br: 2rem;
-  // --gradient: linear-gradient(
-  //   90deg,
-  //   rgb(168, 238, 234) 0%,
-  //   rgb(216, 203, 145) 100%
-  // );
+
+  --bg-color: #f5f9f5;
+ 
+  --button-color-1: #0f1d07;
+  --button-color-2: #cecfce;
+
   --gradient: linear-gradient(
     90deg,
     rgba(250, 82, 82, 1) 0%,
@@ -23,6 +21,7 @@
     rgb(115, 189, 218) 0%,
     rgb(53, 97, 163) 100%
   );
+
   --section-pd: 12rem 0 0;
 
   --yellow: #fff7e5;
@@ -33,4 +32,5 @@
   --green-shade: #ccfcc8;
   --white: #ffffff;
   --black: #000000;
+  --gray: #cecfce;
 }

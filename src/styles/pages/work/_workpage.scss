@@ -65,9 +65,9 @@
     display: flex;
     width: fit-content;
     padding: 12px 22px 12px;
-    color: var(--text-color);
+    color: var(--text-color-2);
     font-weight: 600;
-    background-color: var(--green);
+    background: var(--gradient);
     border-radius: 999px;
   }
 }
