@@ -1,14 +1,17 @@
-.cta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 4rem;
+@use "../../styles/util/" as u;
 
-    span {
-      font-size: u.rem(76);
-    }
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+
+  span {
+    font-size: u.rem(76);
   }
+
   &__button {
-    padding: 44px!important;
+    padding: 44px !important;
     font-size: u.rem(56);
   }
+}

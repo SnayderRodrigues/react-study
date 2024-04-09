@@ -64,7 +64,7 @@
 }
 
 .expertisePage-ending {
-  padding: 0 0 6rem;
+  padding: 0 0 4rem;
 
   &__wrapper {
     display: flex;
@@ -91,19 +91,5 @@
       color: var(--text-color-3);
       font-size: u.rem(20);
     }
-  }
-  &__cta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 4rem;
-
-    span {
-      font-size: u.rem(76);
-    }
-  }
-  &__button {
-    padding: 44px!important;
-    font-size: u.rem(56);
   }
 }

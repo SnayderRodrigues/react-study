@@ -170,19 +170,6 @@ const ExpertisePage = () => {
               <img src={Cat} alt="" />
             </div>
           </div>
-          <div className="expertisePage-ending__cta">
-            <span>
-              Need a <span className="highlight">expert team</span> <br /> on
-              your next project? <br /> Let's talk.
-            </span>
-            <Link
-              to="/contact"
-              className="button link expertisePage-ending__button"
-            >
-              Get in touch
-              <IoMdArrowForward />
-            </Link>
-          </div>
         </div>
       </section>
     </main>
