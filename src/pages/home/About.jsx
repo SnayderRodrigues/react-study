@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-// import Author from "../img/javier-amador-H4_100XlT9s-unsplash.jpg";
-import PresentationVideo from "../../assets/presentation-video.mp4";
+import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import AboutUsPhoto from "../../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
 import { IoMdArrowForward } from "react-icons/io";
 
@@ -8,14 +7,7 @@ const About = () => {
   return (
     <section id="about" className="about">
       <div className="wrapper about__image-wrapper">
-        {/* <img src={Author} alt="" className="about__image" /> */}
-        <video
-          src={PresentationVideo}
-          preload="none"
-          autoPlay
-          loop
-          disablePictureInPicture
-        ></video>
+        <img src={Cat} alt="" className="about__image" />
       </div>
       <div className="wrapper about__wrapper">
         <div className="about__headline">

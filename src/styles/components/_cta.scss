@@ -1,0 +1,14 @@
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    span {
+      font-size: u.rem(76);
+    }
+  }
+  &__button {
+    padding: 44px!important;
+    font-size: u.rem(56);
+  }

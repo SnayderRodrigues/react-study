@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="highlight hero-span-hidden">Extraordinary</span>{" "}
             Visuals
           </h1>
-          <p>Award-winning photo & video studio based in UK. 📍</p>
+          <p>Award-winning visual content studio based in UK.</p>
         </div>
         <div className="hero__button-wrapper">
           <Link to="contact" className="button hero__button link">
