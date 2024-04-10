@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -20,12 +20,14 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
 
+  const location = useLocation();
+
   return (
     <>
       <ScrollToTop />
       <Header />
       <Outlet />
-      <Footer />
+      {location.pathname !== "/contact" && <Footer />}
     </>
   );
 }
