@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import AboutUsPhoto from "../../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
 import { IoMdArrowForward } from "react-icons/io";
+import MIcrosoft from "../../assets/svg/microsoft.svg"
+import Elo from "../../assets/svg/elo.svg"
+import Uber from "../../assets/svg/uber.svg"
+import Hootsuite from "../../assets/svg/hootsuite.svg"
 
 const About = () => {
   return (
@@ -25,20 +29,16 @@ const About = () => {
 
         <div className="about__cards-wrapper">
           <div className="about__card">
-            <span className="about__card-number">11+</span>
-            <span className="about__card-title">Years of experience</span>
+            <img src={MIcrosoft} alt="" />
           </div>
           <div className="about__card">
-            <span className="about__card-number">250+</span>
-            <span className="about__card-title">Projects completed</span>
+            <img src={Uber} alt="" />
           </div>
           <div className="about__card">
-            <span className="about__card-number">230+</span>
-            <span className="about__card-title">Happy customers</span>
+            <img src={Elo} alt="" />
           </div>
           <div className="about__card">
-            <span className="about__card-number">14+</span>
-            <span className="about__card-title">Countries vised for work</span>
+            <img src={Hootsuite} alt="" />
           </div>
         </div>
 

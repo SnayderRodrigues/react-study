@@ -45,19 +45,18 @@
       flex-direction: column;
 
       span {
+        width: fit-content;
         font-size: u.rem(20);
         margin-bottom: 1rem;
         display: flex;
         align-items: center;
         gap: 0.625rem;
         font-weight: 500;
+        transition: color 150ms linear;
 
         &:hover {
           cursor: pointer;
-          background: var(--gradient);
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: var(--accent-color);
         }
 
         svg {
