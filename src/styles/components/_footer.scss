@@ -116,9 +116,7 @@
 
       &:hover {
         color: var(--text-color);
-      }
-      &::after {
-        background: var(--green);
+        background-color: var(--green);
       }
     }
   }

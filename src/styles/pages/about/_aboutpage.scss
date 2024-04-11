@@ -90,6 +90,7 @@
 
     img {
       width: 50%;
+      border-radius: 0;
     }
   }
 }
@@ -114,6 +115,10 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+
+    span:not(:first-of-type) {
+      color: var(--text-color-4);
+    }
   }
   .author-name {
     display: flex;
@@ -124,9 +129,32 @@
     }
   }
   .navigation {
-    font-size: u.rem(44);
-
-    svg:not(:last-of-type) {
+    display: flex;
+    border-radius: 999px;
+    transition: background-color 200ms linear;
+    
+    &:hover {
+      background-color: var(--gray);
+    }
+  }
+  .navigation-button-left, .navigation-button-right {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 1.125rem;
+    cursor: pointer;
+    
+    svg {
+      font-size: u.rem(44);
+      color: var(--text-color-2);
+      transition: color 200ms linear;
+    }
+    svg:hover {
+      color: var(--black);
+    }
+  }
+  .navigation-button-left {
+    svg {
       transform: scaleX(-1);
     }
   }

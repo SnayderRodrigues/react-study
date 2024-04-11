@@ -119,8 +119,12 @@ const AboutPage = () => {
               <span>Example Company</span>
             </div>
             <div className="navigation">
-              <IoMdArrowForward />
-              <IoMdArrowForward />
+              <button className="navigation-button-left">
+                <IoMdArrowForward />
+              </button>
+              <button className="navigation-button-right">
+                <IoMdArrowForward />
+              </button>
             </div>
           </div>
         </div>
