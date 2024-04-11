@@ -72,7 +72,7 @@ const About = () => {
               </div>
 
               <div>
-                <span>230+</span>
+                <span>200+</span>
                 <span>Happy customers</span>
               </div>
             </div>

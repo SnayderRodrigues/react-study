@@ -1,7 +1,15 @@
 import React from "react";
 // import "./expertisepage.scss";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
-import { FaMountainSun } from "react-icons/fa6";
+import { BiCameraMovie } from "react-icons/bi";
+import { MdOutlineCameraAlt } from "react-icons/md";
+import { MdVideoCameraFront } from "react-icons/md";
+import { MdVideoSettings } from "react-icons/md";
+
+import { MdHomeWork } from "react-icons/md";
+import { TbArrowGuide } from "react-icons/tb";
+import { Md6K } from "react-icons/md";
+import { BsBadge3DFill } from "react-icons/bs";
 import Cta from "../../components/Cta";
 
 const ExpertisePage = () => {
@@ -30,9 +38,9 @@ const ExpertisePage = () => {
           <div className="expertisePage-midpage__cards-wrapper">
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <BiCameraMovie />
               </span>
-              <h3>Category</h3>
+              <h3>Videography</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -40,9 +48,9 @@ const ExpertisePage = () => {
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <MdOutlineCameraAlt />
               </span>
-              <h3>Category</h3>
+              <h3>Photography</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -50,9 +58,9 @@ const ExpertisePage = () => {
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <MdVideoCameraFront />
               </span>
-              <h3>Category</h3>
+              <h3>Content Creation</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -60,9 +68,9 @@ const ExpertisePage = () => {
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <MdVideoSettings />
               </span>
-              <h3>Category</h3>
+              <h3>Editing and Post-Production</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -70,9 +78,9 @@ const ExpertisePage = () => {
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <MdHomeWork />
               </span>
-              <h3>Category</h3>
+              <h3>Studio Rental</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -80,9 +88,9 @@ const ExpertisePage = () => {
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <TbArrowGuide />
               </span>
-              <h3>Category</h3>
+              <h3>Consultation and Creative Direction</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -90,9 +98,9 @@ const ExpertisePage = () => {
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <Md6K />
               </span>
-              <h3>Category</h3>
+              <h3>Realistic Immersion</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -100,9 +108,9 @@ const ExpertisePage = () => {
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <FaMountainSun />
+                <BsBadge3DFill />
               </span>
-              <h3>Category</h3>
+              <h3>3D Projects</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.

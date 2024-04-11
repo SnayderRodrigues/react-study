@@ -30,7 +30,7 @@ const Footer = () => {
               <FaAsterisk />
               Reach Us
             </span>
-            <span>9999 999 999</span>
+            <span>+1 000 000 000</span>
             <span>contact@arraystudio.com</span>
           </div>
           <div>
@@ -38,7 +38,7 @@ const Footer = () => {
               <FaAsterisk />
               Address
             </span>
-            <span>999 Example Avenue,</span>
+            <span>000 Example Avenue,</span>
             <span>London AAA 000, UK</span>
           </div>
         </div>
