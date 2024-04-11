@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import AboutUsPhoto from "../../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
 import { IoMdArrowForward } from "react-icons/io";
-import MIcrosoft from "../../assets/svg/microsoft.svg"
-import Elo from "../../assets/svg/elo.svg"
+import Walkme from "../../assets/svg/walkme.svg"
+import UniEssex from "../../assets/svg/university-of-essex.svg"
 import Uber from "../../assets/svg/uber.svg"
 import Hootsuite from "../../assets/svg/hootsuite.svg"
 
@@ -29,16 +29,16 @@ const About = () => {
 
         <div className="about__cards-wrapper">
           <div className="about__card">
-            <img src={MIcrosoft} alt="" />
+            <img src={Hootsuite} alt="" />
           </div>
           <div className="about__card">
             <img src={Uber} alt="" />
           </div>
           <div className="about__card">
-            <img src={Elo} alt="" />
+            <img src={UniEssex} alt="" />
           </div>
           <div className="about__card">
-            <img src={Hootsuite} alt="" />
+            <img src={Walkme} alt="" />
           </div>
         </div>
 

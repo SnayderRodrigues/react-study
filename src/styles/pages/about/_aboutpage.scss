@@ -94,15 +94,41 @@
   }
 }
 
-.aboutPageHistory {
+.aboutPageTestemonials {
   color: var(--text-color-2);
   background-color: var(--black);
   padding: 12rem 0;
 
   &__headline {
     display: inline-block;
-    margin-bottom: 0;
+    margin-bottom: 4rem;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .author-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .author-name {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    svg {
+      margin-right: 0.625rem;
+    }
+  }
+  .navigation {
+    font-size: u.rem(44);
+
+    svg:not(:last-of-type) {
+      transform: scaleX(-1);
+    }
   }
 }
 

@@ -1,8 +1,14 @@
 import React from "react";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+import Hootsuite from "../../assets/svg/hootsuite.svg";
+import Uber from "../../assets/svg/uber.svg";
+import UniEssex from "../../assets/svg/university-of-essex.svg";
+import Walkme from "../../assets/svg/walkme.svg";
 // import "./aboutpage.scss";
 import TeamCard from "../../components/TeamCard";
 import Cta from "../../components/Cta";
+import { FaAsterisk } from "react-icons/fa";
+import { IoMdArrowForward } from "react-icons/io";
 
 const AboutPage = () => {
   return (
@@ -47,52 +53,76 @@ const AboutPage = () => {
           </h2>
           <div className="aboutPageClients__cards-wrapper">
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Hootsuite} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Hootsuite} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Hootsuite} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Hootsuite} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Uber} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Uber} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Uber} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={Uber} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={UniEssex} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={UniEssex} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={UniEssex} alt="" />
             </div>
             <div className="aboutPageClients__card">
-              <img src={Cat} alt="" />
+              <img src={UniEssex} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Walkme} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Walkme} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Walkme} alt="" />
+            </div>
+            <div className="aboutPageClients__card">
+              <img src={Walkme} alt="" />
             </div>
           </div>
         </div>
       </section>
-      <section className="aboutPageHistory">
-        <div className="wrapper aboutPageHistory__wrapper">
-          <h2 className="aboutPageHistory__headline">
+      <section className="aboutPageTestemonials">
+        <div className="wrapper aboutPageTestemonials__wrapper">
+          <h2 className="aboutPageTestemonials__headline">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
             maxime asperiores velit tempora hic quisquam corporis soluta
             sapiente qui blanditiis adipisci impedit accusamus molestiae quas
             cum id ipsa tenetur cumque."
           </h2>
+          <div className="aboutPageTestemonials__author">
+            <div className="author-div">
+              <span className="author-name">
+                <FaAsterisk /> Example Name
+              </span>
+              <span>Example Company</span>
+            </div>
+            <div className="navigation">
+              <IoMdArrowForward />
+              <IoMdArrowForward />
+            </div>
+          </div>
         </div>
       </section>
       <section className="aboutPageTeam">
@@ -103,14 +133,14 @@ const AboutPage = () => {
             possimus quam dolores dolor.
           </h2>
           <div className="aboutPageTeam__cards-wrapper">
-            <TeamCard name="Example Name" office="Office Example"/>
-            <TeamCard name="Example Name" office="Office Example"/>
-            <TeamCard name="Example Name" office="Office Example"/>
-            <TeamCard name="Example Name" office="Office Example"/>
-            <TeamCard name="Example Name" office="Office Example"/>
-            <TeamCard name="Example Name" office="Office Example"/>
-            <TeamCard name="Example Name" office="Office Example"/>
-            <TeamCard name="Example Name" office="Office Example"/>
+            <TeamCard name="Example Name" office="Office Example" />
+            <TeamCard name="Example Name" office="Office Example" />
+            <TeamCard name="Example Name" office="Office Example" />
+            <TeamCard name="Example Name" office="Office Example" />
+            <TeamCard name="Example Name" office="Office Example" />
+            <TeamCard name="Example Name" office="Office Example" />
+            <TeamCard name="Example Name" office="Office Example" />
+            <TeamCard name="Example Name" office="Office Example" />
           </div>
         </div>
       </section>
