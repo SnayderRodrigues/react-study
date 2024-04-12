@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
-
 import { BiCameraMovie } from "react-icons/bi";
 import { MdOutlineCameraAlt } from "react-icons/md";
 import { MdVideoCameraFront } from "react-icons/md";
 import { MdVideoSettings } from "react-icons/md";
-
 import { MdHomeWork } from "react-icons/md";
 import { TbArrowGuide } from "react-icons/tb";
 import { Md6K } from "react-icons/md";

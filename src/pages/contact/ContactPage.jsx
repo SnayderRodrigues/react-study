@@ -6,26 +6,44 @@ import ContactPageFooter from "./ContactPageFooter";
 const ContactPage = () => {
   return (
     <>
-      <main>
+      <main id="contactpage">
         <section className="contactPage">
-          <div className="wrapper contactPage__wrapper ">
+          <div className="wrapper-contact contactPage__wrapper ">
+            <div className="contactPage__headline">
+              <h1>Get in touch with us</h1>
+            </div>
+            <div className="contactPage__contact">
+              <div className="contactPage__contact-address">
+                <span className="contactPage__contact-title">
+                  <FaAsterisk />
+                  Address
+                </span>
+                <span className="address-span">000 Example Avenue</span>
+                <span className="address-span">London AAA 000</span>
+                <span className="address-span"> United Kingdom</span>
+              </div>
+              <div className="contactPage__contact-links">
+                <span className="contactPage__contact-title">
+                  <FaAsterisk />
+                  Contact
+                </span>
+                <span className="link-span">+1 000 000 000</span>
+                <span className="link-span">contact@arraystudio.com</span>
+              </div>
+              <div className="contactPage__contact-socials">
+                <span className="contactPage__contact-title">
+                  <FaAsterisk />
+                  Socials
+                </span>
+                <span>Instagram</span>
+                <span>LinkedIn</span>
+                <span>Unsplash</span>
+                <span>X</span>
+              </div>
+            </div>
             <div className="contactPage__form">
               <div className="contactPage__form-headline">
-                <h1>Let's get started.</h1>
-                <span>
-                  Fill the form bellow or get in touch through our phone or
-                  email:
-                </span>
-                <div>
-                  <span>
-                    <FaAsterisk />
-                    +1 000 000 000
-                  </span>
-                  <span>
-                    <FaAsterisk />
-                    contact@arraystudio.com
-                  </span>
-                </div>
+                <h2>Send us a message</h2>
               </div>
               <div className="contactPage__form-half">
                 <label>

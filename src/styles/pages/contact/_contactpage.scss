@@ -1,15 +1,70 @@
 @use "../../../styles/util/" as u;
 
+#contactpage {
+  background-color: var(--black);
+}
+
 .contactPage {
+  background-color: var(--bg-color);
   padding: 12rem 0 6rem;
+  border-radius: 2rem;
 
   // &__wrapper {
 
   // }
+  &__headline {
+    display: flex;
+    margin-bottom: 4rem;
+    grid-column: 1 / -1;
+  }
+  &__contact {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 4rem;
+    margin-bottom: 4rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      span:not(.contactPage__contact-title) {
+        width: fit-content;
+        font-size: u.rem(20);
+        display: flex;
+        align-items: center;
+        gap: 0.625rem;
+        margin-bottom: 0.625rem;
+        transition: color 200ms linear;
+
+        &:hover:not(.address-span) {
+          cursor: pointer;
+          color: var(--accent-color);
+        }
+      }
+
+      .link-span {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__contact-title {
+    width: fit-content;
+    font-size: u.rem(20);
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+
+    svg {
+      color: var(--green);
+    }
+  }
   &__form {
     background-color: var(--white);
     border-radius: 2rem;
-    padding: 6rem;
+    padding: 8rem;
     display: grid;
     grid-template-columns: repeat(2, minmax(auto, 1fr));
     align-items: flex-start;
@@ -32,38 +87,7 @@
   }
   &__form-headline {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 4rem;
     grid-column: 1 / -1;
-
-    & > span {
-      font-size: u.rem(20);
-      margin-bottom: 2rem;
-    }
-    div {
-      display: flex;
-      flex-direction: column;
-
-      span {
-        width: fit-content;
-        font-size: u.rem(20);
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 0.625rem;
-        font-weight: 500;
-        transition: color 150ms linear;
-
-        &:hover {
-          cursor: pointer;
-          color: var(--accent-color);
-        }
-
-        svg {
-          color: var(--green);
-        }
-      }
-    }
   }
   &__form-half {
     grid-column: span 1;
