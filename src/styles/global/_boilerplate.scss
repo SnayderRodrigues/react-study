@@ -17,7 +17,7 @@ body {
   //   0.9353448275862069rem + 0.27586206896551724vw,
   //   u.rem(20)
   // );
-  // line-height: 1.78;
+  // line-height: 1.98;
   overflow-x: hidden;
 }
 
@@ -41,6 +41,7 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 2rem;
+  object-fit: cover;
 }
 
 svg {
@@ -85,7 +86,23 @@ textarea:focus-visible {
 
 .wrapper {
   // outline: 2px solid red;
-  width: min(100% - u.rem(64), u.rem(1400));
+  // width: min(100% - u.rem(64), u.rem(1400));
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-inline: auto;
+
+  @include u.breakpoint-down(small) {
+    width: min(100% - u.rem(32), u.rem(1400));
+  }
+}
+
+.wrapper-footer, .wrapper-cta {
+  // outline: 2px solid red;
+  // width: min(100% - u.rem(64), u.rem(1400));
+  width: 100%;
+  padding-left: 8rem;
+  padding-right: 8rem;
   margin-inline: auto;
 
   @include u.breakpoint-down(small) {

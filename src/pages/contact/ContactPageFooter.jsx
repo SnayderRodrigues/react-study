@@ -8,7 +8,7 @@ import { FaUnsplash } from "react-icons/fa";
 const ContactPageFooter = () => {
   return (
     <footer id="contactPage-footer" className="contactPage-footer">
-      <div className="wrapper contactPage-footer__wrapper">
+      <div className="wrapper-footer contactPage-footer__wrapper">
         <div className="contactPage-footer__informations-wrapper">
           <div className="contactPage-footer__information">
             <div>

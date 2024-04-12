@@ -14,7 +14,6 @@
   &__image-1 {
     width: 100%;
     height: 800px;
-    object-fit: cover;
   }
   &__grid-wrapper {
     display: grid;
@@ -27,22 +26,20 @@
   &__image-2 {
     grid-area: 1 / 1 / 2 / 2;
     height: 800px;
-    object-fit: cover;
   }
   &__image-3 {
     grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
     height: 600px;
-    object-fit: cover;
   }
   &__image-4 {
     grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
     height: 600px;
-    object-fit: cover;
   }
   &__image-5 {
     grid-area: 2 / 2 / 3 / 3;
     height: 800px;
-    object-fit: cover;
     margin-top: -200px;
   }
 }

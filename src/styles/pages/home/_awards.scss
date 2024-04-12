@@ -52,8 +52,13 @@
     flex-direction: column;
     gap: 1rem;
     background-color: var(--white);
-    padding: 16px;
+    padding: 2rem;
     border-radius: 1.125rem;
+
+    p {
+      color: var(--text-color-3);
+      font-size: u.rem(20);
+    }
   }
   .awards-line-hidden {
     display: inline-block;

@@ -104,11 +104,11 @@ const Expertise = () => {
               immersive 3D environments.
             </p>
           </div>
-        </div>
         <Link to="expertise" className="button link">
           Learn more
           <IoMdArrowForward />
         </Link>
+        </div>
       </div>
     </section>
   );

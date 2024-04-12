@@ -4,7 +4,7 @@
   color: var(--text-color-2);
   padding: 12rem 0 ;
 
-  &__wrapper {
+  &__container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -23,6 +23,13 @@
     flex-direction: column;
     gap: 2rem;
     color: var(--text-color-4);
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: background-color 300ms linear;
+
+    &:hover {
+      background-color: var(--black-shade);
+    }
   }
   &__card-title {
     display: flex;

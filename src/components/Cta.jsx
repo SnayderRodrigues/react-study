@@ -4,7 +4,7 @@ import { IoMdArrowForward } from "react-icons/io";
 
 const Cta = () => {
   return (
-    <div className="cta wrapper">
+    <div className="cta wrapper-cta">
       <span>
         Need a <span className="highlight">expert team</span> <br /> on your
         next project? <br /> Let's talk.

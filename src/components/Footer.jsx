@@ -12,12 +12,14 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="footer">
-      <div className="wrapper contact__wrapper">
+      <div className="wrapper-footer contact__wrapper">
         <div className="contact__headline">
           <span>Your Story, Our Lens:</span>
-          <Link to="contact">
-            Let's create <IoMdArrowForward />
-            something extraordinary
+          <Link to="contact" className="footer__contact-link">
+            <span>
+              <span className="link">Let's create <IoMdArrowForward /></span>
+              extraordinary visuals
+            </span>
           </Link>
           {/* <Link to="contact" onClick={(e) => contactLink(e)}>
             Let's create <IoMdArrowForward />
@@ -43,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="wrapper footer__wrapper">
+      <div className="wrapper-footer footer__wrapper">
         <div className="footer__logo-wrapper">
           <a href="/" className="footer__logo">
             <span>
