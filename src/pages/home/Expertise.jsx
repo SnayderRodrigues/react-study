@@ -11,20 +11,15 @@ import { TbArrowGuide } from "react-icons/tb";
 import { Md6K } from "react-icons/md";
 import { BsBadge3DFill } from "react-icons/bs";
 
-
-
-
-
 const Expertise = () => {
   return (
     <section id="expertise" className="expertise">
       <div className="wrapper expertise__wrapper">
         <h2>OUR EXPERTISE</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          quia architecto atque sequi nemo sit commodi sapiente cum illum,
-          necessitatibus molestiae nihil maxime debitis nisi nulla corporis
-          delectus in? Accusamus.
+          We pride ourselves on our extensive expertise in photography and
+          videography, honed through years of dedication and a relentless
+          pursuit of excellence.
         </p>
         <div className="expertise__cards-wrapper">
           <div className="expertise__card">
@@ -33,8 +28,8 @@ const Expertise = () => {
             </span>
             <h3>Videography</h3>
             <p>
-              Excellent visual productions for commercials, music videos,
-              product demonstrations and many more.
+              Ignite your visual storytelling with our excellent visual
+              productions for commercials, music videos, products and many more.
             </p>
           </div>
           <div className="expertise__card">
@@ -43,8 +38,8 @@ const Expertise = () => {
             </span>
             <h3>Photography</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              explicabo minima corrupti quia, repudiandae officia quos ullam.
+              From meticulously composed portraits to dynamic product shots, we
+              tailor each session to your unique vision.
             </p>
           </div>
           <div className="expertise__card">
@@ -53,18 +48,19 @@ const Expertise = () => {
             </span>
             <h3>Content Creation</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              explicabo minima corrupti quia, repudiandae officia quos ullam.
+              Transforming ideas into captivating visuals, we offer a
+              comprehensive approach to bringing your vision to life.
             </p>
           </div>
           <div className="expertise__card">
             <span>
               <MdVideoSettings />
             </span>
-            <h3>Editing and Post-Production</h3>
+            <h3>Editing & Post-Production</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              explicabo minima corrupti quia, repudiandae officia quos ullam.
+              With meticulous attention to detail, we work tirelessly to refine
+              your content, ensuring every frame is optimized for maximum
+              impact.
             </p>
           </div>
           <div className="expertise__card">
@@ -73,18 +69,19 @@ const Expertise = () => {
             </span>
             <h3>Studio Rental</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              explicabo minima corrupti quia, repudiandae officia quos ullam.
+              A flexible and professional environment, meticulously designed to
+              accommodate a wide range of projects and productions.
             </p>
           </div>
           <div className="expertise__card">
             <span>
               <TbArrowGuide />
             </span>
-            <h3>Consultation and Creative Direction</h3>
+            <h3>Creative Direction</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              explicabo minima corrupti quia, repudiandae officia quos ullam.
+              Our team of experts is dedicated to understanding your goals,
+              refining your ideas, and guiding you through every step of the
+              creative process.
             </p>
           </div>
           <div className="expertise__card">
@@ -93,8 +90,8 @@ const Expertise = () => {
             </span>
             <h3>Realistic Immersion</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              explicabo minima corrupti quia, repudiandae officia quos ullam.
+              Production environment with equipment capable of craft visual
+              narratives that blur the line between fantasy and reality.
             </p>
           </div>
           <div className="expertise__card">
@@ -103,8 +100,8 @@ const Expertise = () => {
             </span>
             <h3>3D Projects</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-              explicabo minima corrupti quia, repudiandae officia quos ullam.
+              Using the latest software and techniques, we transform ideas into
+              immersive 3D environments.
             </p>
           </div>
         </div>

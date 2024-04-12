@@ -24,6 +24,7 @@
   }
   &__headline {
     margin-bottom: 8rem;
+
     h2 {
       font-size: u.rem(98);
       font-weight: 500;
@@ -32,13 +33,15 @@
     p {
       font-size: u.rem(26);
       max-width: 60ch;
+      margin-bottom: 2rem;
     }
+    
   }
   &__cards-wrapper {
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
-    column-gap: 1rem;
+    column-gap: 1.5rem;
     row-gap: 6rem;
   }
   &__card {

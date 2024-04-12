@@ -30,9 +30,14 @@ const ExpertisePage = () => {
           <div className="expertisePage-midpage__headline">
             <h2>Example text</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              perferendis ex quaerat mollitia iusto, nesciunt ratione quos
-              quibusdam distinctio dolores dignissimos nobis.
+              We pride ourselves on our extensive expertise in photography and
+              videography, honed through years of dedication and a relentless
+              pursuit of excellence.
+            </p>
+            <p>
+              With a diverse team of professionals skilled in various techniques
+              and styles, we offer a comprehensive range of services to meet the
+              unique needs of each project.
             </p>
           </div>
           <div className="expertisePage-midpage__cards-wrapper">
@@ -42,8 +47,8 @@ const ExpertisePage = () => {
               </span>
               <h3>Videography</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                Excellent visual productions for commercials, music videos,
+                product demonstrations and many more.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -70,7 +75,7 @@ const ExpertisePage = () => {
               <span>
                 <MdVideoSettings />
               </span>
-              <h3>Editing and Post-Production</h3>
+              <h3>Editing & Post-Production</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
@@ -90,7 +95,7 @@ const ExpertisePage = () => {
               <span>
                 <TbArrowGuide />
               </span>
-              <h3>Consultation and Creative Direction</h3>
+              <h3>Creative Direction</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
                 explicabo minima corrupti quia, repudiandae officia quos ullam.
