@@ -27,18 +27,34 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="about__cards-wrapper">
-          <div className="about__card">
-            <img src={Hootsuite} alt="" />
+        <div className="about__cards-carousel">
+          <div className="about__cards-wrapper">
+            <div className="about__card">
+              <img src={Hootsuite} alt="" />
+            </div>
+            <div className="about__card">
+              <img src={Uber} alt="" />
+            </div>
+            <div className="about__card">
+              <img src={UniEssex} alt="" />
+            </div>
+            <div className="about__card">
+              <img src={Walkme} alt="" />
+            </div>
           </div>
-          <div className="about__card">
-            <img src={Uber} alt="" />
-          </div>
-          <div className="about__card">
-            <img src={UniEssex} alt="" />
-          </div>
-          <div className="about__card">
-            <img src={Walkme} alt="" />
+          <div className="about__cards-wrapper">
+            <div className="about__card">
+              <img src={Hootsuite} alt="" />
+            </div>
+            <div className="about__card">
+              <img src={Uber} alt="" />
+            </div>
+            <div className="about__card">
+              <img src={UniEssex} alt="" />
+            </div>
+            <div className="about__card">
+              <img src={Walkme} alt="" />
+            </div>
           </div>
         </div>
 
@@ -47,13 +63,17 @@ const About = () => {
           <div className="about__content-description">
             <div className="about__content-text-1">
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-                recusandae sapiente debitis placeat cumque necessitatibus? Quia
-                ab assumenda deleniti velit.
+                We weave narratives through visual content that captivate,
+                inspire, and endure. With a blend of technical expertise and
+                boundless creativity, we pour our hearts into every project,
+                ensuring that each frame not only meets but exceeds
+                expectations.
               </p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-                recusandae sapiente debitis placeat cumque necessitatibus?
+                Behind the lens, our dedicated team strives for perfection,
+                pushing boundaries and exploring new horizons to deliver visual
+                content that resonates deeply with our clients and their
+                audiences.
               </p>
               <Link to="about" className="button link">
                 Read more about us
@@ -62,7 +82,7 @@ const About = () => {
             </div>
             <div className="about__content-text-2">
               <div>
-                <span>11+</span>
+                <span>12+</span>
                 <span>Years of experience</span>
               </div>
 
