@@ -42,7 +42,8 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(auto, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
     overflow: hidden;
@@ -53,7 +54,7 @@
     gap: 1rem;
     background-color: var(--white);
     padding: 2rem;
-    border-radius: 1.125rem;
+    border-radius: 2rem;
 
     p {
       color: var(--text-color-3);

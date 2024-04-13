@@ -23,46 +23,43 @@ const Awards = () => {
           <h2 className="awards__title">
             <span>
               While our focus is on client success, we’re proud to have our work
-              continually <span className="highlight">recognised</span> by the
-              best of the best.
+              continually <span className="highlight">recognised</span> with the
+              best awards in the category.
             </span>
           </h2>
         </div>
         <div className="awards__content">
           <div className="awards__card">
-            <h3>Award Name Example</h3>
+            <h3>The Luminescence Award (2023)</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              amet earum dolor non, libero corrupti, quidem nulla excepturi est
-              ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
-              fugiat!
+              Awarded by the International Visual Arts Guild (IVAG), recognizing
+              our studio's "exceptional use of light and shadow to evoke emotion
+              and tell a story" across both photo and videography projects.
             </p>
           </div>
           <div className="awards__card">
-            <h3>Award Name Example</h3>
+            <h3>The Captivate Award (2023)</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              amet earum dolor non, libero corrupti, quidem nulla excepturi est
-              ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
-              fugiat!
+              Presented by the National Association of Content Creators (NACC)
+              for our "ability to capture the viewer's attention and create a
+              lasting impact" with our visual storytelling in videos and
+              photographs.
             </p>
           </div>
           <div className="awards__card">
-            <h3>Award Name Example</h3>
+            <h3>The Muse Award (2021)</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              amet earum dolor non, libero corrupti, quidem nulla excepturi est
-              ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
-              fugiat!
+              Bestowed by the Society of Photographic Artists (SPA) for our
+              studio's "unique artistic vision and creative approach" in
+              crafting visually stunning and thought-provoking content.
             </p>
           </div>
           <div className="awards__card">
-            <h3>Award Name Example</h3>
+            <h3>The Phoenix Award (2020)</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-              amet earum dolor non, libero corrupti, quidem nulla excepturi est
-              ratione nisi quibusdam dicta fuga, nostrum sapiente in harum sit
-              fugiat!
+              Awarded by the Association of Post-Production Professionals (APPP)
+              in recognition of our "excellence in post-production editing,
+              transforming raw footage into captivating narratives."
             </p>
           </div>
         </div>
