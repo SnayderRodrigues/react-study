@@ -10,31 +10,31 @@ const Testemonials = () => {
           <div className="testemonials__card-wrapper">
             <div className="testemonials__card">
               <p>
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ab
-                sunt assumenda dignissimos dolorum dolore, laboriosam, nisi beatae
-                ut, modi nihil recusandae magni numquam? Optio ullam sunt rerum
-                alias? Odit."
+                "Working with Array Studio was fantastic! They captured the
+                essence of our brand perfectly in both photos and videos. The
+                final product exceeded our expectations, and the post-production
+                editing was flawless."
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>Author Name</span>
-                  <span>Brand Example</span>
+                  <span>Sarah M.</span>
+                  <span>Bloom Cosmetics</span>
                 </div>
               </div>
             </div>
             <div className="testemonials__card">
               <p>
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ab
-                sunt assumenda dignissimos dolorum dolore, laboriosam, nisi beatae
-                ut, modi nihil recusandae magni numquam? Optio ullam sunt rerum
-                alias? Odit."
+                "From the initial consultation to the final delivery, Array
+                Studio provided exceptional service. Their creativity and
+                attention to detail truly shined through. We'll definitely be
+                returning for future projects.
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>Author Name</span>
-                  <span>Brand Example</span>
+                  <span>David L.</span>
+                  <span>The Rustic Table</span>
                 </div>
               </div>
             </div>
@@ -42,35 +42,34 @@ const Testemonials = () => {
           <div className="testemonials__card-wrapper">
             <div className="testemonials__card">
               <p>
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ab
-                sunt assumenda dignissimos dolorum dolore, laboriosam, nisi beatae
-                ut, modi nihil recusandae magni numquam? Optio ullam sunt rerum
-                alias? Odit."
+                "I was nervous about my headshot photoshoot, but the team at
+                Array Studio made me feel comfortable and confident. They helped
+                me achieve a professional and polished look that I love."
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>Author Name</span>
-                  <span>Brand Example</span>
+                  <span>Emily C.</span>
+                  <span>Freelance Writer</span>
                 </div>
               </div>
             </div>
             <div className="testemonials__card">
               <p>
-                "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae ab
-                sunt assumenda dignissimos dolorum dolore, laboriosam, nisi beatae
-                ut, modi nihil recusandae magni numquam? Optio ullam sunt rerum
-                alias? Odit."
+                "Array Studio brought our vision for a product launch video to
+                life. Their collaborative spirit and expertise in storytelling
+                made the entire process seamless. We couldn't be happier with
+                the final result."
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>Author Name</span>
-                  <span>Brand Example</span>
+                  <span>John P.</span>
+                  <span>GreenTech Solutions</span>
                 </div>
               </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>
