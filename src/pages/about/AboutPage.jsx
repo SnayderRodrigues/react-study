@@ -104,7 +104,7 @@ const AboutPage = () => {
         </div>
       </section>
       <section className="aboutPageTestemonials">
-        <div className="wrapper aboutPageTestemonials__wrapper">
+        <div className="wrapper-medium aboutPageTestemonials__wrapper">
           <h2 className="aboutPageTestemonials__headline">
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
             maxime asperiores velit tempora hic quisquam corporis soluta

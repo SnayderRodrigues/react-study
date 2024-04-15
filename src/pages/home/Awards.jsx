@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+// import { Link } from "react-router-dom";
 import { AiOutlinePlus } from "react-icons/ai";
+import AwardsModal from "../../components/AwardsModal";
 
 const Awards = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <section id="awards" className="awards">
       <div className="awards__carousel-container">
@@ -63,9 +67,15 @@ const Awards = () => {
             </p>
           </div>
         </div>
-        <Link to="about" className="button link">
+        <button
+          className="button link"
+          onClick={() => {
+            setOpenModal(true);
+          }}
+        >
           See all awards <AiOutlinePlus />
-        </Link>
+        </button>
+        {openModal && <AwardsModal closeModal={setOpenModal}/>}
       </div>
     </section>
   );
