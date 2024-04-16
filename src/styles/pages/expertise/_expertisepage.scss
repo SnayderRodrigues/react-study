@@ -43,15 +43,26 @@
     grid-template-columns: repeat(4, minmax(auto, 1fr));
     column-gap: 1.5rem;
     row-gap: 6rem;
+    background-color: var(--green);
+    padding: 6rem 4rem 4rem;
+    border-radius: 2rem;
+    margin-bottom: 4rem;
   }
   &__card {
     display: flex;
     flex-direction: column;
+    padding: 2rem;
+    border-radius: 2rem;
+    transition: background-color 300ms linear;
+
+    &:hover {
+      background-color: var(--green-shade);
+    }
 
     span {
-      font-size: 1.625rem;
+      font-size: 2rem;
       padding-bottom: 2rem;
-      border-bottom: 1.5px solid var(--gray);
+      border-bottom: 1.5px solid var(--black);
       margin-bottom: 2rem;
     }
     h3 {

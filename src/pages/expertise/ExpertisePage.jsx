@@ -47,8 +47,9 @@ const ExpertisePage = () => {
               </span>
               <h3>Videography</h3>
               <p>
-                Excellent visual productions for commercials, music videos,
-                product demonstrations and many more.
+                Ignite your visual storytelling with our excellent visual
+                productions for commercials, music videos, products and many
+                more.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -57,8 +58,8 @@ const ExpertisePage = () => {
               </span>
               <h3>Photography</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                From meticulously composed portraits to dynamic product shots,
+                we tailor each session to your unique vision.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -67,8 +68,8 @@ const ExpertisePage = () => {
               </span>
               <h3>Content Creation</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                Transforming ideas into captivating visuals, we offer a
+                comprehensive approach to bringing your vision to life.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -77,8 +78,9 @@ const ExpertisePage = () => {
               </span>
               <h3>Editing & Post-Production</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                With meticulous attention to detail, we work tirelessly to
+                refine your content, ensuring every frame is optimized for
+                maximum impact.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -87,8 +89,8 @@ const ExpertisePage = () => {
               </span>
               <h3>Studio Rental</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                A flexible and professional environment, meticulously designed
+                to accommodate a wide range of projects and productions.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -97,8 +99,9 @@ const ExpertisePage = () => {
               </span>
               <h3>Creative Direction</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                Our team of experts is dedicated to understanding your goals,
+                refining your ideas, and guiding you through every step of the
+                creative process.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -107,8 +110,8 @@ const ExpertisePage = () => {
               </span>
               <h3>Realistic Immersion</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                Production environment with equipment capable of craft visual
+                narratives that blur the line between fantasy and reality.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
@@ -117,8 +120,8 @@ const ExpertisePage = () => {
               </span>
               <h3>3D Projects</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
-                explicabo minima corrupti quia, repudiandae officia quos ullam.
+                Using the latest software and techniques, we transform ideas
+                into immersive 3D environments.
               </p>
             </div>
           </div>
