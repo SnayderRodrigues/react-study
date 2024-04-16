@@ -1,19 +1,21 @@
 @use "../../../src/styles/util/" as u;
 
 .awardsModal {
-  align-self: center;
   position: fixed;
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-
+  
+  
   &__backdrop {
     position: fixed;
     z-index: -1;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background: #000;
@@ -27,23 +29,20 @@
     height: 100%;
     width: 100%;
     opacity: 1;
-    will-change: padding;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    overscroll-behavior: none;
+    overflow-y: auto;
+    pointer-events: none;
   }
   &__body {
-    display: grid;
+    // display: grid;
     min-width: 100vh;
     background-color: var(--bg-color);
     border-radius: 2rem;
     padding: 4rem 0;
     position: relative;
+    z-index: 2;
     margin-top: max(20vh, 200px);
+    pointer-events: all;
 
-    p {
-      margin: 4rem 0;
-    }
   }
   &__closeButton {
     display: flex;
@@ -59,9 +58,34 @@
     background-color: var(--black);
   }
   &__title {
+    margin-bottom: 4rem;
      span {
         font-size: u.rem(76);
         font-weight: 500;
      }
+  }
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--text-color-3);
+    font-size: u.rem(26);
+    font-weight: 500;
+    padding: 2rem 0;
+    border-bottom: 1.5px solid var(--gray);
+
+    &-year {
+      min-width: 6rem;
+      padding-right: 1rem;
+    }
+    &-title {
+      padding-right: 8rem;
+    }
+    &-name {
+      padding-right: 4rem;
+    }
+    &-association {
+      padding-right: 4rem;
+    }
   }
 }

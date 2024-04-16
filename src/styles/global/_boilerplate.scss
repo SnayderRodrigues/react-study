@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+.scroll-lock {
+  overflow: hidden!important;
+}
+
 main {
   width: 100%;
 }

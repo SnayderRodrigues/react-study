@@ -6,6 +6,11 @@ import AwardsModal from "../../components/AwardsModal";
 const Awards = () => {
   const [openModal, setOpenModal] = useState(false);
 
+  const handleClick = () => {
+    setOpenModal(true);
+    document.body.classList.add("scroll-lock");
+  };
+
   return (
     <section id="awards" className="awards">
       <div className="awards__carousel-container">
@@ -67,15 +72,10 @@ const Awards = () => {
             </p>
           </div>
         </div>
-        <button
-          className="button link"
-          onClick={() => {
-            setOpenModal(true);
-          }}
-        >
+        <button className="button link" onClick={handleClick}>
           See all awards <AiOutlinePlus />
         </button>
-        {openModal && <AwardsModal closeModal={setOpenModal}/>}
+        {openModal && <AwardsModal closeModal={setOpenModal} />}
       </div>
     </section>
   );
