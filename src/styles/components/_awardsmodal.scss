@@ -64,28 +64,4 @@
         font-weight: 500;
      }
   }
-  &__card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: var(--text-color-3);
-    font-size: u.rem(26);
-    font-weight: 500;
-    padding: 2rem 0;
-    border-bottom: 1.5px solid var(--gray);
-
-    &-year {
-      min-width: 6rem;
-      padding-right: 1rem;
-    }
-    &-title {
-      padding-right: 8rem;
-    }
-    &-name {
-      padding-right: 4rem;
-    }
-    &-association {
-      padding-right: 4rem;
-    }
-  }
 }

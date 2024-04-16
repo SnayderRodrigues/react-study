@@ -1,4 +1,5 @@
 import { MdClose } from "react-icons/md";
+import AwardsCard from "./AwardsCard";
 
 const AwardsModal = ({ closeModal }) => {
   return (
@@ -24,78 +25,78 @@ const AwardsModal = ({ closeModal }) => {
           <div className="awardsModal__title">
             <span>Recognition</span>
           </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year">2023</span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year">2022</span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year">2021</span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
-          <div className="awardsModal__card">
-            <span className="awardsModal__card-year"></span>
-            <span className="awardsModal__card-title">Featured Work</span>
-            <span className="awardsModal__card-name">Award Name</span>
-            <span className="awardsModal__card-association">Award Association</span>
-          </div>
+          <AwardsCard
+            year="2023"
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year=""
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year=""
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year=""
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year="2022"
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year=""
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year=""
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year="2021"
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year=""
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year="2020"
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year=""
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
+          <AwardsCard
+            year="2019"
+            title="Featured Work"
+            name="Award Name"
+            association="Award Association"
+          />
         </div>
       </div>
     </div>
