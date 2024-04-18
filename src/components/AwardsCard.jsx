@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 const AwardsCard = (props) => {
   return (
     <div className="awardsModal__card">
-      <span className="awardsModal__card-year">{props.year}</span>
+      <span className={`${props.class} awardsModal__card-year`}>
+        {props.year}
+      </span>
       <span className="awardsModal__card-title">{props.title}</span>
       <span className="awardsModal__card-name">{props.name}</span>
       <span className="awardsModal__card-association">{props.association}</span>
@@ -13,6 +15,7 @@ const AwardsCard = (props) => {
 };
 
 AwardsCard.propTypes = {
+  class: PropTypes.string,
   year: PropTypes.string,
   title: PropTypes.string,
   name: PropTypes.string,

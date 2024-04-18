@@ -27,75 +27,82 @@ const AwardsModal = ({ closeModal }) => {
           </div>
           <AwardsCard
             year="2023"
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            title="Videography for Uber&copy;"
+            name="The Luminescence Award"
+            association="International Visual Arts Awards"
           />
           <AwardsCard
-            year=""
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            class="opacity-0"
+            year="2023"
+            title="Videography for Uber&copy;"
+            name="Videography Of The Year"
+            association="National Association of Content Creators (NACC)"
           />
           <AwardsCard
-            year=""
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            class="opacity-0"
+            year="2023"
+            title="Videography for Hootsuite&copy;"
+            name="The Echo Award"
+            association="International Content Marketing Association"
           />
           <AwardsCard
-            year=""
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            class="opacity-0"
+            year="2023"
+            title="Videography for WalkMe&copy;"
+            name="Visual Content Creation Of The Month"
+            association="International Visual Arts Awards"
           />
           <AwardsCard
             year="2022"
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            title="Videography for Hootsuite&copy;"
+            name="Visual Content Creation Of The Year"
+            association="International Visual Arts Awards"
           />
           <AwardsCard
-            year=""
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            class="opacity-0"
+            year="2022"
+            title="Photography for University of Essex"
+            name="The Iris Award"
+            association="Society of Photographic Artists (SPA)"
           />
           <AwardsCard
-            year=""
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            class="opacity-0"
+            year="2022"
+            title="Videography for WalkMe&copy;"
+            name="The Phoenix Award"
+            association="Association of Post-Production Professionals"
           />
           <AwardsCard
             year="2021"
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            title="Photography for University of Essex"
+            name="The Muse Award"
+            association="Society of Photographic Artists (SPA)"
           />
           <AwardsCard
-            year=""
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            year="2021"
+            class="opacity-0"
+            title="Videography for Paypal&copy;"
+            name="Visual Content Creation Of The Month"
+            association="International Visual Arts Awards"
           />
           <AwardsCard
             year="2020"
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            title="Videography for Coursera&copy;"
+            name="The Phoenix Award"
+            association="Association of Post-Production Professionals"
           />
           <AwardsCard
-            year=""
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            year="2020"
+            class="opacity-0"
+            title="Videography for Elo&copy;"
+            name="Visual Content Creation Of The Month"
+            association="International Visual Arts Awards"
           />
           <AwardsCard
             year="2019"
-            title="Featured Work"
-            name="Award Name"
-            association="Award Association"
+            title="Videography for Hootsuite&copy;"
+            name="Best New Visual Production Award"
+            association="Association of Audiovisual Creators"
           />
         </div>
       </div>

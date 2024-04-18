@@ -41,18 +41,26 @@ const Awards = () => {
           <div className="awards__card">
             <h3>The Luminescence Award (2023)</h3>
             <p>
-              Awarded by the International Visual Arts Guild (IVAG), recognizing
-              our studio's "exceptional use of light and shadow to evoke emotion
-              and tell a story" across both photo and videography projects.
+              Awarded by the International Visual Arts Awards (IVAA),
+              recognizing our studio's "exceptional use of light and shadow to
+              evoke emotion and tell a story" for a videography project made for
+              Uber&copy;.
             </p>
           </div>
           <div className="awards__card">
-            <h3>The Captivate Award (2023)</h3>
+            <h3>Videography Of The Year (2023)</h3>
             <p>
               Presented by the National Association of Content Creators (NACC)
               for our "ability to capture the viewer's attention and create a
-              lasting impact" with our visual storytelling in videos and
-              photographs.
+              lasting impact" with our visual production storytelling.
+            </p>
+          </div>
+          <div className="awards__card">
+            <h3>Visual Content Creation Of The Year (2022)</h3>
+            <p>
+              Awarded by the International Visual Arts Awards (IVAA) in
+              recognition of our "excellence in visual content production,
+              transforming visual footage into captivating narratives."
             </p>
           </div>
           <div className="awards__card">
@@ -61,14 +69,6 @@ const Awards = () => {
               Bestowed by the Society of Photographic Artists (SPA) for our
               studio's "unique artistic vision and creative approach" in
               crafting visually stunning and thought-provoking content.
-            </p>
-          </div>
-          <div className="awards__card">
-            <h3>The Phoenix Award (2020)</h3>
-            <p>
-              Awarded by the Association of Post-Production Professionals (APPP)
-              in recognition of our "excellence in post-production editing,
-              transforming raw footage into captivating narratives."
             </p>
           </div>
         </div>
