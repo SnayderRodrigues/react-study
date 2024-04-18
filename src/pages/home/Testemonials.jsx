@@ -28,7 +28,7 @@ const Testemonials = () => {
                 "From the initial consultation to the final delivery, Array
                 Studio provided exceptional service. Their creativity and
                 attention to detail truly shined through. We'll definitely be
-                returning for future projects.
+                returning for future projects."
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />

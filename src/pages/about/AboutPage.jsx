@@ -11,6 +11,33 @@ import { FaAsterisk } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 
 const AboutPage = () => {
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const leftButton = document.getElementById("leftButton");
+    const rightButton = document.getElementById("rightButton");
+    const sliderItems = document.querySelectorAll(
+      ".aboutPageTestemonials__slider"
+    );
+    let currentIndex = 0;
+
+    function showItem(index) {
+      sliderItems.forEach((item) => item.classList.remove("slider-active"));
+      sliderItems[index].classList.add("slider-active");
+    }
+
+    leftButton.addEventListener("click", function () {
+      currentIndex =
+        currentIndex === 0 ? sliderItems.length - 1 : currentIndex - 1;
+      showItem(currentIndex);
+    });
+
+    rightButton.addEventListener("click", function () {
+      currentIndex =
+        currentIndex === sliderItems.length - 1 ? 0 : currentIndex + 1;
+      showItem(currentIndex);
+    });
+  });
+
   return (
     <main>
       <section className="aboutPageHero">
@@ -105,24 +132,75 @@ const AboutPage = () => {
       </section>
       <section className="aboutPageTestemonials">
         <div className="wrapper-medium aboutPageTestemonials__wrapper">
-          <h2 className="aboutPageTestemonials__headline">
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt,
-            maxime asperiores velit tempora hic quisquam corporis soluta
-            sapiente qui blanditiis adipisci impedit accusamus molestiae quas
-            cum id ipsa tenetur cumque."
-          </h2>
-          <div className="aboutPageTestemonials__author">
-            <div className="author-div">
-              <span className="author-name">
-                <FaAsterisk /> Example Name
-              </span>
-              <span>Example Company</span>
+          <div className="aboutPageTestemonials__slider slider-active">
+            <h2 className="aboutPageTestemonials__headline">
+              "Working with Array Studio was fantastic! They captured the
+              essence of our brand perfectly in both photos and videos. The
+              final product exceeded our expectations, and the post-production
+              editing was flawless."
+            </h2>
+            <div className="aboutPageTestemonials__author">
+              <div className="author-div">
+                <span className="author-name">
+                  <FaAsterisk /> Sarah M.
+                </span>
+                <span>Bloom Cosmetics</span>
+              </div>
             </div>
-            <div className="navigation">
-              <button className="navigation-button-left">
+          </div>
+          <div className="aboutPageTestemonials__slider">
+            <h2 className="aboutPageTestemonials__headline">
+              "From the initial consultation to the final delivery, Array Studio
+              provided exceptional service. Their creativity and attention to
+              detail truly shined through. We'll definitely be returning for
+              future projects."
+            </h2>
+            <div className="aboutPageTestemonials__author">
+              <div className="author-div">
+                <span className="author-name">
+                  <FaAsterisk /> David L.
+                </span>
+                <span>The Rustic Table</span>
+              </div>
+            </div>
+          </div>
+          <div className="aboutPageTestemonials__slider">
+            <h2 className="aboutPageTestemonials__headline">
+              "I was nervous about my headshot photoshoot, but the team at Array
+              Studio made me feel comfortable and confident. They helped me
+              achieve a professional and polished look that I love."
+            </h2>
+            <div className="aboutPageTestemonials__author">
+              <div className="author-div">
+                <span className="author-name">
+                  <FaAsterisk /> Emily C.
+                </span>
+                <span>Freelance Writer</span>
+              </div>
+            </div>
+          </div>
+          <div className="aboutPageTestemonials__slider">
+            <h2 className="aboutPageTestemonials__headline">
+              "Array Studio brought our vision for a product launch video to
+              life. Their collaborative spirit and expertise in storytelling
+              made the entire process seamless. We couldn't be happier with the
+              final result."
+            </h2>
+            <div className="aboutPageTestemonials__author">
+              <div className="author-div">
+                <span className="author-name">
+                  <FaAsterisk /> John P.
+                </span>
+                <span>GreenTech Solutions</span>
+              </div>
+            </div>
+          </div>
+          <div className="navigation">
+            <div className="navigation-div">
+              <button className="navigation-button-left" id="leftButton">
                 <IoMdArrowForward />
               </button>
-              <button className="navigation-button-right">
+              <button className="navigation-button-right" id="rightButton">
                 <IoMdArrowForward />
               </button>
             </div>
