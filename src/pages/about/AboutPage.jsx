@@ -11,7 +11,6 @@ import { FaAsterisk } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 
 const AboutPage = () => {
-
   document.addEventListener("DOMContentLoaded", function () {
     const leftButton = document.getElementById("leftButton");
     const rightButton = document.getElementById("rightButton");
@@ -42,7 +41,10 @@ const AboutPage = () => {
     <main>
       <section className="aboutPageHero">
         <div className="wrapper aboutPageHero__wrapper">
-          <h1 className="aboutPageHero__title">About Us Example Text</h1>
+          <h1 className="aboutPageHero__title">
+            Our Story. <br />
+            More Than Just a Studio.
+          </h1>
         </div>
       </section>
       <section className="aboutPageMission">
@@ -51,9 +53,11 @@ const AboutPage = () => {
             <img src={Cat} alt="" />
           </div>
           <h2 className="aboutPageMission__headline">
-            <span className="highlight">Lorem ipsum</span> dolor sit amet
-            consectetur adipisicing elit. Minima magnam deserunt optio molestiae
-            possimus quam dolores dolor.
+            We are a <span className="highlight">creative</span> photo and video
+            studio passionate about bringing your vision to life. <br />
+            Our story began with a love for{" "}
+            <span className="highlight">capturing moments</span> and{" "}
+            <span className="highlight">crafting stories</span>.
           </h2>
         </div>
       </section>
@@ -74,9 +78,8 @@ const AboutPage = () => {
       <section className="aboutPageClients">
         <div className="wrapper aboutPageClients__wrapper">
           <h2 className="aboutPageClients__headline">
-            <span className="highlight">Lorem ipsum</span> dolor sit amet
-            consectetur adipisicing elit. Minima magnam deserunt optio molestiae
-            possimus quam dolores dolor.
+            We collaborate with inspiring brands to bring their vision to life
+            through <span className="highlight">powerful visuals</span>.
           </h2>
           <div className="aboutPageClients__cards-wrapper">
             <div className="aboutPageClients__card">
@@ -210,9 +213,12 @@ const AboutPage = () => {
       <section className="aboutPageTeam">
         <div className="wrapper aboutPageTeam__wrapper">
           <h2 className="aboutPageTeam__headline">
-            <span className="highlight">Lorem ipsum</span> dolor sit amet
-            consectetur adipisicing elit. Minima magnam deserunt optio molestiae
-            possimus quam dolores dolor.
+            We see the world through a different lens, capturing moments with{" "}
+            <span className="highlight">artistry</span> and{" "}
+            <span className="highlight">expertise</span>. Our team is a
+            powerhouse of <span className="highlight">experience</span> and{" "}
+            <span className="highlight">creativity</span>, fueled by a shared
+            love for storytelling.
           </h2>
           <div className="aboutPageTeam__cards-wrapper">
             <TeamCard name="Example Name" office="Office Example" />
@@ -229,42 +235,44 @@ const AboutPage = () => {
       <section className="aboutPageEnding">
         <div className="wrapper aboutPageEnding__wrapper">
           <h2 className="aboutPageEnding__headline">
-            <span className="highlight">Lorem ipsum</span> dolor sit amet
-            consectetur adipisicing elit. Minima magnam deserunt optio molestiae
-            possimus quam dolores dolor.
+            We don't just capture moments, we{" "}
+            <span className="highlight">ignite</span> them. Our team of
+            passionate experts transforms ideas into{" "}
+            <span className="highlight">stunning visuals</span> that leave a
+            lasting impression.
           </h2>
           <div className="aboutPageEnding__lists-wrapper">
             <div className="aboutPageEnding__lists">
-              <h3>Example Headline</h3>
+              <h3>Words that define our team:</h3>
               <div className="aboutPageEnding__lists-div">
                 <ul className="aboutPageEnding__lists-ul">
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
+                  <li>Passionate Storytellers</li>
+                  <li>Visual Experts</li>
+                  <li>Collaborative Spirit</li>
+                  <li>Creative Powerhouse</li>
                 </ul>
                 <ul className="aboutPageEnding__lists-ul">
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
+                  <li>Brand Elevators</li>
+                  <li>Technically Savvy</li>
+                  <li>Results-Oriented</li>
+                  <li>Client-Focused</li>
                 </ul>
               </div>
             </div>
             <div className="aboutPageEnding__lists">
-              <h3>Example Headline</h3>
+              <h3>We definetly are not:</h3>
               <div className="aboutPageEnding__lists-div">
                 <ul className="aboutPageEnding__lists-ul">
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
+                  <li>Just Button Pushers</li>
+                  <li>Stuck in the Past</li>
+                  <li>Stressful Collaborators</li>
+                  <li>Overpromising</li>
                 </ul>
                 <ul className="aboutPageEnding__lists-ul">
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
-                  <li>Example text</li>
+                  <li>Sacrifice quality for profit</li>
+                  <li>Fearful of Deadlines</li>
+                  <li>Lacking Enthusiasm</li>
+                  <li>Invisible Partners</li>
                 </ul>
               </div>
             </div>
