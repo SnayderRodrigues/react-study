@@ -16,9 +16,10 @@ const ExpertisePage = () => {
   return (
     <main>
       <section className="expertisePage-hero">
-        <div className="wrapper expertisePage__wrapper">
+        <div className="wrapper expertisePage-hero__wrapper">
           <h1>
-            Expertise Page <br /> Example Text
+            Unique Approach. <br />
+            Crafting Visual Excellence.
           </h1>
         </div>
       </section>
@@ -28,7 +29,7 @@ const ExpertisePage = () => {
             <img src={Cat} alt="" />
           </div>
           <div className="expertisePage-midpage__headline">
-            <h2>Example text</h2>
+            <h2>Expertise that empowers.</h2>
             <p>
               We pride ourselves on our extensive expertise in photography and
               videography, honed through years of dedication and a relentless

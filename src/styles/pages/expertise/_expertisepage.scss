@@ -5,6 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &__wrapper {
+    h1 {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .expertisePage-midpage {

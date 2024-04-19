@@ -10,7 +10,7 @@ const ContactPage = () => {
         <section className="contactPage">
           <div className="wrapper-contact contactPage__wrapper ">
             <div className="contactPage__headline">
-              <h1>Get in touch with us</h1>
+              <h1>Get in Touch with Us.</h1>
             </div>
             <div className="contactPage__contact">
               <div className="contactPage__contact-address">
@@ -43,7 +43,7 @@ const ContactPage = () => {
             </div>
             <div className="contactPage__form">
               <div className="contactPage__form-headline">
-                <h2>Send us a message</h2>
+                <h2>Send us a message.</h2>
               </div>
               <div className="contactPage__form-half">
                 <label>

@@ -7,8 +7,8 @@ const WorkPage = () => {
   return (
     <main>
       <section className="workPage-hero">
-        <div className="wrapper workPage__wrapper">
-          <h1>World-class visual <br />products, vision to action.</h1>
+        <div className="wrapper workPage-hero__wrapper">
+          <h1>World-class Visual <br />Products, Vision to Action.</h1>
         </div>
       </section>
       <section className="workPage-works">
