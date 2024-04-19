@@ -163,6 +163,8 @@
     background-color: transparent;
     padding: 1.125rem;
     cursor: pointer;
+    position: relative;
+    z-index: 999;
     
     svg {
       font-size: u.rem(44);
