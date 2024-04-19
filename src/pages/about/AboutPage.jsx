@@ -11,26 +11,30 @@ import { FaAsterisk } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 
 const AboutPage = () => {
-  document.addEventListener("DOMContentLoaded", function () {
+ 
+    const leftButton = document.getElementById("leftButton");
+    const rightButton = document.getElementById("rightButton");
     const sliderItems = document.querySelectorAll(
       ".aboutPageTestemonials__slider"
     );
     let currentIndex = 0;
 
-    function handleButtonClick(direction) {
-      const newIndex =
-        (currentIndex + direction + sliderItems.length) % sliderItems.length;
-      currentIndex = newIndex;
-
+    function showItem(index) {
       sliderItems.forEach((item) => item.classList.remove("slider-active"));
-      sliderItems[currentIndex].classList.add("slider-active");
+      sliderItems[index].classList.add("slider-active");
     }
 
-    const leftButton = document.getElementById("leftButton");
-    leftButton.addEventListener("click", () => handleButtonClick(-1));
-    const rightButton = document.getElementById("rightButton");
-    rightButton.addEventListener("click", () => handleButtonClick(1));
-  });
+    leftButton.addEventListener("click", function () {
+      currentIndex =
+        currentIndex === 0 ? sliderItems.length - 1 : currentIndex - 1;
+      showItem(currentIndex);
+    });
+
+    rightButton.addEventListener("click", function () {
+      currentIndex =
+        currentIndex === sliderItems.length - 1 ? 0 : currentIndex + 1;
+      showItem(currentIndex);
+    });
 
   return (
     <main>

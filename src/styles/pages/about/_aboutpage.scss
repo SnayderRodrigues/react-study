@@ -109,10 +109,13 @@
     align-items: center;
     opacity: 0;
     z-index: 0;
+    transform: translateY(10%);
+    transition: opacity 300ms linear, transform 300ms linear;
   }
   &__slider.slider-active {
     opacity: 1;
     z-index: 1;
+    transform: translateY(0);
   }
   &__headline {
     display: inline-block;
@@ -169,9 +172,10 @@
     svg {
       font-size: u.rem(44);
       color: var(--text-color-2);
+      pointer-events: none;
       transition: color 200ms linear;
     }
-    svg:hover {
+    &:hover > svg {
       color: var(--green);
     }
   }
