@@ -25,6 +25,11 @@
     display: grid;
     gap: 2rem;
   }
+  &__grid-wrapper:last-of-type {
+    .workPage-works__grid-half {
+      margin-bottom: 0;
+    }
+  }
   &__grid-full {
     display: grid;
     grid-template-areas: "a";

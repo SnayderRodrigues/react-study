@@ -8,9 +8,7 @@ const WorkPage = () => {
     <main>
       <section className="workPage-hero">
         <div className="wrapper workPage__wrapper">
-          <h1>
-            Work Page <br /> Example Text
-          </h1>
+          <h1>World-class visual <br />products, vision to action.</h1>
         </div>
       </section>
       <section className="workPage-works">
@@ -79,7 +77,6 @@ const WorkPage = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </section>
       <Cta />
