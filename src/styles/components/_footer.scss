@@ -33,10 +33,10 @@
     .footer__contact-link {
       width: fit-content;
       font-size: u.rem(88);
-      transition: color 200ms linear;
-
+      
       svg {
         transform: translateX(8px);
+        transition: transform 100ms linear;
       }
 
       &:hover {

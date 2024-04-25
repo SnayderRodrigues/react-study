@@ -6,7 +6,6 @@ import UniEssex from "../../assets/svg/university-of-essex.svg";
 import Walkme from "../../assets/svg/walkme.svg";
 // import "./aboutpage.scss";
 import TeamCard from "../../components/TeamCard";
-import Cta from "../../components/Cta";
 import { FaAsterisk } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 
@@ -95,7 +94,7 @@ const AboutPage = () => {
   };
 
   return (
-    <main>
+    <main id="aboutpage">
       <section className="aboutPageHero">
         <div className="wrapper aboutPageHero__wrapper">
           <h1 className="aboutPageHero__title">
@@ -290,7 +289,6 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <Cta />
     </main>
   );
 };

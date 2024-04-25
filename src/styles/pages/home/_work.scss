@@ -1,6 +1,7 @@
 @use "../../../styles/util/" as u;
 
 .work {
+  background-color: var(--bg-color);
   padding: var(--section-pd);
 
   &__wrapper {

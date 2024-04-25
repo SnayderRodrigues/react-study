@@ -10,11 +10,10 @@ import { MdHomeWork } from "react-icons/md";
 import { TbArrowGuide } from "react-icons/tb";
 import { Md6K } from "react-icons/md";
 import { BsBadge3DFill } from "react-icons/bs";
-import Cta from "../../components/Cta";
 
 const ExpertisePage = () => {
   return (
-    <main>
+    <main id="expertisepage">
       <section className="expertisePage-hero">
         <div className="wrapper expertisePage-hero__wrapper">
           <h1>
@@ -129,29 +128,31 @@ const ExpertisePage = () => {
         </div>
       </section>
       <section className="expertisePage-ending">
-        <div className="wrapper expertisePage-ending__wrapper">
+        <div className="wrapper-medium expertisePage-ending__wrapper">
           <div className="expertisePage-ending__content">
             <div className="expertisePage-ending__image-wrapper">
               <img src={Cat} alt="" />
             </div>
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Example expertise text</h3>
+              <h3>Build your brand and increase engagement</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quaerat consequatur, temporibus omnis itaque, sed quis
-                consequuntur sequi maxime incidunt modi enim quae. Praesentium
-                dolorum ducimus quae doloremque possimus, esse earum.
+                We craft captivating visuals specifically designed to elevate
+                your brand image and spark engagement with your audience. We
+                ensure that we balance brand communications with tactical
+                functionality at all stages of your audience's journey.
               </p>
             </div>
           </div>
           <div className="expertisePage-ending__content">
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Example expertise text</h3>
+              <h3>Creative storytelling</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quaerat consequatur, temporibus omnis itaque, sed quis
-                consequuntur sequi maxime incidunt modi enim quae. Praesentium
-                dolorum ducimus quae doloremque possimus, esse earum.
+                Translate your brand's essence into compelling visual
+                experiences and bring your narrative to life in a way that
+                captivates and engages your audience. We ensure that each
+                element is meticulously designed to resonate with your audience,
+                crafting stories that evoke emotions and create lasting
+                impressions to make your brand unforgettable.
               </p>
             </div>
             <div className="expertisePage-ending__image-wrapper">
@@ -163,23 +164,52 @@ const ExpertisePage = () => {
               <img src={Cat} alt="" />
             </div>
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Example expertise text</h3>
+              <h3>From startups to enterprise</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quaerat consequatur, temporibus omnis itaque, sed quis
-                consequuntur sequi maxime incidunt modi enim quae. Praesentium
-                dolorum ducimus quae doloremque possimus, esse earum.
+                Whether you're a burgeoning brand or a seasoned leader, we
+                tailor our expertise to meet your needs. We understand the
+                unique challenges faced at each stage, and our creative
+                solutions empower you to stand out in a crowded marketplace.
               </p>
             </div>
           </div>
           <div className="expertisePage-ending__content">
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Example expertise text</h3>
+              <h3>Crafted with your vision in mind</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quaerat consequatur, temporibus omnis itaque, sed quis
-                consequuntur sequi maxime incidunt modi enim quae. Praesentium
-                dolorum ducimus quae doloremque possimus, esse earum.
+                We believe every brand deserves a unique visual story. Our
+                collaborative approach ensures your vision takes center stage,
+                with every element meticulously crafted to bring your message to
+                life in an authentic and impactful way.
+              </p>
+            </div>
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+          </div>
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Build clarity, drive impact</h3>
+              <p>
+                We go beyond aesthetics to create visuals that connect with your
+                audience on a deeper level. Our storytelling approach is
+                intuitive, accessible, and aligned with your organisational
+                objectives, helping you define your brand voice, build clarity
+                around your message, and ultimately drive the impact you desire.
+              </p>
+            </div>
+          </div>
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Drive conversions through better digital</h3>
+              <p>
+                In today's digital landscape, captivating visuals are essential
+                for driving conversions. We craft video and photo content
+                specifically designed to engage your audience, generate leads,
+                and propel your brand towards its full potential.
               </p>
             </div>
             <div className="expertisePage-ending__image-wrapper">
@@ -188,7 +218,6 @@ const ExpertisePage = () => {
           </div>
         </div>
       </section>
-      <Cta />
     </main>
   );
 };

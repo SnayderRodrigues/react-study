@@ -1,11 +1,10 @@
 import React from "react";
 // import "./workpage.scss";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
-import Cta from "../../components/Cta";
 
 const WorkPage = () => {
   return (
-    <main>
+    <main id="workpage">
       <section className="workPage-hero">
         <div className="wrapper workPage-hero__wrapper">
           <h1>World-class Visual <br />Products, Vision to Action.</h1>
@@ -79,7 +78,6 @@ const WorkPage = () => {
           </div>
         </div>
       </section>
-      <Cta />
     </main>
   );
 };

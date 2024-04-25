@@ -1,10 +1,15 @@
 @use "../../../styles/util/" as u;
 
+#expertisepage {
+  background-color: var(--black);
+}
+
 .expertisePage-hero {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--bg-color);
 
   &__wrapper {
     h1 {
@@ -14,6 +19,7 @@
 }
 
 .expertisePage-midpage {
+  background-color: var(--bg-color);
   padding: 0 0 12rem;
 
   // &__wrapper {
@@ -41,7 +47,6 @@
       max-width: 60ch;
       margin-bottom: 2rem;
     }
-    
   }
   &__cards-wrapper {
     display: grid;
@@ -83,7 +88,10 @@
 }
 
 .expertisePage-ending {
+  background-color: var(--bg-color);
   padding: 0 0 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 
   &__wrapper {
     display: flex;

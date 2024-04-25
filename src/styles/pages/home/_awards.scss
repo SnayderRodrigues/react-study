@@ -1,6 +1,7 @@
 @use "../../../styles/util/" as u;
 
 .awards {
+  background-color: var(--bg-color);
   padding: var(--section-pd);
 
   &__carousel-container {

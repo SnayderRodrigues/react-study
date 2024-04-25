@@ -2,7 +2,10 @@
 
 .testemonials {
   color: var(--text-color-2);
-  padding: 12rem 0 ;
+  background-color: var(--bg-color);
+  padding: 12rem 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 
   &__container {
     display: flex;

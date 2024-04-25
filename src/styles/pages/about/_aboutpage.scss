@@ -1,10 +1,15 @@
 @use "../../../styles/util/" as u;
 
+#aboutpage {
+  background-color: var(--black);
+}
+
 .aboutPageHero {
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--bg-color);
 
   &__wrapper {
     h1 {
@@ -14,6 +19,7 @@
 }
 
 .aboutPageMission {
+  background-color: var(--bg-color);
   padding: 0 0 12rem;
 
   &__image-wrapper {
@@ -33,6 +39,7 @@
 
 .aboutPageCarousel {
   display: flex;
+  background-color: var(--bg-color);
 
   &__wrapper-1,
   &__wrapper-2 {
@@ -64,6 +71,7 @@
 }
 
 .aboutPageClients {
+  background-color: var(--bg-color);
   padding: 12rem 0;
 
   &__headline {
@@ -96,7 +104,7 @@
   color: var(--text-color-2);
   background-color: var(--black);
   padding: 12rem 0;
-  
+
   &__wrapper {
     display: grid;
     position: relative;
@@ -153,7 +161,7 @@
     justify-self: flex-end;
     border-radius: 999px;
     transition: background-color 200ms linear;
-    
+
     &:hover {
       background-color: var(--black-shade);
     }
@@ -162,7 +170,8 @@
       display: flex;
     }
   }
-  .navigation-button-left, .navigation-button-right {
+  .navigation-button-left,
+  .navigation-button-right {
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -170,7 +179,7 @@
     cursor: pointer;
     position: relative;
     z-index: 999;
-    
+
     svg {
       font-size: u.rem(44);
       color: var(--text-color-2);
@@ -189,6 +198,7 @@
 }
 
 .aboutPageTeam {
+  background-color: var(--bg-color);
   padding: var(--section-pd);
 
   &__headline {
@@ -207,7 +217,10 @@
 }
 
 .aboutPageEnding {
+  background-color: var(--bg-color);
   padding: 12rem 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 
   &__headline {
     display: inline-block;
