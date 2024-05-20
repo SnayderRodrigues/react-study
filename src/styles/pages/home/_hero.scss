@@ -28,10 +28,6 @@
     display: flex;
     gap: 2rem;
   }
-  &__button {
-    font-size: 1.625rem;
-      padding: 20px 36.4px 20px;
-  }
   &__button:last-child {
     color: var(--text-color-1);
     background: var(--green);

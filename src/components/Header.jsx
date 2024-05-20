@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   let lastScrollTop = 0;
@@ -40,8 +39,10 @@ const Header = () => {
       <div className="wrapper">
         <nav className="header__navbar">
           <a href="/" className="header__logo">
-            {"["}<span className="highlight">Array</span>{"]"}
-            <span className="slide-up">Studio</span>
+            {/* <img src={Logo} alt="" className="header__logo-icon"/> */}
+            <span>
+              [<span className="highlight">Array</span>] Studio
+            </span>
           </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">
@@ -50,6 +51,9 @@ const Header = () => {
                 className={`${
                   isHomePage() ? "active-page" : ""
                 } header__navbar-link`}
+                onClick={(e) => {
+                  window.scrollTo(0, 0);
+                }}
               >
                 Home
               </Link>
@@ -61,6 +65,9 @@ const Header = () => {
                 className={`${
                   isAboutPage() ? "active-page" : ""
                 } header__navbar-link`}
+                onClick={(e) => {
+                  window.scrollTo(0, 0);
+                }}
               >
                 About
               </Link>
@@ -71,6 +78,9 @@ const Header = () => {
                 className={`${
                   isWorkPage() ? "active-page" : ""
                 } header__navbar-link`}
+                onClick={(e) => {
+                  window.scrollTo(0, 0);
+                }}
               >
                 Work
               </Link>
@@ -81,6 +91,9 @@ const Header = () => {
                 className={`${
                   isExpertisePage() ? "active-page" : ""
                 } header__navbar-link`}
+                onClick={(e) => {
+                  window.scrollTo(0, 0);
+                }}
               >
                 Expertise
               </Link>
@@ -91,6 +104,9 @@ const Header = () => {
             className={`${
               isContactPage() ? "active-page" : ""
             } header__navbar-link button`}
+            onClick={(e) => {
+              window.scrollTo(0, 0);
+            }}
           >
             Contact
           </Link>

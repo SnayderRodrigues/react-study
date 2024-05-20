@@ -15,26 +15,14 @@
   &__logo {
     display: flex;
     align-items: center;
-    font-size: 2rem;
-    font-weight: 900;
+    gap: 1rem;
+    font-size: 1.75rem;
+    font-weight: 700;
     overflow: hidden;
-
-    .slide-up {
-      // background-color: yellow;
-      display: block;
-      margin-left: 0.5rem;
-      transform: translateY(100%);
-      opacity: 0;
-      transition: all 300ms linear;
-    }
-    
-    &:hover > .slide-up {
-      transform: translateY(0);
-      opacity: 1;
-      transition: all 300ms linear;
-    }
-  
   }
+  // &__logo-icon {
+  //   width: 32px;
+  // }
   &__navbar {
     display: flex;
     align-items: center;

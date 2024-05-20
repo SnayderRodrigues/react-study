@@ -28,6 +28,19 @@ const ContactPageFooter = () => {
               <span>London AAA 000, UK</span>
             </div>
           </div>
+        </div>
+        <div className="contactPage-footer__logo-wrapper">
+          <div className="contactPage-footer__logo">
+            <a href="/">
+              <span>
+                [<span className="highlight">Array</span>] Studio
+              </span>
+            </a>
+            <span>
+              &copy; {new Date().getFullYear()} Array Studio. All rights
+              reserved.
+            </span>
+          </div>
           <div className="contactPage-footer__socials">
             <span>
               <FaAsterisk />
@@ -56,16 +69,6 @@ const ContactPageFooter = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="contactPage-footer__logo">
-          <a href="/">
-            <span>
-              [<span className="highlight">Array</span>] Studio
-            </span>
-          </a>
-          <span>
-            &copy; {new Date().getFullYear()} Array Studio. All rights reserved.
-          </span>
         </div>
       </div>
     </footer>

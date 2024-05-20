@@ -19,6 +19,12 @@
     padding: 8rem 0 4rem;
     
   }
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 3rem;
+  }
   &__logo {
     width: fit-content;
     display: flex;

@@ -1,6 +1,7 @@
 import React from "react";
 // import "./contactpage.scss";
 import { FaAsterisk } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 import ContactPageFooter from "./ContactPageFooter";
 
 const ContactPage = () => {
@@ -35,10 +36,18 @@ const ContactPage = () => {
                   <FaAsterisk />
                   Socials
                 </span>
-                <span>Instagram</span>
-                <span>LinkedIn</span>
-                <span>Unsplash</span>
-                <span>X</span>
+                <span>
+                  Instagram <MdArrowOutward />
+                </span>
+                <span>
+                  LinkedIn <MdArrowOutward />
+                </span>
+                <span>
+                  Unsplash <MdArrowOutward />
+                </span>
+                <span>
+                  X <MdArrowOutward />
+                </span>
               </div>
             </div>
             <div className="contactPage__form">
