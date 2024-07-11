@@ -10,7 +10,7 @@ const Hero = () => {
           <h1>
             Producing <br />{" "}
             <span className="highlight hero-span-hidden">Extraordinary</span>{" "}
-            Visuals
+            Visuals.
           </h1>
           <p>Award-winning visual studio based in UK.</p>
         </div>
