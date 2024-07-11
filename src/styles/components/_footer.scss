@@ -40,7 +40,7 @@
       }
 
       &:hover {
-        color: var(--green);
+        color: var(--light-blue);
 
         svg {
           transform: translateX(20px);
@@ -65,7 +65,7 @@
           gap: 0.625rem;
 
           svg {
-            color: var(--green);
+            color: var(--light-blue);
           }
         }
       }
@@ -102,7 +102,7 @@
       padding: 8px 12px;
 
       svg {
-        color: var(--green);
+        color: var(--light-blue);
       }
     }
   }
@@ -116,7 +116,7 @@
 
       &:hover {
         color: var(--text-color);
-        background-color: var(--green);
+        background-color: var(--light-blue);
       }
     }
   }

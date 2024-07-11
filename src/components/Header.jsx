@@ -40,9 +40,7 @@ const Header = () => {
         <nav className="header__navbar">
           <a href="/" className="header__logo">
             {/* <img src={Logo} alt="" className="header__logo-icon"/> */}
-            <span>
-              [<span className="highlight">Array</span>] Studio
-            </span>
+            <span>\English School</span>
           </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">
@@ -55,7 +53,7 @@ const Header = () => {
                   window.scrollTo(0, 0);
                 }}
               >
-                Home
+                Início
               </Link>
             </li>
             <li className="header__navbar-li">
@@ -69,20 +67,7 @@ const Header = () => {
                   window.scrollTo(0, 0);
                 }}
               >
-                About
-              </Link>
-            </li>
-            <li className="header__navbar-li">
-              <Link
-                to="/work"
-                className={`${
-                  isWorkPage() ? "active-page" : ""
-                } header__navbar-link`}
-                onClick={(e) => {
-                  window.scrollTo(0, 0);
-                }}
-              >
-                Work
+                Sobre
               </Link>
             </li>
             <li className="header__navbar-li">
@@ -95,7 +80,20 @@ const Header = () => {
                   window.scrollTo(0, 0);
                 }}
               >
-                Expertise
+                Cursos
+              </Link>
+            </li>
+            <li className="header__navbar-li">
+              <Link
+                to="/work"
+                className={`${
+                  isWorkPage() ? "active-page" : ""
+                } header__navbar-link`}
+                onClick={(e) => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Blog
               </Link>
             </li>
           </ul>
@@ -108,7 +106,7 @@ const Header = () => {
               window.scrollTo(0, 0);
             }}
           >
-            Contact
+            Contato
           </Link>
         </nav>
       </div>

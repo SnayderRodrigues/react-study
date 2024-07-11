@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaUnsplash } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { FaAsterisk } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 
@@ -17,7 +17,9 @@ const Footer = () => {
           <span>Your Story, Our Lens:</span>
           <Link to="contact" className="footer__contact-link">
             <span>
-              <span className="link">Let's create <IoMdArrowForward /></span>
+              <span className="link">
+                Let's create <IoMdArrowForward />
+              </span>
               extraordinary visuals
             </span>
           </Link>
@@ -49,19 +51,24 @@ const Footer = () => {
         <div className="footer__logo-wrapper">
           <a href="/" className="footer__logo">
             <span>
-              [<span className="highlight">Array</span>] Studio
+              \English School
             </span>
           </a>
           <span>
-            &copy; {new Date().getFullYear()} Array Studio. All rights reserved.
+            &copy; {new Date().getFullYear()} English School. Todos os direitos reservados.
           </span>
         </div>
         <div className="footer__socials">
           <span>
             <FaAsterisk />
-            Our Socials
+            Redes Sociais
           </span>
           <ul className="footer__socials-ul">
+            <li>
+              <a href="" className="link button">
+                <FaFacebook /> Facebook
+              </a>
+            </li>
             <li>
               <a href="" className="link button">
                 <FaInstagram /> Instagram
@@ -70,11 +77,6 @@ const Footer = () => {
             <li>
               <a href="" className="link button">
                 <FaLinkedinIn /> LinkedIn
-              </a>
-            </li>
-            <li>
-              <a href="" className="link button">
-                <FaUnsplash /> Unsplash
               </a>
             </li>
             <li>

@@ -77,15 +77,15 @@ option {
 select:focus,
 input:focus {
   outline: 0;
-  border-bottom: 1px solid var(--green);
-  box-shadow: 0 1px 0 0 var(--green);
+  border-bottom: 1px solid var(--light-blue);
+  box-shadow: 0 1px 0 0 var(--light-blue);
 }
 
 textarea:focus,
 textarea:focus-visible {
   outline: 0;
-  border: 1px solid var(--green);
-  box-shadow: 0 0 0 1px var(--green);
+  border: 1px solid var(--light-blue);
+  box-shadow: 0 0 0 1px var(--light-blue);
 }
 
 .wrapper {
@@ -135,7 +135,7 @@ button {
 }
 
 .highlight {
-  background: var(--gradient);
+  background: var(--accent-color);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
