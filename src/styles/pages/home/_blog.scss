@@ -1,8 +1,10 @@
 @use "../../../styles/util/" as u;
 
-.work {
+.blog {
   background-color: var(--bg-color);
-  padding: var(--section-pd);
+  padding: 12rem 0;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 
   &__wrapper {
     display: flex;

@@ -3,9 +3,7 @@
 .testemonials {
   color: var(--text-color-2);
   background-color: var(--bg-color);
-  padding: 12rem 0;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  padding: var(--section-pd);
 
   &__container {
     display: flex;

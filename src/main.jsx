@@ -49,12 +49,12 @@ const router = createBrowserRouter([
         element: <AboutPage />,
       },
       {
-        path: "work",
-        element: <WorkPage />,
-      },
-      {
         path: "expertise",
         element: <ExpertisePage />,
+      },
+      {
+        path: "work",
+        element: <WorkPage />,
       },
       {
         path: "contact",
