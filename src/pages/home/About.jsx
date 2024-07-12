@@ -16,18 +16,12 @@ const About = () => {
       <div className="wrapper about__wrapper">
         <div className="about__headline">
           <h2>
-            <span>We capture,</span> <span>craft,</span>{" "}
-            <span>and deliver</span>
-          </h2>
-          <h2>
-            <span className="highlight">world-class</span> visual content for
-          </h2>
-          <h2>
-            <span>forward-thinking brands.</span>
+            Não se trata apenas de aprender inglês. É sobre pessoas e como a
+            linguagem transforma suas vidas.
           </h2>
         </div>
 
-        <div className="about__cards-carousel">
+        {/* <div className="about__cards-carousel">
           <div className="about__cards-wrapper">
             <div className="about__card">
               <img src={Hootsuite} alt="" />
@@ -56,49 +50,47 @@ const About = () => {
               <img src={Walkme} alt="" />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <h2>OUR PASSION IS IN EVERY FRAME</h2>
+        <h2>NOSSA ESCOLA</h2>
         <div className="about__content-wrapper">
           <div className="about__content-description">
             <div className="about__content-text-1">
               <p>
-                We weave narratives through visual content that captivate,
-                inspire, and endure. With a blend of technical expertise and
-                boundless creativity, we pour our hearts into every project,
-                ensuring that each frame not only meets but exceeds
-                expectations.
+                Acreditamos que o inglês é a chave para o sucesso individual e
+                profissional. É a ponte que te conecta com novas culturas,
+                amplia seus horizontes e te impulsiona na conquista dos seus
+                sonhos.
               </p>
               <p>
-                Behind the lens, our dedicated team strives for perfection,
-                pushing boundaries and exploring new horizons to deliver visual
-                content that resonates deeply with our clients and their
-                audiences.
+                Com uma metodologia inovadora e personalizada, aulas online ao
+                vivo e professores experientes, te guiamos em uma jornada de
+                aprendizado eficiente e divertida.
               </p>
               <Link to="about" className="button link">
-                Read more about us
+                Saiba mais sobre nós
                 <IoMdArrowForward />
               </Link>
             </div>
             <div className="about__content-text-2">
               <div>
                 <span>12+</span>
-                <span>Years of experience</span>
+                <span>Anos de Experiência no Mercado de Ensino</span>
               </div>
 
               <div>
-                <span>250+</span>
-                <span>Projects completed</span>
+                <span>5000+</span>
+                <span>Alunos Formados com Sucesso</span>
               </div>
 
               <div>
-                <span>200+</span>
-                <span>Happy customers</span>
+                <span>80+</span>
+                <span>Professores Nativos e Certificados</span>
               </div>
             </div>
           </div>
           <div className="about__content-image">
-            <img src={AboutUsPhoto} alt=""/>
+            <img src={Cat} alt="" />
           </div>
         </div>
       </div>

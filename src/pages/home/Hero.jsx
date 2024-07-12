@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="wrapper hero__wrapper">
         <div className="hero__headline">
           <h1>
-            A Escola de Inglês que você <br />{" "}
+            A Escola de Inglês que Você <br />{" "}
             <span className="highlight hero-span-hidden">Merece</span>.
           </h1>
           <p>
