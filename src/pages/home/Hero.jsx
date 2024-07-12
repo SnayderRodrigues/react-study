@@ -8,19 +8,21 @@ const Hero = () => {
       <div className="wrapper hero__wrapper">
         <div className="hero__headline">
           <h1>
-            Producing <br />{" "}
-            <span className="highlight hero-span-hidden">Extraordinary</span>{" "}
-            Visuals.
+            A Escola de Inglês que você <br />{" "}
+            <span className="highlight hero-span-hidden">Merece</span>.
           </h1>
-          <p>Award-winning visual studio based in UK.</p>
+          <p>
+            Imagine ter a confiança para se comunicar em qualquer situação,
+            conquistar seus sonhos profissionais e explorar o mundo.
+          </p>
         </div>
         <div className="hero__button-wrapper">
           <Link to="contact" className="button hero__button link">
-            Contact us
+            Entre em Contato
             <IoMdArrowForward />
           </Link>
-          <Link to="work" className="button hero__button link">
-            See our work
+          <Link to="about" className="button hero__button link">
+            Sobre Nós
             <IoMdArrowForward />
           </Link>
         </div>
