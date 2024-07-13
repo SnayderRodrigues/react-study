@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <section id="blog" className="blog">
       <div className="wrapper blog__wrapper">
-        <h2>English School Blog</h2>
+        <h2>ENGLISH SCHOOL BLOG</h2>
         <div className="blog__image-wrapper">
           <img src={Cat} alt="" className="blog__image-1" />
         </div>

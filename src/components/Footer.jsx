@@ -14,13 +14,13 @@ const Footer = () => {
     <footer id="footer" className="footer">
       <div className="wrapper-footer contact__wrapper">
         <div className="contact__headline">
-          <span>Your Story, Our Lens:</span>
+          <span>Abra Portas para o Seu Futuro:</span>
           <Link to="contact" className="footer__contact-link">
             <span>
               <span className="link">
-                Let's create <IoMdArrowForward />
+                Junte-se a nós hoje <IoMdArrowForward />
               </span>
-              extraordinary visuals
+              e comece sua jornada.
             </span>
           </Link>
           {/* <Link to="contact" onClick={(e) => contactLink(e)}>
@@ -32,30 +32,21 @@ const Footer = () => {
           <div>
             <span>
               <FaAsterisk />
-              Reach Us
+              Contato
             </span>
-            <span>+1 000 000 000</span>
-            <span>contact@arraystudio.com</span>
-          </div>
-          <div>
-            <span>
-              <FaAsterisk />
-              Address
-            </span>
-            <span>000 Example Avenue,</span>
-            <span>London AAA 000, UK</span>
+            <span>+00 00000-0000</span>
+            <span>contato@englishschool.com</span>
           </div>
         </div>
       </div>
       <div className="wrapper-footer footer__wrapper">
         <div className="footer__logo-wrapper">
           <a href="/" className="footer__logo">
-            <span>
-              \English School
-            </span>
+            <span>\English School</span>
           </a>
           <span>
-            &copy; {new Date().getFullYear()} English School. Todos os direitos reservados.
+            &copy; {new Date().getFullYear()} English School. Todos os direitos
+            reservados.
           </span>
         </div>
         <div className="footer__socials">
