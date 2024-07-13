@@ -7,7 +7,7 @@ const WorkPage = () => {
     <main id="workpage">
       <section className="workPage-hero">
         <div className="wrapper workPage-hero__wrapper">
-          <h1>World-class Visual <br />Products, Vision to Action.</h1>
+          <h1>English School Blog</h1>
         </div>
       </section>
       <section className="workPage-works">
