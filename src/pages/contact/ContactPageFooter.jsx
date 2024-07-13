@@ -3,7 +3,7 @@ import { FaAsterisk } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaUnsplash } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
 const ContactPageFooter = () => {
   return (
@@ -14,39 +14,34 @@ const ContactPageFooter = () => {
             <div>
               <span>
                 <FaAsterisk />
-                Reach Us
+                Contato
               </span>
-              <span>+1 000 000 000</span>
-              <span>contact@arraystudio.com</span>
-            </div>
-            <div>
-              <span>
-                <FaAsterisk />
-                Address
-              </span>
-              <span>000 Example Avenue,</span>
-              <span>London AAA 000, UK</span>
+              <span>(00) 00000-0000</span>
+              <span>contato@englishschool.com</span>
             </div>
           </div>
         </div>
         <div className="contactPage-footer__logo-wrapper">
           <div className="contactPage-footer__logo">
             <a href="/">
-              <span>
-                [<span className="highlight">Array</span>] Studio
-              </span>
+              <span>\English School</span>
             </a>
             <span>
-              &copy; {new Date().getFullYear()} Array Studio. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} English School. Todos os
+              direitos reservados.
             </span>
           </div>
           <div className="contactPage-footer__socials">
             <span>
               <FaAsterisk />
-              Our Socials
+              Redes Sociais
             </span>
             <ul className="contactPage-footer__socials-ul">
+              <li>
+                <a href="" className="link button">
+                  <FaFacebook /> Facebook
+                </a>
+              </li>
               <li>
                 <a href="" className="link button">
                   <FaInstagram /> Instagram
@@ -55,11 +50,6 @@ const ContactPageFooter = () => {
               <li>
                 <a href="" className="link button">
                   <FaLinkedinIn /> LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="" className="link button">
-                  <FaUnsplash /> Unsplash
                 </a>
               </li>
               <li>

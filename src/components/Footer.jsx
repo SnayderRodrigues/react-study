@@ -34,7 +34,7 @@ const Footer = () => {
               <FaAsterisk />
               Contato
             </span>
-            <span>+00 00000-0000</span>
+            <span>(00) 00000-0000</span>
             <span>contato@englishschool.com</span>
           </div>
         </div>
