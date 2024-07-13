@@ -14,7 +14,7 @@ const Footer = () => {
     <footer id="footer" className="footer">
       <div className="wrapper-footer contact__wrapper">
         <div className="contact__headline">
-          <span>Abra Portas para o Seu Futuro:</span>
+          <span>Abra portas para o seu futuro:</span>
           <Link to="contact" className="footer__contact-link">
             <span>
               <span className="link">
