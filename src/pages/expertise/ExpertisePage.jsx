@@ -1,25 +1,14 @@
 import React from "react";
 // import "./expertisepage.scss";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
-import { BiCameraMovie } from "react-icons/bi";
-import { MdOutlineCameraAlt } from "react-icons/md";
-import { MdVideoCameraFront } from "react-icons/md";
-import { MdVideoSettings } from "react-icons/md";
-
-import { MdHomeWork } from "react-icons/md";
-import { TbArrowGuide } from "react-icons/tb";
-import { Md6K } from "react-icons/md";
-import { BsBadge3DFill } from "react-icons/bs";
+import { MdHideImage } from "react-icons/md";
 
 const ExpertisePage = () => {
   return (
     <main id="expertisepage">
       <section className="expertisePage-hero">
         <div className="wrapper expertisePage-hero__wrapper">
-          <h1>
-            Unique Approach. <br />
-            Crafting Visual Excellence.
-          </h1>
+          <h1>Título</h1>
         </div>
       </section>
       <section className="expertisePage-midpage">
@@ -28,100 +17,132 @@ const ExpertisePage = () => {
             <img src={Cat} alt="" />
           </div>
           <div className="expertisePage-midpage__headline">
-            <h2>Expertise that empowers.</h2>
+            <h2>Título</h2>
             <p>
-              We pride ourselves on our extensive expertise in photography and
-              videography, honed through years of dedication and a relentless
-              pursuit of excellence.
-            </p>
-            <p>
-              With a diverse team of professionals skilled in various techniques
-              and styles, we offer a comprehensive range of services to meet the
-              unique needs of each project.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+              mollitia dolores dolorum praesentium inventore ut quasi voluptatem
+              ea quam nam.
             </p>
           </div>
           <div className="expertisePage-midpage__cards-wrapper">
             <div className="expertisePage-midpage__card">
               <span>
-                <BiCameraMovie />
+                <MdHideImage />
               </span>
-              <h3>Videography</h3>
+              <h3>Aulas ao vivo 24h</h3>
               <p>
-                Ignite your visual storytelling with our excellent visual
-                productions for commercials, music videos, products and many
-                more.
+                Disponibilidade de aulas ao vivo em qualquer horário, permitindo
+                flexibilidade para os alunos.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <MdOutlineCameraAlt />
+                <MdHideImage />
               </span>
-              <h3>Photography</h3>
+              <h3>Professores Nativos</h3>
               <p>
-                From meticulously composed portraits to dynamic product shots,
-                we tailor each session to your unique vision.
+                Instrutores que são falantes nativos de inglês, garantindo uma
+                experiência autêntica e imersiva.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <MdVideoCameraFront />
+                <MdHideImage />
               </span>
-              <h3>Content Creation</h3>
+              <h3>Conteúdo Inovador</h3>
               <p>
-                Transforming ideas into captivating visuals, we offer a
-                comprehensive approach to bringing your vision to life.
+                Material didático atualizado e inovador que acompanha as
+                tendências mais recentes de ensino.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <MdVideoSettings />
+                <MdHideImage />
               </span>
-              <h3>Editing & Post-Production</h3>
+              <h3>Metodologia Personalizada</h3>
               <p>
-                With meticulous attention to detail, we work tirelessly to
-                refine your content, ensuring every frame is optimized for
-                maximum impact.
+                Planos de estudo personalizados de acordo com as necessidades e
+                objetivos de cada aluno.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <MdHomeWork />
+                <MdHideImage />
               </span>
-              <h3>Studio Rental</h3>
+              <h3>Acompanhamento Individualizado</h3>
               <p>
-                A flexible and professional environment, meticulously designed
-                to accommodate a wide range of projects and productions.
+                Feedback constante e suporte individual para acompanhar o
+                progresso dos alunos.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <TbArrowGuide />
+                <MdHideImage />
               </span>
-              <h3>Creative Direction</h3>
+              <h3>Plataforma Interativa</h3>
               <p>
-                Our team of experts is dedicated to understanding your goals,
-                refining your ideas, and guiding you through every step of the
-                creative process.
+                Uso de uma plataforma online interativa que facilita o
+                aprendizado e o engajamento dos alunos.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <Md6K />
+                <MdHideImage />
               </span>
-              <h3>Realistic Immersion</h3>
+              <h3>Aulas de Conversação</h3>
               <p>
-                Production environment with equipment capable of craft visual
-                narratives that blur the line between fantasy and reality.
+                Sessões focadas em melhorar a fluência e a confiança dos alunos
+                ao falar inglês.
               </p>
             </div>
             <div className="expertisePage-midpage__card">
               <span>
-                <BsBadge3DFill />
+                <MdHideImage />
               </span>
-              <h3>3D Projects</h3>
+              <h3>Preparação para Exames</h3>
               <p>
-                Using the latest software and techniques, we transform ideas
-                into immersive 3D environments.
+                Cursos específicos para preparação de exames de proficiência,
+                como TOEFL, IELTS, entre outros.
+              </p>
+            </div>
+            <div className="expertisePage-midpage__card">
+              <span>
+                <MdHideImage />
+              </span>
+              <h3>Acompanhamento via WhatsApp</h3>
+              <p>
+                Suporte contínuo e direto pelo WhatsApp para esclarecer dúvidas
+                e oferecer orientação.
+              </p>
+            </div>
+            <div className="expertisePage-midpage__card">
+              <span>
+                <MdHideImage />
+              </span>
+              <h3>Teste de Nível</h3>
+              <p>
+                Avaliação precisa do nível de inglês dos alunos para direcionar
+                o ensino de acordo com suas necessidades específicas.
+              </p>
+            </div>
+            <div className="expertisePage-midpage__card">
+              <span>
+                <MdHideImage />
+              </span>
+              <h3>Inglês instrumental</h3>
+              <p>
+                Cursos focados em habilidades específicas, como leitura técnica
+                ou redação acadêmica, para atender às necessidades dos alunos.
+              </p>
+            </div>
+            <div className="expertisePage-midpage__card">
+              <span>
+                <MdHideImage />
+              </span>
+              <h3>Certificação Reconhecida</h3>
+              <p>
+                Certificados reconhecidos internacionalmente que comprovam o
+                nível de proficiência alcançado pelos nossos alunos.
               </p>
             </div>
           </div>
@@ -134,53 +155,24 @@ const ExpertisePage = () => {
               <img src={Cat} alt="" />
             </div>
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Build your brand and increase engagement</h3>
+              <h3>Título do Curso</h3>
               <p>
-                We craft captivating visuals specifically designed to elevate
-                your brand image and spark engagement with your audience. We
-                ensure that we balance brand communications with tactical
-                functionality at all stages of your audience's journey.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
+                velit delectus! Dolorem esse aut pariatur debitis distinctio,
+                ipsam quidem in et est repudiandae, animi culpa deleniti itaque
+                provident perspiciatis perferendis.
               </p>
             </div>
           </div>
           <div className="expertisePage-ending__content">
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Creative storytelling</h3>
+              <h3>Título do Curso</h3>
               <p>
-                Translate your brand's essence into compelling visual
-                experiences and bring your narrative to life in a way that
-                captivates and engages your audience. We ensure that each
-                element is meticulously designed to resonate with your audience,
-                crafting stories that evoke emotions and create lasting
-                impressions to make your brand unforgettable.
-              </p>
-            </div>
-            <div className="expertisePage-ending__image-wrapper">
-              <img src={Cat} alt="" />
-            </div>
-          </div>
-          <div className="expertisePage-ending__content">
-            <div className="expertisePage-ending__image-wrapper">
-              <img src={Cat} alt="" />
-            </div>
-            <div className="expertisePage-ending__text-wrapper">
-              <h3>From startups to enterprise</h3>
-              <p>
-                Whether you're a burgeoning brand or a seasoned leader, we
-                tailor our expertise to meet your needs. We understand the
-                unique challenges faced at each stage, and our creative
-                solutions empower you to stand out in a crowded marketplace.
-              </p>
-            </div>
-          </div>
-          <div className="expertisePage-ending__content">
-            <div className="expertisePage-ending__text-wrapper">
-              <h3>Crafted with your vision in mind</h3>
-              <p>
-                We believe every brand deserves a unique visual story. Our
-                collaborative approach ensures your vision takes center stage,
-                with every element meticulously crafted to bring your message to
-                life in an authentic and impactful way.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Repellendus, nam sunt consequuntur exercitationem quos
+                consectetur! Debitis voluptate architecto unde culpa sequi odit
+                doloremque ipsam velit incidunt earum fuga, dignissimos
+                assumenda!
               </p>
             </div>
             <div className="expertisePage-ending__image-wrapper">
@@ -192,24 +184,52 @@ const ExpertisePage = () => {
               <img src={Cat} alt="" />
             </div>
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Build clarity, drive impact</h3>
+              <h3>Título do Curso</h3>
               <p>
-                We go beyond aesthetics to create visuals that connect with your
-                audience on a deeper level. Our storytelling approach is
-                intuitive, accessible, and aligned with your organisational
-                objectives, helping you define your brand voice, build clarity
-                around your message, and ultimately drive the impact you desire.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                enim, debitis iure dignissimos expedita obcaecati iusto quidem
+                soluta? Dicta nam nisi ea nobis natus expedita consequuntur quas
+                dolor assumenda saepe.
               </p>
             </div>
           </div>
           <div className="expertisePage-ending__content">
             <div className="expertisePage-ending__text-wrapper">
-              <h3>Drive conversions through better digital</h3>
+              <h3>Título do Curso</h3>
               <p>
-                In today's digital landscape, captivating visuals are essential
-                for driving conversions. We craft video and photo content
-                specifically designed to engage your audience, generate leads,
-                and propel your brand towards its full potential.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                quaerat quis officiis ipsam necessitatibus. Vitae porro
+                quibusdam cupiditate voluptatem asperiores saepe quae
+                accusantium maiores, delectus accusamus nisi corporis ullam
+                molestias.
+              </p>
+            </div>
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+          </div>
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__image-wrapper">
+              <img src={Cat} alt="" />
+            </div>
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Título do Curso</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
+                iusto voluptatum fugiat eveniet ipsa vel dolore porro distinctio
+                sit! Atque placeat sapiente commodi recusandae et expedita quia,
+                quos quasi mollitia!
+              </p>
+            </div>
+          </div>
+          <div className="expertisePage-ending__content">
+            <div className="expertisePage-ending__text-wrapper">
+              <h3>Título do Curso</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                in provident porro! Excepturi amet aliquid vitae. Facilis,
+                consequuntur et saepe quae repellat quod qui natus cupiditate
+                incidunt! Omnis, expedita porro!
               </p>
             </div>
             <div className="expertisePage-ending__image-wrapper">
