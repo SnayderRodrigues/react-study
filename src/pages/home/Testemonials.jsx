@@ -6,35 +6,32 @@ const Testemonials = () => {
     <section className="testemonials">
       <div className="wrapper testemonials__wrapper">
         <div className="testemonials__container">
-          <h2>TESTEMONIALS</h2>
+          <h2>DEPOIMENTOS</h2>
           <div className="testemonials__card-wrapper">
             <div className="testemonials__card">
               <p>
-                "Working with Array Studio was fantastic! They captured the
-                essence of our brand perfectly in both photos and videos. The
-                final product exceeded our expectations, and the post-production
-                editing was flawless."
+                "A Talkative transformou minha experiência de aprendizado. As
+                aulas são dinâmicas e os professores são extremamente dedicados.
+                Hoje, me sinto muito mais confiante para conversar em inglês!"
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>Sarah M.</span>
-                  <span>Bloom Cosmetics</span>
+                  <span>Ana Paula</span>
                 </div>
               </div>
             </div>
             <div className="testemonials__card">
               <p>
-                "From the initial consultation to the final delivery, Array
-                Studio provided exceptional service. Their creativity and
-                attention to detail truly shined through. We'll definitely be
-                returning for future projects."
+                "A flexibilidade de horários e a qualidade dos professores da
+                Talkative são incríveis. Consigo estudar no meu próprio ritmo, o
+                que tem sido essencial para o meu desenvolvimento. Melhor
+                decisão que já tomei!"
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>David L.</span>
-                  <span>The Rustic Table</span>
+                  <span>Lucas</span>
                 </div>
               </div>
             </div>
@@ -42,30 +39,29 @@ const Testemonials = () => {
           <div className="testemonials__card-wrapper">
             <div className="testemonials__card">
               <p>
-                "I was nervous about my headshot photoshoot, but the team at
-                Array Studio made me feel comfortable and confident. They helped
-                me achieve a professional and polished look that I love."
+                "Nunca pensei que aprender inglês poderia ser tão divertido e
+                eficiente. As aulas são personalizadas para o meu ritmo e nível
+                de conhecimento. Recomendo a Talkative para todos que querem
+                realmente aprender."
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>Emily C.</span>
-                  <span>Freelance Writer</span>
+                  <span>Alexandre</span>
                 </div>
               </div>
             </div>
             <div className="testemonials__card">
               <p>
-                "Array Studio brought our vision for a product launch video to
-                life. Their collaborative spirit and expertise in storytelling
-                made the entire process seamless. We couldn't be happier with
-                the final result."
+                "Graças à Talkative, consegui uma promoção no trabalho que
+                exigia fluência em inglês. As aulas são práticas e focadas em
+                situações reais do dia a dia. Estou muito satisfeita com meu
+                progresso!"
               </p>
               <div className="testemonials__card-title">
                 <img src={Cat} alt="" />
                 <div>
-                  <span>John P.</span>
-                  <span>GreenTech Solutions</span>
+                  <span>Mariana</span>
                 </div>
               </div>
             </div>
