@@ -53,7 +53,7 @@ const router = createBrowserRouter([
         element: <ExpertisePage />,
       },
       {
-        path: "work",
+        path: "blog",
         element: <WorkPage />,
       },
       {

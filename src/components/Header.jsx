@@ -25,7 +25,7 @@ const Header = () => {
     return location.pathname === "/about";
   };
   const isWorkPage = () => {
-    return location.pathname === "/work";
+    return location.pathname === "/blog";
   };
   const isExpertisePage = () => {
     return location.pathname === "/expertise";
@@ -85,7 +85,7 @@ const Header = () => {
             </li>
             <li className="header__navbar-li">
               <Link
-                to="/work"
+                to="/blog"
                 className={`${
                   isWorkPage() ? "active-page" : ""
                 } header__navbar-link`}

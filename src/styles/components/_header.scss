@@ -20,6 +20,11 @@
     font-weight: 900;
     letter-spacing: -1px;
     overflow: hidden;
+    transition: color 500ms cubic-bezier(0.23, 1, 0.32, 1);
+
+    &:hover {
+      color: var(--accent-color);
+    }
   }
   // &__logo-icon {
   //   width: 32px;
@@ -42,15 +47,14 @@
     border-radius: 999px;
   }
   &__navbar-li:not(:last-child) {
-    margin-right: 8px;
+    margin-right: 1rem;
   }
   &__navbar-link {
-    display: flex;
-    padding: 12px 16px 12px;
-    display: flex;
+    font-weight: 600;
     width: fit-content;
-    border: none;
-    border-radius: 999px;
+    padding: 12px 16px 12px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -70,10 +74,18 @@
       background-color: var(--accent-color);
     }
   }
+  &__navbar > &__navbar-link {
+    border: 0;
+  }
   .active-page {
-    color: var(--text-color-2);
-    background-color: var(--accent-color)!important;
+    // color: var(--text-color-2);
+    // background-color: var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
     transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .header__navbar-link.button.active-page {
+    border: 0;
+    background-color: var(--accent-color);
   }
 }
 

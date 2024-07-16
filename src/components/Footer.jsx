@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <footer id="footer" className="footer">
-      <div className="wrapper-footer contact__wrapper">
+      <div className="wrapper contact__wrapper">
         <div className="contact__headline">
           <span>Abra portas para o seu futuro:</span>
           <Link to="contact" className="footer__contact-link">
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="wrapper-footer footer__wrapper">
+      <div className="wrapper footer__wrapper">
         <div className="footer__logo-wrapper">
           <a href="/" className="footer__logo">
             <span>\English School</span>

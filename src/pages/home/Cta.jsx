@@ -47,7 +47,7 @@ const Cta = () => {
               eveniet voluptatibus.
             </span>
             <Link to="contact" className="button cta__button link">
-              Mais informações sobre os cursos
+              Mais informações
               <IoMdArrowForward />
             </Link>
           </div>
