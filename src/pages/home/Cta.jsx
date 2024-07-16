@@ -14,7 +14,7 @@ const Cta = () => {
           </p>
         </div>
         <div className="cta__button-wrapper">
-          <Link to="contact" className="button link">
+          <Link to="contact" className="button cta__button link">
             Entre em contato
             <IoMdArrowForward />
           </Link>

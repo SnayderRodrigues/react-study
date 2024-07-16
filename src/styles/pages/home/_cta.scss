@@ -1,4 +1,13 @@
 .cta {
-    background-color: var(--bg-color);
+    color: var(--text-color-2);
+    background-color: var(--dark-blue);
     padding: 12rem 0;
+
+    &__headline {
+        margin-bottom: 2rem;
+    }
+    &__button {
+        color: var(--text-color);
+        background-color: var(--light-blue);
+    }
 }
