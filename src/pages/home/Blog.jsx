@@ -8,14 +8,11 @@ const Blog = () => {
     <section id="blog" className="blog">
       <div className="wrapper blog__wrapper">
         <h2>ENGLISH SCHOOL BLOG</h2>
-        <div className="blog__image-wrapper">
-          <img src={Cat} alt="" className="blog__image-1" />
-        </div>
         <div className="blog__grid-wrapper">
-          <img src={Cat} alt="" className="blog__image-2" />
-          <img src={Cat} alt="" className="blog__image-3" />
-          <img src={Cat} alt="" className="blog__image-4" />
-          <img src={Cat} alt="" className="blog__image-5" />
+          <img src={Cat} alt="" className="blog__image" />
+          <img src={Cat} alt="" className="blog__image" />
+          <img src={Cat} alt="" className="blog__image" />
+          <img src={Cat} alt="" className="blog__image" />
         </div>
         <Link to="blog" className="button link">
           Leia mais artigos

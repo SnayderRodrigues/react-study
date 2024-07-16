@@ -1,0 +1,16 @@
+.blogPage-hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
