@@ -40,7 +40,7 @@ const Header = () => {
         <nav className="header__navbar">
           <a href="/" className="header__logo">
             {/* <img src={Logo} alt="" className="header__logo-icon"/> */}
-            <span>\English School</span>
+            <span>Talkative</span>
           </a>
           <ul className="header__navbar-ul">
             <li className="header__navbar-li">
@@ -97,17 +97,17 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <Link
-            to="contact"
-            className={`${
-              isContactPage() ? "active-page" : ""
-            } header__navbar-link button`}
-            onClick={(e) => {
-              window.scrollTo(0, 0);
-            }}
-          >
-            Contato
-          </Link>
+              <Link
+                to="contact"
+                className={`${
+                  isContactPage() ? "active-page" : ""
+                } header__navbar-link button`}
+                onClick={(e) => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Contato
+              </Link>
         </nav>
       </div>
     </header>
