@@ -3,7 +3,6 @@ import Hero from "./Hero";
 import About from './About';
 import Blog from "./Blog";
 import Expertise from "./Expertise";
-import Awards from "./Awards";
 import Testemonials from './Testemonials';
 
 const HomePage = () => {
@@ -12,7 +11,6 @@ const HomePage = () => {
       <Hero />
       <About />
       <Expertise />
-      <Awards />
       <Testemonials />
       <Blog />
     </main>
