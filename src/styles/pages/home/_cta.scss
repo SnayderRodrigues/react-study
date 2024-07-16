@@ -1,13 +1,37 @@
 .cta {
-    color: var(--text-color-2);
-    background-color: var(--dark-blue);
-    padding: 12rem 0;
+  color: var(--text-color-2);
+  background-color: var(--black);
+  padding: 12rem 0;
 
-    &__headline {
+  &__headline {
+    margin-bottom: 4rem;
+  }
+  &__card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  &__card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--black-shade);
+    padding: 2rem;
+    border-radius: 2rem;
+
+    & > svg {
+        width: 2.5rem;
+        height: 2.5rem;
         margin-bottom: 2rem;
     }
-    &__button {
-        color: var(--text-color);
-        background-color: var(--light-blue);
+    span:nth-of-type(1) {
+        font-weight: 700;
     }
+  }
+//   &__button {
+//     color: var(--text-color);
+//     background-color: var(--light-blue);
+//   }
 }
