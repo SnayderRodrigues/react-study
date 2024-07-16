@@ -1,59 +1,82 @@
 @use "../../../styles/util/" as u;
 
 .testemonials {
-  color: var(--text-color-2);
   background-color: var(--bg-color);
   padding: var(--section-pd);
 
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-    background-color: var(--dark-blue);
-    padding: 8rem 4rem;
-    border-radius: 2rem;
   }
   &__card-wrapper {
     display: flex;
-    gap: 4rem;
-    margin-right: 24rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2.5rem;
+    overflow: visible;
   }
   &__card {
-    width: 50%;
+    min-width: 30rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    color: var(--text-color-4);
-    padding: 2rem;
+    background-color: var(--white);
+    padding: 1.5rem;
     border-radius: 2rem;
     transition: background-color 300ms linear;
 
-    &:hover {
+    // &:nth-of-type(1), &:nth-of-type(2) {
+    //   flex: 2;
+    // }
+    // &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5) {
+    //   width: 100%;
+    // }
+    &:nth-of-type(1) {
+      transform: rotate(-5deg);
+    }
+    &:nth-of-type(2) {
+      transform: rotate(3deg);
+    }
+    &:nth-of-type(3) {
+      transform: rotate(3deg);
+    }
+    &:nth-of-type(4) {
+      transform: rotate(-3deg);
+    }
+    &:nth-of-type(5) {
+      transform: rotate(2deg);
+    }
+    &:nth-of-type(2), &:nth-of-type(4) {
       background-color: var(--light-blue);
     }
   }
-  &__card-title {
+  &__card-header {
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
+    // gap: 4rem;
+    margin-bottom: 4rem;
 
+    span {
+      font-size: 10rem;
+      margin-right: 4rem;
+    }
     img {
       aspect-ratio: 1/1;
-      border-radius: 50%;
-      width: 64px;
-      height: 64px;
+      border-radius: 1.5rem;
+      width: 12rem;
+      height: 15rem;
       object-fit: cover;
       margin-right: 1rem;
     }
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      span:first-child {
-        color: var(--text-color-2);
-        font-weight: 700;
-      }
+  }
+  &__card-text {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
     }
   }
 }
