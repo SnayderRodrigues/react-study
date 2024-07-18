@@ -8,7 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 const ContactPageFooter = () => {
   return (
     <footer id="contactPage-footer" className="contactPage-footer">
-      <div className="wrapper-footer contactPage-footer__wrapper">
+      <div className="wrapper contactPage-footer__wrapper">
         <div className="contactPage-footer__informations-wrapper">
           <div className="contactPage-footer__information">
             <div>
@@ -17,17 +17,17 @@ const ContactPageFooter = () => {
                 Contato
               </span>
               <span>(00) 00000-0000</span>
-              <span>contato@englishschool.com</span>
+              <span>contato@talkative.com</span>
             </div>
           </div>
         </div>
         <div className="contactPage-footer__logo-wrapper">
           <div className="contactPage-footer__logo">
             <a href="/">
-              <span>\English School</span>
+              <span>Talkative</span>
             </a>
             <span>
-              &copy; {new Date().getFullYear()} English School. Todos os
+              &copy; {new Date().getFullYear()} Talkative. Todos os
               direitos reservados.
             </span>
           </div>

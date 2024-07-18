@@ -35,17 +35,17 @@ const Footer = () => {
               Contato
             </span>
             <span>(00) 00000-0000</span>
-            <span>contato@englishschool.com</span>
+            <span>contato@talkative.com</span>
           </div>
         </div>
       </div>
       <div className="wrapper footer__wrapper">
         <div className="footer__logo-wrapper">
           <a href="/" className="footer__logo">
-            <span>\English School</span>
+            <span>Talkative</span>
           </a>
           <span>
-            &copy; {new Date().getFullYear()} English School. Todos os direitos
+            &copy; {new Date().getFullYear()} Talkative. Todos os direitos
             reservados.
           </span>
         </div>

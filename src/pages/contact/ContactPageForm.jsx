@@ -1,0 +1,110 @@
+import React from 'react'
+import { FaAsterisk } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
+
+const ContactPageForm = () => {
+  return (
+    <section className="contactPage-form">
+      <div className="wrapper contactPage-form__wrapper ">
+        <div className="contactPage-form__headline">
+          <h1>Get in Touch with Us.</h1>
+        </div>
+        <div className="contactPage-form__contact">
+          <div className="contactPage-form__contact-address">
+            <span className="contactPage-form__contact-title">
+              <FaAsterisk />
+              Address
+            </span>
+            <span className="address-span">000 Example Avenue</span>
+            <span className="address-span">London AAA 000</span>
+            <span className="address-span"> United Kingdom</span>
+          </div>
+          <div className="contactPage-form__contact-links">
+            <span className="contactPage-form__contact-title">
+              <FaAsterisk />
+              Contact
+            </span>
+            <span className="link-span">+1 000 000 000</span>
+            <span className="link-span">contact@arraystudio.com</span>
+          </div>
+          <div className="contactPage-form__contact-socials">
+            <span className="contactPage-form__contact-title">
+              <FaAsterisk />
+              Socials
+            </span>
+            <span>
+              Instagram <MdArrowOutward />
+            </span>
+            <span>
+              LinkedIn <MdArrowOutward />
+            </span>
+            <span>
+              Unsplash <MdArrowOutward />
+            </span>
+            <span>
+              X <MdArrowOutward />
+            </span>
+          </div>
+        </div>
+        <div className="contactPage-form__form">
+          <div className="contactPage-form__form-headline">
+            <h2>Send us a message.</h2>
+          </div>
+          <div className="contactPage-form__form-half">
+            <label>
+              What's your name?<span className="highlight">*</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Your name here"
+              aria-required="true"
+            />
+          </div>
+          <div className="contactPage-form__form-half">
+            <label>
+              Name of your company / brand?
+              <span className="highlight">*</span>
+            </label>
+            <input
+              type="text"
+              placeholder="Company name"
+              aria-required="true"
+            />
+          </div>
+          <div className="contactPage-form__form-half">
+            <label>
+              What's your phone number?<span className="highlight">*</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Your phone number"
+              aria-required="true"
+            />
+          </div>
+          <div className="contactPage-form__form-half">
+            <label>
+              What's your email address?<span className="highlight">*</span>
+            </label>
+            <input
+              type="email"
+              placeholder="Your email address"
+              aria-required="true"
+            />
+          </div>
+          <div className="contactPage-form__form-full">
+            <label>Tell us about the project</label>
+            <span>
+              Need stunning photos or videos for your brand? Let us know how we
+              can help.
+            </span>
+            <textarea name="message" id="" rows="6"></textarea>
+          </div>
+
+          <button className="button link">Submit</button>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ContactPageForm
