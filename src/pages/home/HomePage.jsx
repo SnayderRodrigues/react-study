@@ -1,10 +1,11 @@
 import React from 'react'
 import Hero from "./Hero";
 import About from './About';
-import Blog from "./Blog";
 import Expertise from "./Expertise";
 import Testemonials from './Testemonials';
 import Cta from './Cta';
+import Faq from './Faq';
+import Blog from "./Blog";
 
 const HomePage = () => {
   return (
@@ -14,6 +15,7 @@ const HomePage = () => {
       <Expertise />
       <Testemonials />
       <Cta />
+      <Faq />
       <Blog />
     </main>
   );
