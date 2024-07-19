@@ -1,0 +1,35 @@
+@use "../../../styles/util/" as u;
+
+.expertisePage-ending {
+  background-color: var(--bg-color);
+  padding: 0 0 4rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 8rem;
+  }
+  &__image-wrapper {
+    max-width: 50%;
+  }
+  &__text-wrapper {
+    max-width: 35%;
+
+    h3 {
+      font-size: u.rem(56);
+      margin-bottom: 2rem;
+    }
+    p {
+      color: var(--text-color-3);
+      font-size: u.rem(20);
+    }
+  }
+}
