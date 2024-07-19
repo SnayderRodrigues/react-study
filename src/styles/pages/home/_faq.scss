@@ -2,4 +2,77 @@
 
 .faq {
   background-color: var(--bg-color);
+  padding: 12rem 0 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+
+    h2 {
+      min-width: 100%;
+    }
+  }
+  &__text-wrapper {
+    flex: 1;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+  &__dropdown-wrapper {
+    flex: 2;
+  }
+  &__dropdown {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 2rem;
+  }
+  &__dropdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  &__dropdown-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-wrap: nowrap;
+    padding: 2rem;
+    font-weight: 700;
+    transition: 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+
+    span {
+      margin-right: 1rem;
+    }
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  &__dropdown &__dropdown-item:not(:last-of-type) &__dropdown-header {
+    border-bottom: 2px solid var(--bg-color);
+  }
+  &__dropdown-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+
+    div {
+      overflow: hidden;
+    }
+    div > p {
+      padding: 0 2rem 2rem 2rem;
+      margin: 0;
+    }
+  }
 }
