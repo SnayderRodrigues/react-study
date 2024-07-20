@@ -45,7 +45,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="faq">
+    <section className="faq" id="faq">
       <div className="wrapper faq__wrapper">
         <h2>FAQ</h2>
         <div className="faq__content">

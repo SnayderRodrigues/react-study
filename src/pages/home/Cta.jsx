@@ -34,7 +34,7 @@ const Cta = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum
               eveniet voluptatibus.
             </span>
-            <Link to="contact" className="button cta__button link">
+            <Link to="about" className="button cta__button link">
               Saiba mais sobre nós
               <IoMdArrowForward />
             </Link>
@@ -46,7 +46,7 @@ const Cta = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum
               eveniet voluptatibus.
             </span>
-            <Link to="contact" className="button cta__button link">
+            <Link to="expertise" className="button cta__button link">
               Mais informações
               <IoMdArrowForward />
             </Link>
@@ -58,10 +58,10 @@ const Cta = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum
               eveniet voluptatibus.
             </span>
-            <Link to="contact" className="button cta__button link">
+            <a href="#faq" className="button cta__button link">
               Leia nossas FAQs
               <IoMdArrowForward />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
