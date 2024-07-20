@@ -11,13 +11,37 @@ const Faq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  const questions = [
-    "Título da Pergunta 1",
-    "Título da Pergunta 2",
-    "Título da Pergunta 3",
-    "Título da Pergunta 4",
-    "Título da Pergunta 5",
-    "Título da Pergunta 6",
+  const faqItems = [
+    {
+      question: "Título da Pergunta 1",
+      answer:
+        "Resposta para a Pergunta 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+    },
+    {
+      question: "Título da Pergunta 2",
+      answer:
+        "Resposta para a Pergunta 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+    },
+    {
+      question: "Título da Pergunta 3",
+      answer:
+        "Resposta para a Pergunta 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+    },
+    {
+      question: "Título da Pergunta 4",
+      answer:
+        "Resposta para a Pergunta 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+    },
+    {
+      question: "Título da Pergunta 5",
+      answer:
+        "Resposta para a Pergunta 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+    },
+    {
+      question: "Título da Pergunta 6",
+      answer:
+        "Resposta para a Pergunta 6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+    },
   ];
 
   return (
@@ -38,7 +62,7 @@ const Faq = () => {
           </div>
           <div className="faq__dropdown-wrapper">
             <div className="faq__dropdown">
-              {questions.map((question, index) => (
+              {faqItems.map((item, index) => (
                 <div key={index} className="faq__dropdown-item">
                   <div
                     className={`faq__dropdown-header ${
@@ -46,19 +70,13 @@ const Faq = () => {
                     }`}
                     onClick={() => handleClick(index)}
                   >
-                    <span>{question}</span>
+                    <span>{item.question}</span>
                     <MdKeyboardArrowDown />
                   </div>
                   {openIndex === index && (
-                    <div class="faq__dropdown-content">
+                    <div className="faq__dropdown-content">
                       <div>
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Voluptatibus cupiditate odit reiciendis maiores
-                          suscipit vel quasi, id architecto dolore doloribus
-                          molestiae consectetur repellendus impedit aliquid eius
-                          nulla sint ducimus vitae.
-                        </p>
+                        <p>{item.answer}</p>
                       </div>
                     </div>
                   )}
