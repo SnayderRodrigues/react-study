@@ -24,18 +24,21 @@
   }
   &__headline {
     display: inline-block;
-    text-align: center;
     margin-bottom: 8rem;
 
     h2 {
       font-size: clamp(
         u.rem(44),
         1.8269230769230769rem + 4.615384615384616vw,
-        u.rem(126)
+        u.rem(96)
       );
       font-weight: 500;
       margin-bottom: 0;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    p:nth-of-type(1) {
+      font-weight: 700;
     }
   }
   &__cards-carousel {
@@ -44,25 +47,6 @@
     margin-bottom: 12rem;
     height: 30vh;
     overflow: hidden;
-  }
-  &__cards-wrapper {
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    // clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    animation: loop-up 3s infinite ease-in-out;
-  }
-  @keyframes loop-up {
-    0% {
-      transform: translateY(0);
-    }
-    75% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
   }
   &__card {
     width: 15%;

@@ -16,42 +16,12 @@ const About = () => {
       <div className="wrapper about__wrapper">
         <div className="about__headline">
           <h2>
-            Não se trata apenas de aprender inglês. É sobre pessoas e como a
-            linguagem transforma suas vidas.
+            "Não se trata apenas de aprender inglês. É sobre pessoas e como a
+            linguagem transforma suas vidas."
           </h2>
+          <p>Exemplo Nome</p>
+          <p>CEO da Talkative</p>
         </div>
-
-        {/* <div className="about__cards-carousel">
-          <div className="about__cards-wrapper">
-            <div className="about__card">
-              <img src={Hootsuite} alt="" />
-            </div>
-            <div className="about__card">
-              <img src={Uber} alt="" />
-            </div>
-            <div className="about__card">
-              <img src={UniEssex} alt="" />
-            </div>
-            <div className="about__card">
-              <img src={Walkme} alt="" />
-            </div>
-          </div>
-          <div className="about__cards-wrapper">
-            <div className="about__card">
-              <img src={Hootsuite} alt="" />
-            </div>
-            <div className="about__card">
-              <img src={Uber} alt="" />
-            </div>
-            <div className="about__card">
-              <img src={UniEssex} alt="" />
-            </div>
-            <div className="about__card">
-              <img src={Walkme} alt="" />
-            </div>
-          </div>
-        </div> */}
-
         <h2>NOSSA ESCOLA</h2>
         <div className="about__content-wrapper">
           <div className="about__content-description">
