@@ -4,14 +4,14 @@ import { FaAsterisk } from "react-icons/fa";
 
 const AboutPageTestemonials = () => {
   const sliderItems = [
-    <div className="aboutPageTestemonials__slider slider-active">
-      <h2 className="aboutPageTestemonials__headline">
+    <div className="aboutPage-testemonials__slider slider-active">
+      <h2 className="aboutPage-testemonials__headline">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vel quae
         dicta eaque nostrum consequuntur quas officia perspiciatis? Voluptate
         ipsum deserunt vero voluptatem blanditiis, delectus necessitatibus
         perferendis. Suscipit, expedita corrupti?
       </h2>
-      <div className="aboutPageTestemonials__author">
+      <div className="aboutPage-testemonials__author">
         <div className="author-div">
           <span className="author-name">
             <FaAsterisk /> Nome
@@ -19,14 +19,14 @@ const AboutPageTestemonials = () => {
         </div>
       </div>
     </div>,
-    <div className="aboutPageTestemonials__slider">
-      <h2 className="aboutPageTestemonials__headline">
+    <div className="aboutPage-testemonials__slider">
+      <h2 className="aboutPage-testemonials__headline">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
         aperiam corrupti vel eum inventore officiis, facere praesentium quia
         voluptatum dolores voluptates deserunt expedita maxime delectus
         repellendus optio dolor cumque veniam?
       </h2>
-      <div className="aboutPageTestemonials__author">
+      <div className="aboutPage-testemonials__author">
         <div className="author-div">
           <span className="author-name">
             <FaAsterisk /> Nome
@@ -34,14 +34,14 @@ const AboutPageTestemonials = () => {
         </div>
       </div>
     </div>,
-    <div className="aboutPageTestemonials__slider">
-      <h2 className="aboutPageTestemonials__headline">
+    <div className="aboutPage-testemonials__slider">
+      <h2 className="aboutPage-testemonials__headline">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum
         nam aperiam minus impedit itaque voluptatibus? Magni modi blanditiis
         possimus laborum praesentium recusandae. Nostrum facilis obcaecati
         impedit, minima tempora natus!
       </h2>
-      <div className="aboutPageTestemonials__author">
+      <div className="aboutPage-testemonials__author">
         <div className="author-div">
           <span className="author-name">
             <FaAsterisk /> Nome
@@ -49,14 +49,14 @@ const AboutPageTestemonials = () => {
         </div>
       </div>
     </div>,
-    <div className="aboutPageTestemonials__slider">
-      <h2 className="aboutPageTestemonials__headline">
+    <div className="aboutPage-testemonials__slider">
+      <h2 className="aboutPage-testemonials__headline">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio officia
         eos odio voluptas, blanditiis expedita, delectus a dolorum placeat
         voluptates vitae. Quasi est unde ut, dolore nihil quis reiciendis
         molestias.
       </h2>
-      <div className="aboutPageTestemonials__author">
+      <div className="aboutPage-testemonials__author">
         <div className="author-div">
           <span className="author-name">
             <FaAsterisk /> Nome
@@ -85,14 +85,14 @@ const AboutPageTestemonials = () => {
   };
 
   return (
-    <section className="aboutPageTestemonials">
-      <div className="wrapper-medium aboutPageTestemonials__wrapper">
+    <section className="aboutPage-testemonials">
+      <div className="wrapper-medium aboutPage-testemonials__wrapper">
         {sliderItems.map((item, index) =>
           React.cloneElement(item, {
             className:
               index === currentIndex
-                ? "aboutPageTestemonials__slider slider-active"
-                : "aboutPageTestemonials__slider",
+                ? "aboutPage-testemonials__slider slider-active"
+                : "aboutPage-testemonials__slider",
             key: index,
           })
         )}
