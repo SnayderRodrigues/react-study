@@ -11,29 +11,6 @@ import ExpertisePage from "./pages/expertise/ExpertisePage.jsx";
 import ContactPage from "./pages/contact/ContactPage.jsx";
 import ErrorPage from "./pages/error/ErrorPage.jsx";
 
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <HomePage />,
-//   },
-//   {
-//     path: "about",
-//     element: <AboutPage />,
-//   },
-//   {
-//     path: "work",
-//     element: <WorkPage />,
-//   },
-//   {
-//     path: "expertise",
-//     element: <ExpertisePage />,
-//   },
-//   {
-//     path: "contact",
-//     element: <ContactPage />,
-//   },
-// ]);
-
 const router = createBrowserRouter([
   {
     path: "/",
