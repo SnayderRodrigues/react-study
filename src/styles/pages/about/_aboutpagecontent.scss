@@ -1,0 +1,52 @@
+@use "../../../styles/util/" as u;
+
+.aboutPage-content {
+  background-color: var(--bg-color);
+  padding: 0 0 12rem;
+
+  &__image-wrapper {
+    margin-bottom: 12rem;
+    img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+  }
+  &__headline {
+    display: inline-block;
+    margin-bottom: 12rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  &__carousel {
+    display: flex;
+    background-color: var(--bg-color);
+
+    &-wrapper-1,
+    &-wrapper-2 {
+      min-width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      animation: loop-left 20s infinite linear;
+    }
+    .image-small,
+    .image-medium {
+      width: 20%;
+      object-fit: cover;
+    }
+    .image-small {
+      height: 360px;
+    }
+    .image-medium {
+      height: 490px;
+    }
+    @keyframes loop-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
+}
