@@ -73,13 +73,11 @@ const Faq = () => {
                     <span>{item.question}</span>
                     <MdKeyboardArrowDown />
                   </div>
-                  {openIndex === index && (
-                    <div className="faq__dropdown-content">
-                      <div>
-                        <p>{item.answer}</p>
-                      </div>
+                  <div className="faq__dropdown-content">
+                    <div>
+                      <p>{item.answer}</p>
                     </div>
-                  )}
+                  </div>
                 </div>
               ))}
             </div>
