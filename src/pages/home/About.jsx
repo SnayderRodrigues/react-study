@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
-import AboutUsPhoto from "../../img/daniel-lee-S9Zo6zF9cWE-unsplash-_1_.webp";
 import { IoMdArrowForward } from "react-icons/io";
-import Walkme from "../../assets/svg/walkme.svg"
-import UniEssex from "../../assets/svg/university-of-essex.svg"
-import Uber from "../../assets/svg/uber.svg"
-import Hootsuite from "../../assets/svg/hootsuite.svg"
 
 const About = () => {
   return (
@@ -14,18 +9,26 @@ const About = () => {
         <img src={Cat} alt="" className="about__image" />
       </div>
       <div className="wrapper about__wrapper">
-        <div className="about__headline">
-          <h2>
-            "Não se trata apenas de aprender inglês. É sobre pessoas e como a
-            linguagem transforma suas vidas."
-          </h2>
-          <p>Exemplo Nome</p>
-          <p>CEO da Talkative</p>
+        <div className="about__headline-wrapper">
+          <div>
+            <h2>
+              "Não se trata apenas de aprender inglês. É sobre pessoas e como a
+              linguagem transforma suas vidas."
+            </h2>
+            <p>Exemplo Nome</p>
+            <p>CEO da Talkative</p>
+          </div>
+          <div>
+            <img src={Cat} alt="" />
+          </div>
         </div>
         <h2>NOSSA ESCOLA</h2>
         <div className="about__content-wrapper">
+          <div className="about__content-image">
+            <img src={Cat} alt="" />
+          </div>
           <div className="about__content-description">
-            <div className="about__content-text-1">
+            <div className="about__content-text">
               <p>
                 Acreditamos que o inglês é a chave para o sucesso individual e
                 profissional. É a ponte que te conecta com novas culturas,
@@ -42,26 +45,23 @@ const About = () => {
                 <IoMdArrowForward />
               </Link>
             </div>
-            <div className="about__content-text-2">
-              <div>
-                <span>12+</span>
-                <span>Anos de Experiência no Mercado de Ensino</span>
-              </div>
-
-              <div>
-                <span>5000+</span>
-                <span>Alunos Formados com Sucesso</span>
-              </div>
-
-              <div>
-                <span>80+</span>
-                <span>Professores Nativos e Certificados</span>
-              </div>
+          </div>
+        </div>
+        <div className="about__info-wrapper">
+            <div>
+              <span>15+</span>
+              <span>Anos de Experiência no Mercado de Ensino</span>
             </div>
-          </div>
-          <div className="about__content-image">
-            <img src={Cat} alt="" />
-          </div>
+
+            <div>
+              <span>100000+</span>
+              <span>Alunos Matriculados em Nossos Cursos</span>
+            </div>
+
+            <div>
+              <span>1000+</span>
+              <span>Professores Nativos e Certificados</span>
+            </div>
         </div>
       </div>
     </section>

@@ -17,66 +17,50 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-
-    h2:last-of-type {
-      margin-bottom: 4rem;
-    }
   }
-  &__headline {
-    display: inline-block;
+  &__headline-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
     margin-bottom: 8rem;
 
+    div {
+      width: 50%;
+    }
     h2 {
-      font-size: clamp(
-        u.rem(44),
-        1.8269230769230769rem + 4.615384615384616vw,
-        u.rem(96)
-      );
+      font-size: 3rem;
       font-weight: 500;
-      margin-bottom: 0;
+      margin-bottom: 2rem;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
-
     p:nth-of-type(1) {
       font-weight: 700;
     }
   }
-  &__cards-carousel {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 12rem;
-    height: 30vh;
-    overflow: hidden;
-  }
-  &__card {
-    width: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    img {
-      border-radius: 0;
-    }
-  }
   &__content-wrapper {
     display: flex;
+    align-items: center;
     gap: 4rem;
+    margin-bottom: 8rem;
+  }
+    &__content-image {
+    width: 50%;
   }
   &__content-description {
-    width: 45%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 8rem;
   }
-  &__content-text-1 {
+  &__content-text {
     p {
       font-size: u.rem(26);
       margin-bottom: 2rem;
       // max-width: 40ch;
     }
   }
-  &__content-text-2 {
+  &__info-wrapper {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -95,8 +79,5 @@
         font-size: u.rem(26);
       }
     }
-  }
-  &__content-image {
-    width: 55%;
   }
 }
