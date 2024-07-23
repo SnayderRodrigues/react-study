@@ -93,7 +93,7 @@ const Expertise = () => {
             </p>
           </div>
           <Link to="expertise" className="button link">
-            Saiba mais
+            Mais sobre os cursos
             <IoMdArrowForward />
           </Link>
         </div>
