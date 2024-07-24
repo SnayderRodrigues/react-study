@@ -9,25 +9,11 @@ const AboutPageContent = () => {
           <img src={Cat} alt="" />
         </div>
         <h2 className="aboutPage-content__headline">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nemo
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nemo
           eum accusamus! Inventore fuga maxime atque id est, repudiandae ipsam
           omnis nemo dolore quod voluptatibus natus provident! Nostrum, illum
-          fugit!
+          fugit!"
         </h2>
-      </div>
-      <div className="aboutPage-content__carousel">
-        <div className="aboutPage-content__carousel-wrapper-1">
-          <img src={Cat} alt="" className="image-small" />
-          <img src={Cat} alt="" className="image-medium" />
-          <img src={Cat} alt="" className="image-small" />
-          <img src={Cat} alt="" className="image-medium" />
-        </div>
-        <div className="aboutPage-content__carousel-wrapper-2">
-          <img src={Cat} alt="" className="image-small" />
-          <img src={Cat} alt="" className="image-medium" />
-          <img src={Cat} alt="" className="image-small" />
-          <img src={Cat} alt="" className="image-medium" />
-        </div>
       </div>
     </section>
   );

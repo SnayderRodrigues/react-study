@@ -1,22 +1,22 @@
 @use "../../../styles/util/" as u;
 
 .aboutPage-testemonials {
-  color: var(--text-color-2);
-  background-color: var(--black);
-  padding: 12rem 0;
+  background-color: var(--bg-color);
+  padding: 0 0 12rem 0;
 
   &__wrapper {
     display: grid;
     position: relative;
   }
   &__slider {
-    background-color: var(--black);
+    background-color: var(--white);
     display: grid;
     grid-template-rows: 1fr auto;
     grid-area: 1 / -1;
-    margin: 0;
-    padding: 0;
     align-items: center;
+    padding: 4rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
     opacity: 0;
     z-index: 0;
     transform: translateY(10%);
@@ -55,16 +55,13 @@
     }
   }
   .navigation {
-    grid-area: 1 / -1;
+    position: relative;
     z-index: 1;
-    align-self: flex-end;
-    justify-self: flex-end;
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--black-shade);
     border-radius: 999px;
     transition: background-color 200ms linear;
-
-    &:hover {
-      background-color: var(--black-shade);
-    }
 
     &-div {
       display: flex;
@@ -81,13 +78,13 @@
     z-index: 999;
 
     svg {
-      font-size: u.rem(44);
-      color: var(--text-color-2);
+      font-size: u.rem(32);
+      color: var(--dark-gray);
       pointer-events: none;
       transition: color 200ms linear;
     }
     &:hover > svg {
-      color: var(--accent-color);
+      color: var(--white);
     }
   }
   .navigation-button-left {
