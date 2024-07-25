@@ -9,19 +9,36 @@
     position: relative;
   }
   &__card {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
     background-color: var(--white);
-    display: grid;
-    grid-template-columns: 0fr;
     padding: 4rem;
     border-radius: 2rem;
     margin-bottom: 2rem;
   }
   &__card.card-active {
-    grid-template-columns: 1fr;
+    position: relative;
+    left: auto;
+    width: auto;
+    height: auto;
   }
   &__card-content {
     display: flex;
+    flex-direction: column;
 
+    & > div {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+
+      h2,
+      img {
+        width: 50%;
+      }
+    }
     & > span {
       width: 100%;
       font-size: 8rem;

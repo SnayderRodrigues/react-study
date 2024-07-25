@@ -63,10 +63,12 @@ const AboutPageTestemonials = () => {
           >
             <div className="aboutPage-testemonials__card-content">
               <span>{item.number}</span>
-              <h2 className="aboutPage-testemonials__headline">
-                {item.testemonial}
-              </h2>
-              <img src={Cat} alt="" />
+              <div>
+                <h2 className="aboutPage-testemonials__headline">
+                  {item.testemonial}
+                </h2>
+                <img src={Cat} alt="" />
+              </div>
               <div className="aboutPage-testemonials__author">
                 <span className="author-name">
                   <FaAsterisk /> {item.author}
