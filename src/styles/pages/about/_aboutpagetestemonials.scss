@@ -8,26 +8,33 @@
     display: grid;
     position: relative;
   }
-  &__slider {
+  &__card {
     background-color: var(--white);
     display: grid;
-    grid-template-rows: 1fr auto;
-    grid-area: 1 / -1;
-    align-items: center;
+    grid-template-columns: 0fr;
     padding: 4rem;
     border-radius: 2rem;
     margin-bottom: 2rem;
-    opacity: 0;
-    z-index: 0;
-    transform: translateY(10%);
-    transition: opacity 300ms linear, transform 300ms linear;
   }
-  &__slider.slider-active {
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0);
+  &__card.card-active {
+    grid-template-columns: 1fr;
+  }
+  &__card-content {
+    display: flex;
+
+    & > span {
+      width: 100%;
+      font-size: 8rem;
+      color: var(--text-color-4);
+      margin-bottom: 2rem;
+    }
+    & > img {
+      flex: 1;
+    }
   }
   &__headline {
+    flex: 1;
+    font-size: 2rem;
     display: inline-block;
     margin-bottom: 4rem;
   }
