@@ -31,7 +31,7 @@
 
     & > div {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 2rem;
 
       h2,
@@ -58,23 +58,11 @@
   &__author {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-  }
-  .author-div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 
-    span:not(:first-of-type) {
-      color: var(--text-color-4);
-    }
-  }
-  .author-name {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
     svg {
+      color: var(--accent-color);
       margin-right: 0.625rem;
     }
   }
@@ -83,32 +71,34 @@
     z-index: 1;
     width: fit-content;
     height: fit-content;
-    background-color: var(--black-shade);
+    // background-color: var(--dark-blue);
     border-radius: 999px;
     transition: background-color 200ms linear;
 
     &-div {
       display: flex;
+      gap: 1rem;
     }
   }
   .navigation-button-left,
   .navigation-button-right {
     display: flex;
     align-items: center;
-    background-color: transparent;
+    background-color: var(--dark-blue);
     padding: 1.125rem;
+    border-radius: 50%;
     cursor: pointer;
     position: relative;
+    transition: background-color 200ms linear;
     z-index: 999;
 
+    &:hover {
+      background-color: var(--accent-color);
+    }
     svg {
       font-size: u.rem(32);
-      color: var(--dark-gray);
-      pointer-events: none;
-      transition: color 200ms linear;
-    }
-    &:hover > svg {
       color: var(--white);
+      pointer-events: none;
     }
   }
   .navigation-button-left {

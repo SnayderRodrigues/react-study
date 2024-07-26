@@ -89,15 +89,18 @@ textarea:focus-visible {
 }
 
 .wrapper {
-  // outline: 2px solid red;
-  // width: min(100% - u.rem(64), u.rem(1400));
-  width: 100%;
-  padding-left: 8rem;
-  padding-right: 8rem;
+
+  // width: 100%;
+  // padding-left: 8rem;
+  // padding-right: 8rem;
+  width: min(100% - u.rem(64), u.rem(1440));
   margin-inline: auto;
 
   @include u.breakpoint-down(small) {
-    width: min(100% - u.rem(32), u.rem(1400));
+    width: min(100% - u.rem(40), u.rem(1440));
+  }
+  @include u.breakpoint-down(xsmall) {
+    width: min(100% - u.rem(32), u.rem(1440));
   }
 }
 

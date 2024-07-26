@@ -52,12 +52,10 @@ const About = () => {
               <span>15+</span>
               <span>Anos de Experiência no Mercado de Ensino</span>
             </div>
-
             <div>
               <span>100000+</span>
               <span>Alunos Matriculados em Nossos Cursos</span>
             </div>
-
             <div>
               <span>1000+</span>
               <span>Professores Nativos e Certificados</span>

@@ -65,14 +65,12 @@ const AboutPageTestemonials = () => {
               <span>{item.number}</span>
               <div>
                 <h2 className="aboutPage-testemonials__headline">
+                  <span className="aboutPage-testemonials__author">
+                    <FaAsterisk /> {item.author}
+                  </span>
                   {item.testemonial}
                 </h2>
                 <img src={Cat} alt="" />
-              </div>
-              <div className="aboutPage-testemonials__author">
-                <span className="author-name">
-                  <FaAsterisk /> {item.author}
-                </span>
               </div>
             </div>
           </div>
