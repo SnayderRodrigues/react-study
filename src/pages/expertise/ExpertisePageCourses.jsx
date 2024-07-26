@@ -4,7 +4,8 @@ import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 const ExpertisePageCourses = () => {
   return (
     <section className="expertisePage-ending">
-      <div className="wrapper-medium expertisePage-ending__wrapper">
+      <div className="wrapper expertisePage-ending__wrapper">
+        <h2>NOSSOS CURSOS</h2>
         <div className="expertisePage-ending__content">
           <div className="expertisePage-ending__image-wrapper">
             <img src={Cat} alt="" />

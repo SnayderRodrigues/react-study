@@ -10,7 +10,7 @@ const ExpertisePageContent = () => {
           <img src={Cat} alt="" />
         </div>
         <div className="expertisePage-midpage__headline">
-          <h2>Título</h2>
+          <h2>TÍTULO</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
             mollitia dolores dolorum praesentium inventore ut quasi voluptatem
