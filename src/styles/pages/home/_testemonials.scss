@@ -53,7 +53,7 @@
   &__card-header {
     flex: 1;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     // gap: 4rem;
     margin-bottom: 4rem;
@@ -68,7 +68,6 @@
       width: 12rem;
       height: 15rem;
       object-fit: cover;
-      margin-right: 1rem;
     }
   }
   &__card-text {
