@@ -12,12 +12,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
-  // font-size: clamp(
-  //   u.rem(18),
-  //   0.9353448275862069rem + 0.27586206896551724vw,
-  //   u.rem(20)
-  // );
-  // line-height: 1.98;
+  font-size: 1rem;
   overflow-x: hidden;
 }
 

@@ -10,33 +10,20 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(
-    u.rem(44),
-    1.8269230769230769rem + 4.615384615384616vw,
-    u.rem(126)
-  );
+  font-size: clamp(2.5rem, 0.006688963210702337rem + 9.364548494983277vw, 6rem);
   line-height: 1.3;
   margin-bottom: 4rem;
-  // background: var(--gradient);
-  // background-clip: text;
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
 }
 
 h2 {
-  font-size: clamp(
-    u.rem(32),
-    1.2241379310344829rem + 3.3103448275862064vw,
-    u.rem(76)
-  );
+  font-size: clamp(2rem, 0.04096989966555209rem + 7.357859531772575vw, 4.75rem);
   margin-bottom: 4rem;
 }
 
 h3 {
-  font-size: clamp(1.75rem, 1.6206896551724137rem + 0.5517241379310345vw, 2rem);
+  font-size: clamp(1.75rem, 1.5719063545150502rem + 0.6688963210702341vw, 2rem);
 }
 
 p {
-    // font-size: clamp(u.rem(16), 0.9353448275862069rem + 0.27586206896551724vw, u.rem(18));
-    line-height: 1.58;
+  line-height: 1.58;
 }
