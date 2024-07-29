@@ -6,7 +6,7 @@ const Expertise = () => {
   return (
     <section id="expertise" className="expertise">
       <div className="wrapper expertise__wrapper">
-        <h2>NOSSA EXPERTISE</h2>
+        <h2>Nossa Expertise</h2>
         <p>
           Para oferecer o melhor aprendizado em inglês, destacamos algumas
           características que fazem da nossa escola a escolha ideal:

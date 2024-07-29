@@ -22,7 +22,7 @@ const About = () => {
             <img src={Cat} alt="" />
           </div>
         </div>
-        <h2>NOSSA ESCOLA</h2>
+        <h2>Nossa Escola</h2>
         <div className="about__content-wrapper">
           <div className="about__content-image">
             <img src={Cat} alt="" />

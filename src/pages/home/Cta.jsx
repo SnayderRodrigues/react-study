@@ -8,7 +8,7 @@ const Cta = () => {
     <section className="cta" id="cta">
       <div className="wrapper cta__wrapper">
         <div className="cta__headline">
-          <h2>INGLÊS ONLINE PARA TODAS AS IDADES E NECESSIDADES</h2>
+          <h2>Inglês Online para Todas as Idades e Necessidades</h2>
           <p>
             Nossos cursos são adaptados às suas necessidades, ajudando você a
             atingir seus objetivos pessoais e profissionais.

@@ -6,7 +6,7 @@ const Testemonials = () => {
     <section className="testemonials">
       <div className="wrapper testemonials__wrapper">
         <div className="testemonials__container">
-          <h2>DEPOIMENTOS</h2>
+          <h2>Depoimentos</h2>
           <div className="testemonials__card-wrapper">
             <div className="testemonials__card">
               <div className="testemonials__card-header">

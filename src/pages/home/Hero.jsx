@@ -18,11 +18,11 @@ const Hero = () => {
         </div>
         <div className="hero__button-wrapper">
           <Link to="contact" className="button hero__button link">
-            Entre em Contato
+            Entre em contato
             <IoMdArrowForward />
           </Link>
           <Link to="about" className="button hero__button link">
-            Sobre Nós
+            Sobre nós
             <IoMdArrowForward />
           </Link>
         </div>
