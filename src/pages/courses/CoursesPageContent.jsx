@@ -2,14 +2,14 @@ import React from "react";
 import { MdHideImage } from "react-icons/md";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 
-const ExpertisePageContent = () => {
+const CoursesPageContent = () => {
   return (
-    <section className="expertisePage-midpage">
-      <div className="wrapper expertisePage-midpage__wrapper">
-        <div className="expertisePage-midpage__image-wrapper">
+    <section className="coursesPage-midpage">
+      <div className="wrapper coursesPage-midpage__wrapper">
+        <div className="coursesPage-midpage__image-wrapper">
           <img src={Cat} alt="" />
         </div>
-        <div className="expertisePage-midpage__headline">
+        <div className="coursesPage-midpage__headline">
           <h2>TÍTULO</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
@@ -17,8 +17,8 @@ const ExpertisePageContent = () => {
             ea quam nam.
           </p>
         </div>
-        <div className="expertisePage-midpage__cards-wrapper">
-          <div className="expertisePage-midpage__card">
+        <div className="coursesPage-midpage__cards-wrapper">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -28,7 +28,7 @@ const ExpertisePageContent = () => {
               flexibilidade para os alunos.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -38,7 +38,7 @@ const ExpertisePageContent = () => {
               experiência autêntica e imersiva.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -48,7 +48,7 @@ const ExpertisePageContent = () => {
               tendências mais recentes de ensino.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -58,7 +58,7 @@ const ExpertisePageContent = () => {
               objetivos de cada aluno.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -68,7 +68,7 @@ const ExpertisePageContent = () => {
               progresso dos alunos.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -78,7 +78,7 @@ const ExpertisePageContent = () => {
               e o engajamento dos alunos.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -88,7 +88,7 @@ const ExpertisePageContent = () => {
               falar inglês.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -98,7 +98,7 @@ const ExpertisePageContent = () => {
               TOEFL, IELTS, entre outros.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -108,7 +108,7 @@ const ExpertisePageContent = () => {
               oferecer orientação.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -118,7 +118,7 @@ const ExpertisePageContent = () => {
               ensino de acordo com suas necessidades específicas.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -128,7 +128,7 @@ const ExpertisePageContent = () => {
               redação acadêmica, para atender às necessidades dos alunos.
             </p>
           </div>
-          <div className="expertisePage-midpage__card">
+          <div className="coursesPage-midpage__card">
             <span>
               <MdHideImage />
             </span>
@@ -144,4 +144,4 @@ const ExpertisePageContent = () => {
   );
 };
 
-export default ExpertisePageContent;
+export default CoursesPageContent;

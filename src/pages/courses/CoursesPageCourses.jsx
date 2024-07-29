@@ -1,16 +1,16 @@
 import React from "react";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 
-const ExpertisePageCourses = () => {
+const CoursesPageCourses = () => {
   return (
-    <section className="expertisePage-ending">
-      <div className="wrapper expertisePage-ending__wrapper">
+    <section className="coursesPage-ending">
+      <div className="wrapper coursesPage-ending__wrapper">
         <h2>NOSSOS CURSOS</h2>
-        <div className="expertisePage-ending__content">
-          <div className="expertisePage-ending__image-wrapper">
+        <div className="coursesPage-ending__content">
+          <div className="coursesPage-ending__image-wrapper">
             <img src={Cat} alt="" />
           </div>
-          <div className="expertisePage-ending__text-wrapper">
+          <div className="coursesPage-ending__text-wrapper">
             <h3>Título do Curso</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error,
@@ -20,8 +20,8 @@ const ExpertisePageCourses = () => {
             </p>
           </div>
         </div>
-        <div className="expertisePage-ending__content">
-          <div className="expertisePage-ending__text-wrapper">
+        <div className="coursesPage-ending__content">
+          <div className="coursesPage-ending__text-wrapper">
             <h3>Título do Curso</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -30,15 +30,15 @@ const ExpertisePageCourses = () => {
               doloremque ipsam velit incidunt earum fuga, dignissimos assumenda!
             </p>
           </div>
-          <div className="expertisePage-ending__image-wrapper">
+          <div className="coursesPage-ending__image-wrapper">
             <img src={Cat} alt="" />
           </div>
         </div>
-        <div className="expertisePage-ending__content">
-          <div className="expertisePage-ending__image-wrapper">
+        <div className="coursesPage-ending__content">
+          <div className="coursesPage-ending__image-wrapper">
             <img src={Cat} alt="" />
           </div>
-          <div className="expertisePage-ending__text-wrapper">
+          <div className="coursesPage-ending__text-wrapper">
             <h3>Título do Curso</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim,
@@ -48,8 +48,8 @@ const ExpertisePageCourses = () => {
             </p>
           </div>
         </div>
-        <div className="expertisePage-ending__content">
-          <div className="expertisePage-ending__text-wrapper">
+        <div className="coursesPage-ending__content">
+          <div className="coursesPage-ending__text-wrapper">
             <h3>Título do Curso</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
@@ -58,15 +58,15 @@ const ExpertisePageCourses = () => {
               delectus accusamus nisi corporis ullam molestias.
             </p>
           </div>
-          <div className="expertisePage-ending__image-wrapper">
+          <div className="coursesPage-ending__image-wrapper">
             <img src={Cat} alt="" />
           </div>
         </div>
-        <div className="expertisePage-ending__content">
-          <div className="expertisePage-ending__image-wrapper">
+        <div className="coursesPage-ending__content">
+          <div className="coursesPage-ending__image-wrapper">
             <img src={Cat} alt="" />
           </div>
-          <div className="expertisePage-ending__text-wrapper">
+          <div className="coursesPage-ending__text-wrapper">
             <h3>Título do Curso</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus
@@ -76,8 +76,8 @@ const ExpertisePageCourses = () => {
             </p>
           </div>
         </div>
-        <div className="expertisePage-ending__content">
-          <div className="expertisePage-ending__text-wrapper">
+        <div className="coursesPage-ending__content">
+          <div className="coursesPage-ending__text-wrapper">
             <h3>Título do Curso</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
@@ -86,7 +86,7 @@ const ExpertisePageCourses = () => {
               incidunt! Omnis, expedita porro!
             </p>
           </div>
-          <div className="expertisePage-ending__image-wrapper">
+          <div className="coursesPage-ending__image-wrapper">
             <img src={Cat} alt="" />
           </div>
         </div>
@@ -95,4 +95,4 @@ const ExpertisePageCourses = () => {
   );
 };
 
-export default ExpertisePageCourses;
+export default CoursesPageCourses;

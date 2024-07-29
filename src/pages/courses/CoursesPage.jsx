@@ -1,14 +1,14 @@
 import React from "react";
-import ExpertisePageHero from "./ExpertisePageHero";
-import ExpertisePageContent from "./ExpertisePageContent";
-import ExpertisePageCourses from "./ExpertisePageCourses";
+import CoursesPageHero from "./CoursesPageHero";
+import CoursesPageContent from "./CoursesPageContent";
+import CoursesPageCourses from "./CoursesPageCourses";
 
 const CoursesPage = () => {
   return (
-    <main id="expertisepage">
-      <ExpertisePageHero />
-      <ExpertisePageContent />
-      <ExpertisePageCourses />
+    <main id="coursespage">
+      <CoursesPageHero />
+      <CoursesPageContent />
+      <CoursesPageCourses />
     </main>
   );
 };
