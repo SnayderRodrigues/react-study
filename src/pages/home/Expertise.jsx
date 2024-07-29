@@ -76,8 +76,8 @@ const Expertise = () => {
               TOEFL, IELTS, entre outros.
             </p>
           </div>
-          <Link to="expertise" className="button link">
-            Mais sobre os cursos
+          <Link to="about" className="button link">
+            Mais informações
             <IoMdArrowForward />
           </Link>
         </div>

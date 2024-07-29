@@ -27,8 +27,8 @@ const Header = () => {
   const isWorkPage = () => {
     return location.pathname === "/blog";
   };
-  const isExpertisePage = () => {
-    return location.pathname === "/expertise";
+  const isCoursesPage = () => {
+    return location.pathname === "/courses";
   };
   const isContactPage = () => {
     return location.pathname === "/contact";
@@ -72,9 +72,9 @@ const Header = () => {
             </li>
             <li className="header__navbar-li">
               <Link
-                to="/expertise"
+                to="/courses"
                 className={`${
-                  isExpertisePage() ? "active-page" : ""
+                  isCoursesPage() ? "active-page" : ""
                 } header__navbar-link`}
                 onClick={(e) => {
                   window.scrollTo(0, 0);

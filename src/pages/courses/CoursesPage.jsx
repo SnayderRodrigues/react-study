@@ -3,7 +3,7 @@ import ExpertisePageHero from "./ExpertisePageHero";
 import ExpertisePageContent from "./ExpertisePageContent";
 import ExpertisePageCourses from "./ExpertisePageCourses";
 
-const ExpertisePage = () => {
+const CoursesPage = () => {
   return (
     <main id="expertisepage">
       <ExpertisePageHero />
@@ -13,4 +13,4 @@ const ExpertisePage = () => {
   );
 };
 
-export default ExpertisePage;
+export default CoursesPage;
