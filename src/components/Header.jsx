@@ -2,21 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
-  let lastScrollTop = 0;
   const location = useLocation();
-
-  window.addEventListener("scroll", function () {
-    const header = document.getElementById("header");
-    const currentScroll = window.scrollY;
-
-    if (currentScroll > lastScrollTop) {
-      header.classList.add("header-scroll");
-    } else {
-      header.classList.remove("header-scroll");
-    }
-
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-  });
 
   const isHomePage = () => {
     return location.pathname === "/";
@@ -34,12 +20,15 @@ const Header = () => {
     return location.pathname === "/contact";
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <header id="header" className="header">
       <div className="wrapper">
         <nav className="header__navbar">
-          <a href="/" className="header__logo">
-            {/* <img src={Logo} alt="" className="header__logo-icon"/> */}
+          <a href="/" className="header__logo" onClick={scrollToTop}>
             <span>Talkative</span>
           </a>
           <ul className="header__navbar-ul">
@@ -49,9 +38,7 @@ const Header = () => {
                 className={`${
                   isHomePage() ? "active-page" : ""
                 } header__navbar-link`}
-                onClick={(e) => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={scrollToTop}
               >
                 Início
               </Link>
@@ -63,9 +50,7 @@ const Header = () => {
                 className={`${
                   isAboutPage() ? "active-page" : ""
                 } header__navbar-link`}
-                onClick={(e) => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={scrollToTop}
               >
                 Sobre
               </Link>
@@ -76,9 +61,7 @@ const Header = () => {
                 className={`${
                   isCoursesPage() ? "active-page" : ""
                 } header__navbar-link`}
-                onClick={(e) => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={scrollToTop}
               >
                 Cursos
               </Link>
@@ -89,25 +72,21 @@ const Header = () => {
                 className={`${
                   isWorkPage() ? "active-page" : ""
                 } header__navbar-link`}
-                onClick={(e) => {
-                  window.scrollTo(0, 0);
-                }}
+                onClick={scrollToTop}
               >
                 Blog
               </Link>
             </li>
           </ul>
-              <Link
-                to="contact"
-                className={`${
-                  isContactPage() ? "active-page" : ""
-                } header__navbar-link button`}
-                onClick={(e) => {
-                  window.scrollTo(0, 0);
-                }}
-              >
-                Contato
-              </Link>
+          <Link
+            to="contact"
+            className={`${
+              isContactPage() ? "active-page" : ""
+            } header__navbar-link button`}
+            onClick={scrollToTop}
+          >
+            Contato
+          </Link>
         </nav>
       </div>
     </header>

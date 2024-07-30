@@ -6,10 +6,12 @@ import { Outlet, useLocation } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
+
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 0.8,
       wheelMultiplier: 0.8,
+      duration: 0.7,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
     function raf(time) {
@@ -20,11 +22,12 @@ function App() {
     requestAnimationFrame(raf);
   }, []);
 
+  ScrollToTop();
+
   const location = useLocation();
 
   return (
     <>
-      <ScrollToTop />
       <Header />
       <Outlet />
       {location.pathname !== "/contact" && <Footer />}

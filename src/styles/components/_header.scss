@@ -26,9 +26,6 @@
       color: var(--accent-color);
     }
   }
-  // &__logo-icon {
-  //   width: 32px;
-  // }
   &__navbar {
     display: flex;
     align-items: center;
@@ -80,8 +77,6 @@
     border: 0;
   }
   .active-page {
-    // color: var(--text-color-2);
-    // background-color: var(--accent-color);
     border-bottom: 4px solid var(--accent-color);
     transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -89,9 +84,4 @@
     border: 0;
     background-color: var(--accent-color);
   }
-}
-
-header.header-scroll {
-  // transform: translateY(-100%);
-  transition: transform 200ms linear;
 }
