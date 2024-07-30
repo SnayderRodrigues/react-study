@@ -1,12 +1,12 @@
 import React from "react";
 import CoursesPageHero from "./CoursesPageHero";
-import CoursesPageCourses from "./CoursesPageCourses";
+import CoursesPageContent from "./CoursesPageContent";
 
 const CoursesPage = () => {
   return (
     <main id="coursespage">
       <CoursesPageHero />
-      <CoursesPageCourses />
+      <CoursesPageContent />
     </main>
   );
 };

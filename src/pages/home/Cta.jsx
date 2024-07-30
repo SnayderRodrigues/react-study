@@ -31,7 +31,7 @@ const Cta = () => {
                 assumenda quod incidunt rem similique pariatur dignissimos sint
                 eligendi voluptate aut cum!
               </p>
-              <Link to="expertise" className="button cta__button link">
+              <Link to="courses" className="button cta__button link">
                 Conheça a Talkative Kids
                 <IoMdArrowForward />
               </Link>
