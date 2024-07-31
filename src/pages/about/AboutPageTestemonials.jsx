@@ -64,12 +64,12 @@ const AboutPageTestemonials = () => {
             <div className="aboutPage-testemonials__card-content">
               <span>{item.number}</span>
               <div>
-                <h2 className="aboutPage-testemonials__headline">
+                <div className="aboutPage-testemonials__headline">
                   <span className="aboutPage-testemonials__author">
                     <FaAsterisk /> {item.author}
                   </span>
-                  {item.testemonial}
-                </h2>
+                  <p>"{item.testemonial}"</p>
+                </div>
                 <img src={Cat} alt="" />
               </div>
             </div>

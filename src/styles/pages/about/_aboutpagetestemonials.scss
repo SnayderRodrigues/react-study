@@ -51,14 +51,12 @@
   }
   &__headline {
     flex: 1;
-    font-size: 2rem;
-    display: inline-block;
-    margin-bottom: 4rem;
   }
   &__author {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
+    font-weight: 500;
     margin-bottom: 2rem;
 
     svg {
