@@ -1,14 +1,10 @@
 import React from "react";
 import { MdHideImage } from "react-icons/md";
-import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 
 const AboutPageExpertise = () => {
   return (
     <section className="aboutPage-expertise">
       <div className="wrapper aboutPage-expertise__wrapper">
-        <div className="aboutPage-expertise__image-wrapper">
-          <img src={Cat} alt="" />
-        </div>
         <div className="aboutPage-expertise__headline">
           <h2>TÍTULO</h2>
           <p>
