@@ -55,7 +55,7 @@ const Faq = () => {
               Encontre respostas para perguntas comuns sobre nossos cursos e
               plataforma.
             </p>
-            <Link to="contact" className="button link">
+            <Link to="/contact" className="button link">
               Entre em contato
               <IoMdArrowForward />
             </Link>

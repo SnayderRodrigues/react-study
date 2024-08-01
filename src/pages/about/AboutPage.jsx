@@ -1,18 +1,22 @@
 import React from "react";
 import AboutPageHero from "./AboutPageHero";
 import AboutPageTeam from "./AboutPageTeam";
-import AboutPageContent from "./AboutPageContent";
+import AboutPageQuote from "./AboutPageQuote";
+import AboutPageInfo from "./AboutPageInfo";
 import AboutPageTestemonials from "./AboutPageTestemonials";
 import AboutPageExpertise from "./AboutPageExpertise";
+import Faq from "../home/Faq"
 
 const AboutPage = () => {
   return (
     <main id="aboutpage">
       <AboutPageHero />
       <AboutPageTeam />
-      <AboutPageContent />
+      <AboutPageQuote />
+      <AboutPageInfo />
       <AboutPageExpertise />
       <AboutPageTestemonials />
+      <Faq />
     </main>
   );
 };

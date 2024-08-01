@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import { IoMdArrowForward } from "react-icons/io";
 
-const AboutPageContent = () => {
+const AboutPageInfo = () => {
   return (
-    <section className="aboutPage-content">
-      <div className="wrapper aboutPage-content__wrapper">
+    <section className="aboutPage-info">
+      <div className="wrapper aboutPage-info__wrapper">
         <h2>Título de Exemplo</h2>
-        <div className="aboutPage-content__info-wrapper">
+        <div className="aboutPage-info__info-wrapper">
           <img src={Cat} alt="" />
-          <div className="aboutPage-content__info">
+          <div className="aboutPage-info__info">
             <div>
               <span>15+</span>
               <span>Anos de experiência no mercado de ensino</span>
@@ -32,18 +32,9 @@ const AboutPageContent = () => {
             </Link>
           </div>
         </div>
-        <h2 className="aboutPage-content__headline">
-          "Lorem ipsum dolor sit amet, consectetur elit. Adipisci natus et atque
-          saepe nisi libero sapiente, molestias."
-        </h2>
-        <div className="aboutPage-content__author">
-          <img src={Cat} alt="" />
-          <span>Exemplo Nome</span>
-          <span>CEO e Fundador da Talkative</span>
-        </div>
       </div>
     </section>
   );
 };
 
-export default AboutPageContent;
+export default AboutPageInfo;
