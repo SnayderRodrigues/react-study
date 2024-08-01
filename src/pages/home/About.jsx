@@ -50,15 +50,15 @@ const About = () => {
         <div className="about__info-wrapper">
             <div>
               <span>15+</span>
-              <span>Anos de Experiência no Mercado de Ensino</span>
+              <span>Anos de experiência no mercado de ensino</span>
             </div>
             <div>
               <span>100000+</span>
-              <span>Alunos Matriculados em Nossos Cursos</span>
+              <span>Alunos matriculados em nossos cursos</span>
             </div>
             <div>
               <span>1000+</span>
-              <span>Professores Nativos e Certificados</span>
+              <span>Professores nativos e certificados</span>
             </div>
         </div>
       </div>

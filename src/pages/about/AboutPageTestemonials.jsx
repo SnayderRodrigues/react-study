@@ -52,6 +52,7 @@ const AboutPageTestemonials = () => {
   return (
     <section className="aboutPage-testemonials">
       <div className="wrapper aboutPage-testemonials__wrapper">
+        <h2>Depoimentos de Nossos Alunos</h2>
         {testemonialsItems.map((item, index) => (
           <div
             className={

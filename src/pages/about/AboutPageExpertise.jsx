@@ -6,7 +6,7 @@ const AboutPageExpertise = () => {
     <section className="aboutPage-expertise">
       <div className="wrapper aboutPage-expertise__wrapper">
         <div className="aboutPage-expertise__headline">
-          <h2>TÍTULO</h2>
+          <h2>Nossa Expertise</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
             mollitia dolores dolorum praesentium inventore ut quasi voluptatem
