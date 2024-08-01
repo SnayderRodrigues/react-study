@@ -23,10 +23,6 @@ const Footer = () => {
               e comece sua jornada.
             </span>
           </Link>
-          {/* <Link to="contact" onClick={(e) => contactLink(e)}>
-            Let's create <IoMdArrowForward />
-            something extraordinary
-          </Link> */}
         </div>
         <div className="contact__information">
           <div>
@@ -49,7 +45,7 @@ const Footer = () => {
             reservados.
           </span>
         </div>
-        <div className="footer__socials">
+        <div className="footer__socials-wrapper">
           <span>
             <FaAsterisk />
             Redes Sociais
