@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 
 const AboutPageContent = () => {
@@ -9,14 +9,17 @@ const AboutPageContent = () => {
           <img src={Cat} alt="" />
         </div>
         <h2 className="aboutPage-content__headline">
-          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi nemo
-          eum accusamus! Inventore fuga maxime atque id est, repudiandae ipsam
-          omnis nemo dolore quod voluptatibus natus provident! Nostrum, illum
-          fugit!"
+          "Lorem ipsum dolor sit amet, consectetur  elit. Adipisci
+          natus et atque saepe nisi libero sapiente, molestias."
         </h2>
+        <div className="aboutPage-content__author">
+          <img src={Cat} alt="" />
+          <span>Exemplo Nome</span>
+          <span>CEO e Fundador da Talkative</span>
+        </div>
       </div>
     </section>
   );
-}
+};
 
-export default AboutPageContent
+export default AboutPageContent;
