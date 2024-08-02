@@ -1,10 +1,15 @@
 import React from "react";
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Faq = () => {
+  const location = useLocation();
+
+  const isAboutPage = location.pathname === "/about";
+
   const [openIndex, setOpenIndex] = useState(null);
 
   const handleClick = (index) => {
@@ -45,7 +50,7 @@ const Faq = () => {
   ];
 
   return (
-    <section className="faq" id="faq">
+    <section className={`faq ${isAboutPage ? "about-page" : ""}`} id="faq">
       <div className="wrapper faq__wrapper">
         <h2>FAQ</h2>
         <div className="faq__content">

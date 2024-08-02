@@ -41,6 +41,42 @@ const AboutPageTeam = () => {
             maiores ullam velit.
           </span>
         </div>
+        <div className="aboutPage-team__card">
+          <img src={Cat} alt="" />
+          <span>Nome e Sobrenome</span>
+          <span>Cargo ou Função</span>
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi eum
+            maiores ullam velit.
+          </span>
+        </div>
+        <div className="aboutPage-team__card">
+          <img src={Cat} alt="" />
+          <span>Nome e Sobrenome</span>
+          <span>Cargo ou Função</span>
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi eum
+            maiores ullam velit.
+          </span>
+        </div>
+        <div className="aboutPage-team__card">
+          <img src={Cat} alt="" />
+          <span>Nome e Sobrenome</span>
+          <span>Cargo ou Função</span>
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi eum
+            maiores ullam velit.
+          </span>
+        </div>
+        <div className="aboutPage-team__card">
+          <img src={Cat} alt="" />
+          <span>Nome e Sobrenome</span>
+          <span>Cargo ou Função</span>
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi eum
+            maiores ullam velit.
+          </span>
+        </div>
       </div>
     </section>
   );
