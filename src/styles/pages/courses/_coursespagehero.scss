@@ -1,15 +1,31 @@
 @use "../../../styles/util/" as u;
 
 .coursesPage-hero {
-  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 100svh;
   background-color: var(--bg-color);
+  padding: 12rem 0;
+
 
   &__wrapper {
-    h1 {
-      margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  &__headline {
+    width: 60%;;
+
+    h1, p {
+      margin-bottom: 2rem;
     }
+    p {
+      max-width: 40ch;
+    }
+  }
+  &__image {
+    width: 40%;
+    height: 500px;
   }
 }

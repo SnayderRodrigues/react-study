@@ -3,9 +3,9 @@ import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 
 const CoursesPageContent = () => {
   return (
-    <section className="coursesPage-content">
+    <section className="coursesPage-content" id="coursesPageContent">
       <div className="wrapper coursesPage-content__wrapper">
-        <h2>NOSSOS CURSOS</h2>
+        <h2>Nossos Cursos</h2>
         <div className="coursesPage-content__content">
           <div className="coursesPage-content__image-wrapper">
             <img src={Cat} alt="" />

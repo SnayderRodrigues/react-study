@@ -1,13 +1,22 @@
-import React from 'react'
+import React from "react";
+import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg"
 
 const CoursesPageHero = () => {
   return (
     <section className="coursesPage-hero">
       <div className="wrapper coursesPage-hero__wrapper">
-        <h1>Título</h1>
+        <div className="coursesPage-hero__headline">
+          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas
+            obcaecati ipsam deserunt.
+          </p>
+          <a href="" className="button">Saiba mais</a>
+        </div>
+        <img src={Cat} alt="" className="coursesPage-hero__image" />
       </div>
     </section>
   );
-}
+};
 
-export default CoursesPageHero
+export default CoursesPageHero;
