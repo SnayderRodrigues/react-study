@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
+  const headerRef = useRef(null);
 
   const isHomePage = () => {
     return location.pathname === "/";
@@ -24,16 +25,16 @@ const Header = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const header = document.querySelector(".header");
-      if (window.scrollY > 0) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
-    };
+  const handleScroll = () => {
+    const header = headerRef.current;
+    if (window.scrollY > 0) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  };
 
+  useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -41,7 +42,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header id="header" className="header">
+    <header ref={headerRef} id="header" className="header">
       <div className="wrapper">
         <nav className="header__navbar">
           <a href="/" className="header__logo" onClick={scrollToTop}>
