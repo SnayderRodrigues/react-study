@@ -1,10 +1,12 @@
 import React from "react";
-import BlogHero from "./BlogHero"
+import BlogPageHero from "./BlogPageHero"
+import BlogPageFeatured from "./BlogPageFeatured";
 
 const BlogPage = () => {
   return (
     <main id="blogPage">
-      <BlogHero />
+      <BlogPageHero />
+      <BlogPageFeatured />
     </main>
   );
 };

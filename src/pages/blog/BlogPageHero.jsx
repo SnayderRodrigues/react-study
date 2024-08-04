@@ -2,7 +2,7 @@ import React from "react";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import { IoMdArrowForward } from "react-icons/io";
 
-const BlogHero = () => {
+const BlogPageHero = () => {
   return (
     <section className="blogPage-hero">
       <div className="wrapper blogPage-hero__wrapper">
@@ -38,4 +38,4 @@ const BlogHero = () => {
   );
 };
 
-export default BlogHero;
+export default BlogPageHero;
