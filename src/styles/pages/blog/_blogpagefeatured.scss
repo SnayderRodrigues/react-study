@@ -4,4 +4,33 @@
   background-color: var(--bg-color);
   padding: 0 0 12rem;
   border-radius: 0 0 4rem 4rem;
+
+  &__posts-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  &__post {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    img {
+      height: 300px;
+    }
+    span:first-of-type {
+      width: fit-content;
+      font-size: 0.825rem;
+      background-color: var(--light-blue);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+    }
+    span:nth-of-type(2) {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
 }
