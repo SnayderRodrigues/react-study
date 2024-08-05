@@ -72,19 +72,14 @@ option {
 select:focus,
 input:focus {
   outline: 0;
-  border-bottom: 1px solid var(--light-blue);
-  box-shadow: 0 1px 0 0 var(--light-blue);
 }
 
 textarea:focus,
 textarea:focus-visible {
   outline: 0;
-  border: 1px solid var(--light-blue);
-  box-shadow: 0 0 0 1px var(--light-blue);
 }
 
 .wrapper {
-
   // width: 100%;
   // padding-left: 8rem;
   // padding-right: 8rem;
