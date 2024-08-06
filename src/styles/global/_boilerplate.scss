@@ -128,10 +128,11 @@ button {
 }
 
 .highlight {
-  background: var(--accent-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  // background: var(--accent-color);
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  color: var(--accent-color);
 }
 
 html.lenis,

@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa6";
@@ -30,7 +31,7 @@ const ContactPageForm = () => {
             <h2 className="contactPage-form__form-headline">
               Formulário de Contato
             </h2>
-            <div className="contactPage-form__form-half">
+            <div className="contactPage-form__input-section">
               <label>
                 Nome<span className="highlight">*</span>
               </label>
@@ -44,7 +45,7 @@ const ContactPageForm = () => {
                 <span>Este campo é obrigatório.</span>
               )}
             </div>
-            <div className="contactPage-form__form-half">
+            <div className="contactPage-form__input-section">
               <label>Sobrenome</label>
               <input
                 type="text"
@@ -52,7 +53,7 @@ const ContactPageForm = () => {
                 {...register("surname")}
               />
             </div>
-            <div className="contactPage-form__form-half">
+            <div className="contactPage-form__input-section">
               <label>
                 Endereço de e-mail<span className="highlight">*</span>
               </label>
@@ -66,7 +67,7 @@ const ContactPageForm = () => {
                 <span>Este campo é obrigatório.</span>
               )}
             </div>
-            <div className="contactPage-form__form-half">
+            <div className="contactPage-form__input-section">
               <label>
                 Número de telefone<span className="highlight">*</span>
               </label>
@@ -127,19 +128,16 @@ const ContactPageForm = () => {
                   Talkative Express: English in a Flash
                 </label>
               </div>
-              <div>
-                <input
-                  id="course0"
-                  type="checkbox"
-                  value="Inglês Instrumental"
-                  {...register("courses")}
-                />
-                <label htmlFor="course0">Ainda não tenho certeza 🙃</label>
-              </div>
+            </div>
+            <div className="contactPage-form__form-section">
+              <span>Ainda não sabe qual curso escolher?</span>
+              <span>
+                Saiba mais sobre nossos cursos <Link to="/courses">aqui</Link>.
+              </span>
             </div>
             <button
               onClick={() => handleSubmit(onSubmit)()}
-              className="button link"
+              className="button"
             >
               Comece sua jornada
             </button>
