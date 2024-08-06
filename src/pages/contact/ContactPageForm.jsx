@@ -83,6 +83,60 @@ const ContactPageForm = () => {
                 <span>Este campo é obrigatório.</span>
               )}
             </div>
+            <div className="contactPage-form__form-section">
+              <label>Selecione os cursos de interesse:</label>
+              <div>
+                <input
+                  id="course1"
+                  type="checkbox"
+                  value="Talkative Complete"
+                  {...register("courses")}
+                />
+                <label htmlFor="course1">
+                  Talkative Complete: English Mastery
+                </label>
+              </div>
+              <div>
+                <input
+                  id="course2"
+                  type="checkbox"
+                  value="Talkative Kids"
+                  {...register("courses")}
+                />
+                <label htmlFor="course2">
+                  Talkative Kids: English Adventures
+                </label>
+              </div>
+              <div>
+                <input
+                  id="course3"
+                  type="checkbox"
+                  value="Talkative Teens"
+                  {...register("courses")}
+                />
+                <label htmlFor="course3">Talkative Teens: Global Connect</label>
+              </div>
+              <div>
+                <input
+                  id="course4"
+                  type="checkbox"
+                  value="Talkative Express"
+                  {...register("courses")}
+                />
+                <label htmlFor="course4">
+                  Talkative Express: English in a Flash
+                </label>
+              </div>
+              <div>
+                <input
+                  id="course0"
+                  type="checkbox"
+                  value="Inglês Instrumental"
+                  {...register("courses")}
+                />
+                <label htmlFor="course0">Ainda não tenho certeza 🙃</label>
+              </div>
+            </div>
             <button
               onClick={() => handleSubmit(onSubmit)()}
               className="button link"
