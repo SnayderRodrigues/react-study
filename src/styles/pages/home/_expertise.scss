@@ -1,8 +1,9 @@
 @use "../../../styles/util/" as u;
 
 .expertise {
-  background-color: var(--bg-color);
-  padding: var(--section-pd);
+  color: var(--text-color-2);
+  background-color: var(--dark-blue);
+  padding: 12rem 0;
 
   &__wrapper {
     display: flex;
@@ -18,26 +19,30 @@
     & > p:last-of-type {
       margin-bottom: 4rem;
     }
+    & > div {
+      margin-bottom: 4rem;
+    }
+    a {
+      color: var(--text-color);
+      background-color: var(--white);
+    }
   }
   &__cards-wrapper {
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(4, minmax(auto, 1fr));
     gap: 2rem;
+
   }
   &__card {
     display: flex;
     flex-direction: column;
-    color: var(--text-color-2);
-    background-color: var(--dark-blue);
+    color: var(--text-color);
+    background-color: var(--white);
     padding: 2rem;
     border-radius: 2rem;
     transition: background-color 300ms linear;
     cursor: default;
-
-    &:hover {
-      background-color: var(--accent-color);
-    }
 
     svg {
       width: 2rem;
