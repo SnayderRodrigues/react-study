@@ -8,15 +8,15 @@ const About = () => {
       <div className="wrapper about__wrapper">
         <div className="about__headline-wrapper">
           <div>
+            <img src={Cat} alt="" />
+          </div>
+          <div>
             <h2>
               "Não se trata apenas de aprender inglês. É sobre pessoas e como a
               linguagem transforma suas vidas."
             </h2>
             <p>Exemplo Nome</p>
             <p>CEO da Talkative</p>
-          </div>
-          <div>
-            <img src={Cat} alt="" />
           </div>
         </div>
         <h2>Nossa Escola</h2>
