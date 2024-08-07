@@ -3,7 +3,7 @@ import AboutPageHero from "./AboutPageHero";
 import AboutPageTeam from "./AboutPageTeam";
 import AboutPageQuote from "./AboutPageQuote";
 import AboutPageInfo from "./AboutPageInfo";
-import AboutPageTestemonials from "./AboutPageTestemonials";
+import AboutPageTestimonials from "./AboutPageTestimonials";
 import AboutPageExpertise from "./AboutPageExpertise";
 import Faq from "../home/Faq"
 
@@ -15,7 +15,7 @@ const AboutPage = () => {
       <AboutPageQuote />
       <AboutPageInfo />
       <AboutPageExpertise />
-      <AboutPageTestemonials />
+      <AboutPageTestimonials />
       <Faq />
     </main>
   );

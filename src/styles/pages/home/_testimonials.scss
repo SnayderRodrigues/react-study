@@ -1,6 +1,6 @@
 @use "../../../styles/util/" as u;
 
-.testemonials {
+.testimonials {
   background-color: var(--bg-color);
   padding: 12rem 0;
 
@@ -13,8 +13,15 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 2.5rem;
-    overflow: visible;
+    // transition: transform .7s cubic-bezier(.5,.5,0,1) 0s, scale 0.3s ease-out;
+    // user-select: none;
+    // cursor: grab;
+    // touch-action: pan-y;
   }
+  // &__card-wrapper:active {
+  //   cursor: grabbing;
+  //   scale: 0.9;
+  // }
   &__card {
     min-width: 30rem;
     display: flex;
