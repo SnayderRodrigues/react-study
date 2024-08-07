@@ -46,7 +46,9 @@ const ContactPageForm = () => {
               )}
             </div>
             <div className="contactPage-form__input-section">
-              <label>Sobrenome</label>
+              <label>
+                Sobrenome <span className="lowlight">(opcional)</span>
+              </label>
               <input
                 type="text"
                 placeholder="Seu sobrenome"
@@ -84,8 +86,18 @@ const ContactPageForm = () => {
                 <span>Este campo é obrigatório.</span>
               )}
             </div>
+            <div className="contactPage-form__textarea-section">
+              <label>
+                Possui alguma dúvida ou mensagem adicional?{" "}
+                <span className="lowlight">(opcional)</span>
+              </label>
+              <textarea placeholder="Seu mensagem" {...register("message")} />
+            </div>
             <div className="contactPage-form__form-section">
-              <label>Selecione os cursos de interesse:</label>
+              <label>
+                Selecione os cursos de interesse:{" "}
+                <span className="lowlight">(opcional)</span>
+              </label>
               <div>
                 <input
                   id="course1"
@@ -135,10 +147,7 @@ const ContactPageForm = () => {
                 Saiba mais sobre nossos cursos <Link to="/courses">aqui</Link>.
               </span>
             </div>
-            <button
-              onClick={() => handleSubmit(onSubmit)()}
-              className="button"
-            >
+            <button onClick={() => handleSubmit(onSubmit)()} className="button">
               Comece sua jornada
             </button>
           </div>
