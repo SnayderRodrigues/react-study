@@ -1,7 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { IoMdArrowForward } from "react-icons/io";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+import { IoMdArrowForward } from "react-icons/io";
+import { FaMicrophone } from "react-icons/fa6";
+import { FaVideo } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
 
 const Hero = () => {
   return (
@@ -9,7 +12,7 @@ const Hero = () => {
       <div className="wrapper hero__wrapper">
         <div className="hero__headline-wrapper">
           <h1>
-            A Escola de Inglês que {" "}
+            A Escola de Inglês que{" "}
             <span className="highlight hero-span-hidden">Você Merece</span>.
           </h1>
           <p>
@@ -28,16 +31,22 @@ const Hero = () => {
           </div>
         </div>
         <div className="hero__image-wrapper">
-          <img src={Cat} alt="" className="hero__image" />
-          <img src={Cat} alt="" className="hero__image" />
-          <img src={Cat} alt="" className="hero__image" />
-          <img src={Cat} alt="" className="hero__image" />
-          <img src={Cat} alt="" className="hero__image" />
-          <img src={Cat} alt="" className="hero__image" />
-          <img src={Cat} alt="" className="hero__image" />
-          <span></span>
-          <span></span>
-          <span></span>
+          <div>
+            <img src={Cat} alt="" className="hero__image" />
+            <div>
+              <FaMicrophone />
+              <FaPhone />
+              <FaVideo />
+            </div>
+          </div>
+          <div>
+            <img src={Cat} alt="" className="hero__image" />
+            <div>
+              <FaMicrophone />
+              <FaPhone />
+              <FaVideo />
+            </div>
+          </div>
         </div>
       </div>
     </section>

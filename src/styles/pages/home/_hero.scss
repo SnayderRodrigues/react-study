@@ -16,11 +16,12 @@
   }
   &__headline-wrapper {
     width: 50%;
-    // h1 {
-    //   line-height: 1;
-    // }
+
+    h1 {
+      margin-bottom: 2rem;
+    }
     p {
-      font-size: u.rem(26);
+      font-size: u.rem(20);
       margin-bottom: 3rem;
     }
   }
@@ -38,51 +39,47 @@
     }
   }
   &__image-wrapper {
-    // width: 50%;
+    width: 50%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    column-gap: 1.5rem;
-    row-gap: 3rem;
-    transform: rotate(35deg);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 4rem;
     position: relative;
-
-    span {
-      width: 2px;
-      height: 2000px;
-      position: absolute;
-      z-index: 0;
-      transform: translate(89px, -800px);
-    }
-    span:nth-of-type(1) {
-      grid-area: 2 / 1 / 3 / 2;
-      background-color: var(--light-blue);
-    }
-    span:nth-of-type(2) {
-      grid-area: 2 / 2 / 3 / 3;
-      background-color: var(--accent-color);
-    }
-    span:nth-of-type(3) {
-      grid-area: 2 / 3 / 3 / 4;
-      background-color: var(--dark-blue);
-    }
+  }
+  &__image-wrapper > div {
+    position: relative;
+  }
+  &__image-wrapper > div:nth-of-type(1) {
+    grid-area: 1 / 3 / 2 / 7;
+  }
+  &__image-wrapper > div:nth-of-type(2) {
+    grid-area: 2 / 1 / 3 / 5;
   }
   &__image {
-    width: 180px;
-    height: 360px;
+    width: 100%;
+    height: 260px;
     position: relative;
     z-index: 1;
   }
-  &__image:last-of-type {
-    grid-area: 3 / 2 / 4 / 3;
-  }
-  &__image:nth-of-type(2),
-  &__image:nth-of-type(5),
-  &__image:last-of-type {
-    transform: translateY(-280px);
-  }
-  &__image:nth-of-type(3),
-  &__image:nth-of-type(6) {
-    transform: translateY(-100px);
+  &__image-wrapper > div > div {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+    position: absolute;
+    left: 50%;
+    bottom: calc(0% + 1rem);
+    transform: translate(-50%, 0%);
+    z-index: 2;
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 999px;
+
+    & > svg {
+      font-size: 1.25rem;
+    }
+    & > svg:nth-of-type(2) {
+      color: var(--accent-color);
+    }
   }
 }

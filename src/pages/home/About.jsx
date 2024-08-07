@@ -5,9 +5,6 @@ import { IoMdArrowForward } from "react-icons/io";
 const About = () => {
   return (
     <section id="about" className="about">
-      <div className="wrapper about__image-wrapper">
-        <img src={Cat} alt="" className="about__image" />
-      </div>
       <div className="wrapper about__wrapper">
         <div className="about__headline-wrapper">
           <div>
