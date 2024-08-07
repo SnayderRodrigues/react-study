@@ -1,12 +1,17 @@
 .cta {
-  background-color: var(--bg-color);
-  padding: 0 0;
+  color: var(--text-color-2);
+  background-color: var(--accent-color);
+  padding: 8rem 0;
 
   &__headline {
     p {
       font-size: 1.625rem;
       max-width: 50ch;
       margin-bottom: 2rem;
+    }
+    a:hover {
+      color: var(--text-color);
+      background-color: var(--light-blue);
     }
   }
 }

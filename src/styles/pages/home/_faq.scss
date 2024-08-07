@@ -2,7 +2,7 @@
 
 .faq {
   background-color: var(--bg-color);
-  padding: 12rem 0;
+  padding: 8rem 0 0;
 
   &__wrapper {
     display: flex;
@@ -84,5 +84,6 @@
 }
 
 .faq.about-page {
+  padding: 8rem 0;
   border-radius: 0 0 4rem 4rem;
 }

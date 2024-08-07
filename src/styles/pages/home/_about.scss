@@ -2,18 +2,8 @@
 
 .about {
   background-color: var(--bg-color);
-  padding: 0 0 12rem;
+  padding: 0 0 8rem;
 
-  &__image-wrapper {
-    margin-bottom: 12rem;
-    overflow: hidden;
-
-    img {
-      width: 100%;
-      max-height: 800px;
-      object-fit: cover;
-    }
-  }
   &__wrapper {
     display: flex;
     flex-direction: column;

@@ -3,7 +3,7 @@
 .expertise {
   color: var(--text-color-2);
   background-color: var(--dark-blue);
-  padding: 12rem 0;
+  padding: 8rem 0;
 
   &__wrapper {
     display: flex;
@@ -23,8 +23,7 @@
       margin-bottom: 4rem;
     }
     a {
-      color: var(--text-color);
-      background-color: var(--white);
+      background-color: hsl(249, 60%, 27%);
     }
   }
   &__cards-wrapper {
@@ -37,8 +36,8 @@
   &__card {
     display: flex;
     flex-direction: column;
-    color: var(--text-color);
-    background-color: var(--white);
+    // color: var(--text-color);
+    background-color: hsl(249, 60%, 27%);
     padding: 2rem;
     border-radius: 2rem;
     transition: background-color 300ms linear;
