@@ -7,31 +7,28 @@ const AboutPageInfo = () => {
   return (
     <section className="aboutPage-info">
       <div className="wrapper aboutPage-info__wrapper">
-        <h2>Título de Exemplo</h2>
+        <h2>Temos Orgulho do que Fazemos e dos Resultados que Entregamos</h2>
         <div className="aboutPage-info__info-wrapper">
-          <img src={Cat} alt="" />
           <div className="aboutPage-info__info">
-            <div>
-              <span>15+</span>
-              <span>Anos de experiência no mercado de ensino</span>
-            </div>
-            <div>
-              <span>100000+</span>
-              <span>Alunos matriculados em nossos cursos</span>
-            </div>
-            <div>
-              <span>1000+</span>
-              <span>Professores nativos e certificados</span>
-            </div>
-            <div>
-              <span>97%</span>
-              <span>Alunos que acreditam que os cursos são eficientes</span>
-            </div>
-            <Link className="button">
-              Veja mais estatísticas <IoMdArrowForward />
-            </Link>
+            <span>15+</span>
+            <span>Anos de experiência no mercado de ensino</span>
+          </div>
+          <div className="aboutPage-info__info">
+            <span>100 mil+</span>
+            <span>Alunos matriculados em nossos cursos</span>
+          </div>
+          <div className="aboutPage-info__info">
+            <span>1000+</span>
+            <span>Professores nativos e certificados</span>
+          </div>
+          <div className="aboutPage-info__info">
+            <span>97%</span>
+            <span>Dos alunos aprovam nossos cursos</span>
           </div>
         </div>
+          <Link className="button">
+            Veja mais estatísticas <IoMdArrowForward />
+          </Link>
       </div>
     </section>
   );

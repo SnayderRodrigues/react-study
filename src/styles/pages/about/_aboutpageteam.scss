@@ -2,12 +2,13 @@
 
 .aboutPage-team {
   background-color: var(--bg-color);
-  padding: 0 0 12rem;
+  padding: 0;
 
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    column-gap: 2rem;
+    row-gap: 4rem;
   }
   &__card {
     display: flex;
