@@ -25,10 +25,6 @@
     padding: 1.5rem;
     border-radius: 2rem;
     transition: background-color 300ms linear;
-
-    &:nth-of-type(2), &:nth-of-type(4) {
-      background-color: var(--light-blue);
-    }
   }
   &__card-header {
     flex: 1;

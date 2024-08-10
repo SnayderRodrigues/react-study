@@ -45,6 +45,18 @@ const Blog = () => {
               </Link>
             </div>
           </div>
+          <div className="blog__card">
+            <img src={Cat} alt="" className="blog__image" />
+            <span>01.01.2024</span>
+            <div className="blog__card-title">
+              <Link to="blog">
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </Link>
+              <Link to="blog" className="button">
+                <MdArrowOutward />
+              </Link>
+            </div>
+          </div>
         </div>
         <Link to="blog" className="button link">
           Leia mais artigos
