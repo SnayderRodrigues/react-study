@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+import { Link } from "react-router-dom";
+import { IoMdArrowForward } from "react-icons/io";
 
 const Course = ({ title, text, imageFirst }) => (
   <div className="coursesPage-content__content">
@@ -12,6 +14,10 @@ const Course = ({ title, text, imageFirst }) => (
         <div className="coursesPage-content__text-wrapper">
           <h3>{title}</h3>
           <p>{text}</p>
+          <Link to="" className="button link">
+            Saiba mais
+            <IoMdArrowForward />
+          </Link>
         </div>
       </>
     ) : (
@@ -19,6 +25,10 @@ const Course = ({ title, text, imageFirst }) => (
         <div className="coursesPage-content__text-wrapper">
           <h3>{title}</h3>
           <p>{text}</p>
+          <Link to="" className="button link">
+            Saiba mais
+            <IoMdArrowForward />
+          </Link>
         </div>
         <div className="coursesPage-content__image-wrapper">
           <img src={Cat} alt={title} />
@@ -66,6 +76,26 @@ const CoursesPageContent = () => {
     <section className="coursesPage-content" id="coursesPageContent">
       <div className="wrapper coursesPage-content__wrapper">
         <h2>Nossos Cursos</h2>
+        <div className="coursesPage-content__description">
+          <div>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+              maxime optio laudantium cum illum expedita rerum laborum. Fuga
+              tempore similique, et ex nisi enim dolor, quidem velit molestiae
+              possimus ad.
+            </p>
+          </div>
+          <div>
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+              maxime optio laudantium cum illum expedita rerum laborum. Fuga
+              tempore similique, et ex nisi enim dolor, quidem velit molestiae
+              possimus ad.
+            </p>
+          </div>
+        </div>
         {courses.map((course, index) => (
           <Course
             key={index}
