@@ -15,17 +15,16 @@ const About = () => {
               "Não se trata apenas de aprender inglês. É sobre pessoas e como a
               linguagem transforma suas vidas."
             </h2>
-            <p>Exemplo Nome</p>
-            <p>CEO da Talkative</p>
+            <span>Exemplo Nome</span>
+            <span>CEO e Fundador da Talkative</span>
           </div>
         </div>
         <h2>Nossa Escola</h2>
         <div className="about__content-wrapper">
-          <div className="about__content-image">
-            <img src={Cat} alt="" />
-          </div>
+          <img src={Cat} alt="" className="about__content-image" />
           <div className="about__content-description">
             <div className="about__content-text">
+              <h3>Sobre Nós</h3>
               <p>
                 Acreditamos que o inglês é a chave para o sucesso individual e
                 profissional. É a ponte que te conecta com novas culturas,
@@ -44,19 +43,38 @@ const About = () => {
             </div>
           </div>
         </div>
+        <div className="about__mission-wrapper">
+          <div>
+            <h3>Nossa Missão</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+              quaerat nobis dolores quia, fugiat perspiciatis harum assumenda
+              temporibus consequuntur, deserunt iure enim, reiciendis a. Ut
+              numquam corrupti odit rem id!
+            </p>
+          </div>
+          <img src={Cat} alt="" className="about__mission-image" />
+        </div>
+        <h3 className="about__info-headline">
+          Lorem ipsum, dolor sit amet consectetur
+        </h3>
         <div className="about__info-wrapper">
-            <div>
-              <span>15+</span>
-              <span>Anos de experiência no mercado de ensino</span>
-            </div>
-            <div>
-              <span>100000+</span>
-              <span>Alunos matriculados em nossos cursos</span>
-            </div>
-            <div>
-              <span>1000+</span>
-              <span>Professores nativos e certificados</span>
-            </div>
+          <div className="about__info">
+            <span>15+</span>
+            <span>Anos de experiência no mercado de ensino</span>
+          </div>
+          <div className="about__info">
+            <span>100 mil+</span>
+            <span>Alunos matriculados em nossos cursos</span>
+          </div>
+          <div className="about__info">
+            <span>1000+</span>
+            <span>Professores nativos e certificados</span>
+          </div>
+          <div className="about__info">
+            <span>97%</span>
+            <span>Dos alunos aprovam nossos cursos</span>
+          </div>
         </div>
       </div>
     </section>
