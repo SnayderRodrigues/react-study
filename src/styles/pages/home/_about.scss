@@ -11,14 +11,30 @@
   &__headline-wrapper {
     display: flex;
     align-items: center;
-    gap: 4rem;
-    margin-bottom: 8rem;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 12rem;
+    position: relative;
 
-    div {
-      width: 50%;
+    img {
+      width: 600px;
+      height: 370px;
+      position: relative;
+      transform: translate(4rem, -4rem);
+      z-index: 1;
+      
     }
-    h2 {
-      font-size: 3rem;
+    div {
+      width: 600px;
+      background-color: var(--white);
+      padding: 4rem;
+      border-radius: 2rem;
+      position: relative;
+      transform: translate(-4rem, 4rem);
+      z-index: 2;
+    }
+    div > h2 {
+      font-size: 2rem;
       font-weight: 500;
       margin-bottom: 2rem;
     }

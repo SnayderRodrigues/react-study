@@ -7,9 +7,7 @@ const About = () => {
     <section id="about" className="about">
       <div className="wrapper about__wrapper">
         <div className="about__headline-wrapper">
-          <div>
-            <img src={Cat} alt="" />
-          </div>
+          <img src={Cat} alt="" />
           <div>
             <h2>
               "Não se trata apenas de aprender inglês. É sobre pessoas e como a
