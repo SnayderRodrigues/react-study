@@ -31,11 +31,24 @@
       border-radius: 1rem;
       margin-bottom: 1rem;
     }
-    & > span {
+    & > div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    & > div > span:nth-of-type(1) {
+      font-size: u.rem(14);
+      font-weight: 500;
+      color: var(--text-color-2);
+      background-color: var(--accent-color);
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+    }
+    & > div > span:nth-of-type(2) {
       font-size: u.rem(14);
       font-weight: 500;
       color: var(--text-color-4);
-      margin-bottom: 0.5rem;
     }
   }
   &__card-title {

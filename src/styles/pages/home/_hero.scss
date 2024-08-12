@@ -2,12 +2,12 @@
 
 .hero {
   width: 100%;
-  height: 100vh;
   background-color: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  padding: 12rem 0;
 
   &__wrapper {
     display: flex;
@@ -65,21 +65,30 @@
     display: flex;
     align-items: center;
     justify-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     position: absolute;
     left: 50%;
     bottom: calc(0% + 1rem);
     transform: translate(-50%, 0%);
     z-index: 2;
     background-color: var(--white);
-    padding: 1.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 999px;
 
     & > svg {
       font-size: 1.25rem;
     }
-    & > svg:nth-of-type(2) {
-      color: var(--accent-color);
+    & > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--accent-color);
+      padding: 1rem;
+      border-radius: 50%;
+    }
+    & > div > svg {
+      font-size: 1.25rem;
+      color: var(--white);
     }
   }
 }

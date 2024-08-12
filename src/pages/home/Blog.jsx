@@ -11,7 +11,10 @@ const Blog = () => {
         <div className="blog__cards-wrapper">
           <div className="blog__card">
             <img src={Cat} alt="" className="blog__image" />
-            <span>01.01.2024</span>
+            <div>
+              <span>Categoria</span>
+              <span>01.01.2024</span>
+            </div>
             <div className="blog__card-title">
               <Link to="blog">
                 <span>Lorem ipsum dolor sit amet consectetur.</span>
@@ -23,7 +26,10 @@ const Blog = () => {
           </div>
           <div className="blog__card">
             <img src={Cat} alt="" className="blog__image" />
-            <span>01.01.2024</span>
+            <div>
+              <span>Categoria</span>
+              <span>01.01.2024</span>
+            </div>
             <div className="blog__card-title">
               <Link to="blog">
                 <span>Lorem ipsum dolor sit amet consectetur.</span>
@@ -35,7 +41,10 @@ const Blog = () => {
           </div>
           <div className="blog__card">
             <img src={Cat} alt="" className="blog__image" />
-            <span>01.01.2024</span>
+            <div>
+              <span>Categoria</span>
+              <span>01.01.2024</span>
+            </div>
             <div className="blog__card-title">
               <Link to="blog">
                 <span>Lorem ipsum dolor sit amet consectetur.</span>
@@ -47,7 +56,10 @@ const Blog = () => {
           </div>
           <div className="blog__card">
             <img src={Cat} alt="" className="blog__image" />
-            <span>01.01.2024</span>
+            <div>
+              <span>Categoria</span>
+              <span>01.01.2024</span>
+            </div>
             <div className="blog__card-title">
               <Link to="blog">
                 <span>Lorem ipsum dolor sit amet consectetur.</span>

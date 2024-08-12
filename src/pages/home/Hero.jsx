@@ -35,7 +35,9 @@ const Hero = () => {
             <img src={Cat} alt="" className="hero__image" />
             <div>
               <FaMicrophone />
-              <FaPhone />
+              <div>
+                <FaPhone />
+              </div>
               <FaVideo />
             </div>
           </div>
@@ -43,7 +45,9 @@ const Hero = () => {
             <img src={Cat} alt="" className="hero__image" />
             <div>
               <FaMicrophone />
-              <FaPhone />
+              <div>
+                <FaPhone />
+              </div>
               <FaVideo />
             </div>
           </div>
