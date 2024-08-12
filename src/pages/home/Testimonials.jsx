@@ -1,4 +1,9 @@
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+import { useLayoutEffect, useRef } from "react";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const testimonialsData = [
   {
@@ -47,12 +52,32 @@ const TestimonialCard = ({ initial, name, text, imgSrc }) => (
 );
 
 const Testimonials = () => {
+  const component = useRef();
+  const slider = useRef();
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      let panels = gsap.utils.toArray(".testimonials__card");
+      gsap.to(panels, {
+        xPercent: -80 * (panels.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: slider.current,
+          pin: true,
+          scrub: 1,
+          end: () => "+=" + slider.current.offsetWidth,
+        },
+      });
+    }, component);
+    return () => ctx.revert();
+  });
+
   return (
-    <section className="testimonials">
+    <section className="testimonials" ref={component}>
       <div className="wrapper testimonials__wrapper">
         <div className="testimonials__container">
           <h2>Depoimentos</h2>
-          <div className="testimonials__card-wrapper">
+          <div className="testimonials__card-wrapper" ref={slider}>
             {testimonialsData.map((testimonial, index) => (
               <TestimonialCard
                 key={index}

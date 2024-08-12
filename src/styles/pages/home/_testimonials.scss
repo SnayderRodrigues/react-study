@@ -2,6 +2,7 @@
 
 .testimonials {
   padding: 8rem 0;
+  margin-bottom: 160vh;
 
   &__container {
     display: flex;
@@ -11,9 +12,7 @@
     width: 100%;
     display: flex;
     gap: 2.5rem;
-    // overflow-x: auto;
-    user-select: none;
-    scrollbar-color: transparent transparent;
+    margin-top: -8rem;
   }
   &__card {
     min-width: 30rem;
@@ -23,14 +22,13 @@
     background-color: var(--white);
     padding: 1.5rem;
     border-radius: 2rem;
-    transition: background-color 300ms linear;
+    margin-top: 8rem;
   }
   &__card-header {
     flex: 1;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    // gap: 4rem;
     margin-bottom: 4rem;
 
     span {
