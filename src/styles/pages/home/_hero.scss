@@ -1,8 +1,6 @@
 @use "../../../styles/util/" as u;
 
 .hero {
-  width: 100%;
-  background-color: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: center;

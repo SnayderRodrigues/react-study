@@ -1,9 +1,7 @@
 @use "../../../styles/util/" as u;
 
 .contactPage-form {
-  background-color: var(--bg-color);
-  padding: 12rem 0 6rem;
-  border-radius: 0 0 4rem 4rem;
+  padding: 12rem 0 8rem;
 
   &__wrapper {
     display: flex;

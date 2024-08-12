@@ -1,10 +1,13 @@
 @use "../../../styles/util/" as u;
 
 .contactPage-footer {
-  background-color: var(--white);
+  color: var(--text-color-2);
+  background-color: var(--dark-blue);
+  border-radius: 4rem 4rem 0 0;
+  margin: 0 2rem;
 
   a {
-    color: var(--text-color);
+    color: var(--text-color-2);
   }
 
   &__wrapper {
@@ -48,7 +51,7 @@
       font-weight: 500;
       letter-spacing: 0.05em;
       line-height: 1rem;
-      color: var(--text-color-4);
+      color: var(--gray);
       margin-bottom: 1rem;
     }
   }
@@ -76,7 +79,7 @@
       font-weight: 500;
       letter-spacing: 0.05em;
       line-height: 1rem;
-      color: var(--text-color-4);
+      color: var(--gray);
       margin-bottom: 1rem;
     }
     a {
@@ -99,7 +102,7 @@
       font-weight: 500;
       letter-spacing: 0.05em;
       line-height: 1rem;
-      color: var(--text-color-4);
+      color: var(--gray);
       margin-bottom: 1rem;
     }
   }

@@ -1,10 +1,7 @@
 @use "../../../styles/util/" as u;
 
 .coursesPage-content {
-  background-color: var(--bg-color);
-  padding: 0 0 4rem;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
+  padding: 0 0 8rem;
 
   &__wrapper {
     display: flex;
@@ -28,6 +25,9 @@
     justify-content: space-between;
     gap: 4rem;
     margin-bottom: 8rem;
+  }
+  &__content:last-of-type {
+    margin-bottom: 0rem;
   }
   &__image-wrapper {
     max-width: 50%;

@@ -1,10 +1,13 @@
 @use "../util/" as u;
 
 .footer {
-  background-color: var(--white);
+  background-color: var(--dark-blue);
+  color: var(--text-color-2);
+  border-radius: 4rem 4rem 0 0;
+  margin: 0 2rem;
 
   a {
-    color: var(--text-color);
+    color: var(--text-color-2);
   }
 
   &__wrapper {
@@ -40,7 +43,7 @@
     display: grid;
     grid-template-columns: repeat(8, minmax(0, 1fr));
     gap: 2rem;
-    border-top: 2px solid var(--bg-color);
+    border-top: 2px solid var(--white);
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
@@ -72,7 +75,7 @@
       font-weight: 500;
       letter-spacing: 0.05em;
       line-height: 1rem;
-      color: var(--text-color-4);
+      color: var(--gray);
       margin-bottom: 1rem;
     }
   }
@@ -100,7 +103,7 @@
       font-weight: 500;
       letter-spacing: 0.05em;
       line-height: 1rem;
-      color: var(--text-color-4);
+      color: var(--gray);
       margin-bottom: 1rem;
     }
     a {
@@ -123,7 +126,7 @@
       font-weight: 500;
       letter-spacing: 0.05em;
       line-height: 1rem;
-      color: var(--text-color-4);
+      color: var(--gray);
       margin-bottom: 1rem;
     }
   }

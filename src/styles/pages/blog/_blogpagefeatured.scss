@@ -1,9 +1,7 @@
 .blogPage-featured {
   display: flex;
   align-items: flex-start;
-  background-color: var(--bg-color);
-  padding: 0 0 12rem;
-  border-radius: 0 0 4rem 4rem;
+  padding: 0 0 8rem;
 
   &__posts-wrapper {
     display: flex;
