@@ -7,35 +7,33 @@
 
   &__wrapper {
     display: flex;
-    flex-direction: column;
-
-    h1 {
-      margin-bottom: 4rem;
-    }
-  }
-  &__posts-wrapper {
-    display: flex;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 4rem;
   }
-  &__post {
+  &__image {
+    width: 40%;
+    height: 600px;
+  }
+  &__headline {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 
-    img {
-      height: 600px;
-    }
-    span:first-of-type {
+    span {
       width: fit-content;
-      font-size: 0.825rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
       color: var(--text-color-2);
-      background-color: var(--dark-blue);
-      padding: 0.25rem 0.75rem;
+      background-color: var(--accent-color);
+      padding: 0.75rem 1rem;
       border-radius: 999px;
+      margin-bottom: 2rem;
     }
-    span:nth-of-type(2) {
-      font-size: 2.5rem;
+    h1 {
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 2rem;
     }
   }
   &__post:nth-of-type(2) > img {

@@ -6,30 +6,18 @@ const BlogPageHero = () => {
   return (
     <section className="blogPage-hero">
       <div className="wrapper blogPage-hero__wrapper">
-        <h1>Talkative Blog</h1>
-        <div className="blogPage-hero__posts-wrapper">
-          <div className="blogPage-hero__post">
-            <img src={Cat} alt="" />
-            <span>Categoria</span>
-            <span>Lorem ipsum dolor sit amet</span>
+        <div className="blogPage-hero__wrapper">
+          <img src={Cat} alt="" className="blogPage-hero__image" />
+          <div className="blogPage-hero__headline">
+            <span>Talkative Blog</span>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum voluptates.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+              impedit amet culpa odio illum. Reiciendis nisi porro atque aliquam
+              adipisci deserunt.
             </p>
-            <a href="" className="button">
-              Ler artigo <IoMdArrowForward />
-            </a>
-          </div>
-          <div className="blogPage-hero__post">
-            <img src={Cat} alt="" />
-            <span>Categoria</span>
-            <span>Lorem ipsum dolor sit amet consectetur</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum voluptates.
-            </p>
-            <a href="" className="button">
-              Ler artigo <IoMdArrowForward />
+            <a href="#blogPageFeatured" className="button">
+              Navegar pelos artigos <IoMdArrowForward />
             </a>
           </div>
         </div>
