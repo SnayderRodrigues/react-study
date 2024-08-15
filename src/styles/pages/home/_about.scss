@@ -9,16 +9,15 @@
   }
   &__headline-wrapper {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 4rem;
     margin-bottom: 12rem;
-    position: relative;
 
     img {
       width: 600px;
       height: 370px;
       position: relative;
+      left: 0;
       transform: translate(4rem, -4rem);
       z-index: 1;
       
@@ -29,6 +28,7 @@
       padding: 4rem;
       border-radius: 2rem;
       position: relative;
+      right: 0;
       transform: translate(-4rem, 4rem);
       z-index: 2;
     }

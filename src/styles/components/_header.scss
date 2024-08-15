@@ -50,19 +50,16 @@
   &__navbar-link {
     font-weight: 600;
     width: fit-content;
-    padding: 12px 16px 12px;
-    border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
+    padding: 8px 16px;
+    border-radius: 999px;
     overflow: hidden;
     position: relative;
     z-index: 1;
     text-decoration: none;
     transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
-    border-radius: 0.5rem 0.5rem 0 0;
 
     &:hover {
       background-color: var(--light-blue);
-      border-bottom: 4px solid var(--accent-color);
     }
   }
   .header__navbar-link.button {
@@ -78,7 +75,8 @@
     border: 0;
   }
   .active-page {
-    border-bottom: 4px solid var(--accent-color);
+    color: var(--text-color-2);
+    background-color: var(--accent-color);
     transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .header__navbar-link.button.active-page {

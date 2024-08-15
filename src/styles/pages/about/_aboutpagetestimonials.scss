@@ -11,13 +11,14 @@
   &__card-wrapper {
     display: flex;
     gap: 2rem;
+    transition: transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
   }
   &__card {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: fit-content;
+    min-width: calc(50% - 2rem);
+    height: auto;
     background-color: var(--white);
     padding: 2rem;
     border-radius: 2rem;
@@ -28,15 +29,14 @@
       flex-direction: column;
 
       span {
-        font-size: 2rem;
-        margin-bottom: 1rem;
+        font-size: 4rem;
+        margin-bottom: 2rem;
       }
       img {
         min-width: 500px;
         height: 280px;
         border-radius: 1rem;
-        margin-bottom: 1rem;
-        transition: all 700ms cubic-bezier(0.16, 1, 0.3, 1);
+        margin-bottom: 2rem;
       }
     }
     .aboutPage-testimonials__card-author {
@@ -46,10 +46,9 @@
       margin-bottom: 1rem;
     }
     .aboutPage-testimonials__card-description {
-      display: grid;
-      grid-template-rows: 1fr;
-      overflow: hidden;
-      transition: all 700ms cubic-bezier(0.16, 1, 0.3, 1);
+      // display: grid;
+      // grid-template-rows: 1fr;
+      // overflow: hidden;
 
       div {
         overflow: hidden;
@@ -60,18 +59,15 @@
           // color: var(--text-color-4);
           margin-bottom: 2rem;
         }
-        p {
-          max-width: 420px;
-        }
       }
     }
   }
   &__card.card-active {
-     background-color: var(--dark-blue);
-     color: var(--text-color-2);
+    background-color: var(--accent-color);
+    color: var(--text-color-2);
   }
   .navigation {
-    align-self: flex-end;
+    align-self: flex-start;
     position: relative;
     z-index: 1;
     width: fit-content;

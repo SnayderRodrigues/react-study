@@ -32,6 +32,27 @@ const AboutPageTestimonials = () => {
       author: "Mariana",
       status: "Aluna, formada",
     },
+    {
+      number: "05.",
+      testimonial:
+        "Graças à Talkative, consegui uma promoção no trabalho que exigia fluência em inglês. As aulas são práticas e focadas em situações reais do dia a dia. Estou muito satisfeita com meu progresso!",
+      author: "Mariana",
+      status: "Aluna, formada",
+    },
+    {
+      number: "06.",
+      testimonial:
+        "Graças à Talkative, consegui uma promoção no trabalho que exigia fluência em inglês. As aulas são práticas e focadas em situações reais do dia a dia. Estou muito satisfeita com meu progresso!",
+      author: "Mariana",
+      status: "Aluna, formada",
+    },
+    {
+      number: "07.",
+      testimonial:
+        "Graças à Talkative, consegui uma promoção no trabalho que exigia fluência em inglês. As aulas são práticas e focadas em situações reais do dia a dia. Estou muito satisfeita com meu progresso!",
+      author: "Mariana",
+      status: "Aluna, formada",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,7 +95,10 @@ const AboutPageTestimonials = () => {
             </button>
           </div>
         </div>
-        <div className="aboutPage-testimonials__card-wrapper">
+        <div
+          className="aboutPage-testimonials__card-wrapper"
+          style={{ transform: `translateX(-${currentIndex * 50}%)` }}
+        >
           {testimonialsItems.map((item, index) => (
             <div
               className={
