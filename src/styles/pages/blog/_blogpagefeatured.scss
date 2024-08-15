@@ -3,6 +3,11 @@
   align-items: flex-start;
   padding: 0 0 8rem;
 
+  &__wrapper {
+    background: var(--white);
+    padding: 4rem;
+    border-radius: 4rem;
+  }
   &__posts-wrapper {
     display: flex;
     align-items: flex-start;

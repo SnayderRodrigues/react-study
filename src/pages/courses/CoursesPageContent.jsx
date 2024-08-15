@@ -76,23 +76,41 @@ const CoursesPageContent = () => {
     <section className="coursesPage-content" id="coursesPageContent">
       <div className="wrapper coursesPage-content__wrapper">
         <h2>Nossos Cursos</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+          laborum perspiciatis magnam.
+        </p>
         <div className="coursesPage-content__description">
           <div>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>Lorem ipsum</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
               maxime optio laudantium cum illum expedita rerum laborum. Fuga
-              tempore similique, et ex nisi enim dolor, quidem velit molestiae
-              possimus ad.
+              tempore similique.
             </p>
           </div>
           <div>
-            <h3>Lorem ipsum dolor sit amet</h3>
+            <h3>Lorem ipsum</h3>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
               maxime optio laudantium cum illum expedita rerum laborum. Fuga
-              tempore similique, et ex nisi enim dolor, quidem velit molestiae
-              possimus ad.
+              tempore similique.
+            </p>
+          </div>
+          <div>
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+              maxime optio laudantium cum illum expedita rerum laborum. Fuga
+              tempore similique.
+            </p>
+          </div>
+          <div>
+            <h3>Lorem ipsum</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
+              maxime optio laudantium cum illum expedita rerum laborum. Fuga
+              tempore similique.
             </p>
           </div>
         </div>

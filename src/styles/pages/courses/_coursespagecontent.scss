@@ -6,9 +6,20 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
+
+
+    & > h2 {
+      margin-bottom: 2rem;
+    }
+    & > p {
+      font-size: u.rem(26);
+      max-width: 50ch;
+      margin-bottom: 4rem;
+    }
   }
   &__description {
     display: flex;
+    gap: 2rem;
     margin-bottom: 8rem;
     
     div {
@@ -24,6 +35,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
+    background-color: var(--white);
+    padding: 4rem;
+    border-radius: 4rem;
     margin-bottom: 8rem;
   }
   &__content:last-of-type {
@@ -33,7 +47,7 @@
     max-width: 50%;
   }
   &__text-wrapper {
-    max-width: 35%;
+    max-width: 50%;
 
     h3 {
       font-size: u.rem(56);
