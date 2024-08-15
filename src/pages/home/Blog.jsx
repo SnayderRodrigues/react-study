@@ -3,72 +3,68 @@ import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import { IoMdArrowForward } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
 
+const BlogCard = ({ image, category, date, title, link }) => (
+  <div className="blog__card">
+    <img
+      src={image}
+      alt={`${title}`}
+      className="blog__image"
+    />
+    <div>
+      <span>{category}</span>
+      <span>{date}</span>
+    </div>
+    <div className="blog__card-title">
+      <Link to={link}>
+        <span>{title}</span>
+      </Link>
+      <Link to={link} className="button">
+        <MdArrowOutward />
+      </Link>
+    </div>
+  </div>
+);
+
 const Blog = () => {
+  const blogPosts = [
+    {
+      image: Cat,
+      category: "Categoria",
+      date: "01.01.2024",
+      title: "Lorem ipsum dolor sit amet consectetur.",
+      link: "blog",
+    },
+    {
+      image: Cat,
+      category: "Categoria",
+      date: "01.01.2024",
+      title: "Lorem ipsum dolor sit amet consectetur.",
+      link: "blog",
+    },
+    {
+      image: Cat,
+      category: "Categoria",
+      date: "01.01.2024",
+      title: "Lorem ipsum dolor sit amet consectetur.",
+      link: "blog",
+    },
+  ];
+
   return (
     <section id="blog" className="blog">
       <div className="wrapper blog__wrapper">
         <h2>Talkative Blog</h2>
         <div className="blog__cards-wrapper">
-          <div className="blog__card">
-            <img src={Cat} alt="" className="blog__image" />
-            <div>
-              <span>Categoria</span>
-              <span>01.01.2024</span>
-            </div>
-            <div className="blog__card-title">
-              <Link to="blog">
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-              </Link>
-              <Link to="blog" className="button">
-                <MdArrowOutward />
-              </Link>
-            </div>
-          </div>
-          <div className="blog__card">
-            <img src={Cat} alt="" className="blog__image" />
-            <div>
-              <span>Categoria</span>
-              <span>01.01.2024</span>
-            </div>
-            <div className="blog__card-title">
-              <Link to="blog">
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-              </Link>
-              <Link to="blog" className="button">
-                <MdArrowOutward />
-              </Link>
-            </div>
-          </div>
-          <div className="blog__card">
-            <img src={Cat} alt="" className="blog__image" />
-            <div>
-              <span>Categoria</span>
-              <span>01.01.2024</span>
-            </div>
-            <div className="blog__card-title">
-              <Link to="blog">
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-              </Link>
-              <Link to="blog" className="button">
-                <MdArrowOutward />
-              </Link>
-            </div>
-          </div>
-          <div className="blog__card">
-            <img src={Cat} alt="" className="blog__image" />
-            <div>
-              <span>Categoria</span>
-              <span>01.01.2024</span>
-            </div>
-            <div className="blog__card-title">
-              <Link to="blog">
-                <span>Lorem ipsum dolor sit amet consectetur.</span>
-              </Link>
-              <Link to="blog" className="button">
-                <MdArrowOutward />
-              </Link>
-            </div>
-          </div>
+          {blogPosts.map((post, index) => (
+            <BlogCard
+              key={index}
+              image={post.image}
+              category={post.category}
+              date={post.date}
+              title={post.title}
+              link={post.link}
+            />
+          ))}
         </div>
         <Link to="blog" className="button link">
           Leia mais artigos
