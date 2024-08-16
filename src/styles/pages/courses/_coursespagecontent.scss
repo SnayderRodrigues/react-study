@@ -30,7 +30,12 @@
       }
     }
   }
-  &__content {
+  &__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+  &__card {
     position: sticky;
     top: 8rem;
     display: flex;
@@ -40,10 +45,6 @@
     background-color: var(--white);
     padding: 4rem;
     border-radius: 4rem;
-    margin-bottom: 8rem;
-  }
-  &__content:last-of-type {
-    margin-bottom: 0rem;
   }
   &__image-wrapper {
     max-width: 50%;

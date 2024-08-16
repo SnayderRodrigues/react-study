@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 
 const Course = ({ title, text, imageFirst }) => (
-  <div className="coursesPage-content__content">
+  <div className="coursesPage-content__card">
     {imageFirst ? (
       <>
         <div className="coursesPage-content__image-wrapper">
@@ -114,14 +114,16 @@ const CoursesPageContent = () => {
             </p>
           </div>
         </div>
-        {courses.map((course, index) => (
-          <Course
-            key={index}
-            title={course.title}
-            text={course.text}
-            imageFirst={course.imageFirst}
-          />
-        ))}
+        <div className="coursesPage-content__card-wrapper">
+          {courses.map((course, index) => (
+            <Course
+              key={index}
+              title={course.title}
+              text={course.text}
+              imageFirst={course.imageFirst}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
