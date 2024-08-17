@@ -31,21 +31,22 @@ const Blog = () => {
       image: Cat,
       category: "Categoria",
       date: "01.01.2024",
-      title: "Lorem ipsum dolor sit amet consectetur.",
+      title: "5 Dicas Essenciais para Melhorar Sua Pronúncia em Inglês",
       link: "blog",
     },
     {
       image: Cat,
       category: "Categoria",
       date: "01.01.2024",
-      title: "Lorem ipsum dolor sit amet consectetur.",
+      title: "Por Que Aprender Inglês Desde a Infância Faz Toda a Diferença?",
       link: "blog",
     },
     {
       image: Cat,
       category: "Categoria",
       date: "01.01.2024",
-      title: "Lorem ipsum dolor sit amet consectetur.",
+      title:
+        "Inglês para Adolescentes: Como Conectar o Ensino com o Mundo Digital",
       link: "blog",
     },
   ];

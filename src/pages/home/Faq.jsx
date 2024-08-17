@@ -18,34 +18,35 @@ const Faq = () => {
 
   const faqItems = [
     {
-      question: "Título da Pergunta 1",
+      question: "1. Quais são os níveis oferecidos nos cursos?",
       answer:
-        "Resposta para a Pergunta 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+        "Oferecemos cursos desde o nível iniciante até o avançado. Todos os nossos cursos, como o Talkative Complete, são estruturados para que os alunos progridam de acordo com seu ritmo e objetivos.",
     },
     {
-      question: "Título da Pergunta 2",
+      question:
+        "2. O que diferencia os cursos Talkative Kids e Talkative Teens?",
       answer:
-        "Resposta para a Pergunta 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+        "O Talkative Kids é voltado para crianças, com foco em aprendizado lúdico e interativo, enquanto o Talkative Teens é direcionado para adolescentes, abordando temas relevantes para essa faixa etária e preparando-os para desafios futuros.",
     },
     {
-      question: "Título da Pergunta 3",
+      question: "3. Como funciona o Talkative Express?",
       answer:
-        "Resposta para a Pergunta 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+        "O Talkative Express é um curso intensivo ideal para quem precisa aprender inglês rapidamente. Ele é focado em resultados rápidos, com ênfase na prática constante e na comunicação em situações do dia a dia.",
     },
     {
-      question: "Título da Pergunta 4",
+      question: "4. As aulas são presenciais ou online?",
       answer:
-        "Resposta para a Pergunta 4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+        "Oferecemos ambas as opções. Você pode escolher entre aulas presenciais na nossa escola ou participar de aulas online ao vivo, que proporcionam flexibilidade e comodidade.",
     },
     {
-      question: "Título da Pergunta 5",
+      question: "5. Quais são os horários das aulas?",
       answer:
-        "Resposta para a Pergunta 5. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+        "Nossos cursos têm horários flexíveis para se adaptar à sua rotina. Oferecemos turmas pela manhã, tarde e noite.",
     },
     {
-      question: "Título da Pergunta 6",
+      question: "6. Há algum teste de nivelamento?",
       answer:
-        "Resposta para a Pergunta 6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate odit reiciendis maiores suscipit vel quasi, id architecto dolore doloribus molestiae consectetur repellendus impedit aliquid eius nulla sint ducimus vitae.",
+        "Sim, antes de iniciar qualquer curso, todos os alunos passam por um teste de nivelamento gratuito. Isso nos permite determinar o melhor nível para cada aluno, garantindo que eles estejam em uma turma adequada ao seu conhecimento atual.",
     },
   ];
 

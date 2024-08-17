@@ -45,16 +45,20 @@ const About = () => {
           <div>
             <h3>Nossa Missão</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
-              quaerat nobis dolores quia, fugiat perspiciatis harum assumenda
-              temporibus consequuntur, deserunt iure enim, reiciendis a. Ut
-              numquam corrupti odit rem id!
+              Na Talkative, nossa missão é empoderar nossos alunos, fornecendo
+              uma educação de qualidade que se adapta às necessidades
+              individuais, promovendo o desenvolvimento pessoal e profissional.
+            </p>
+            <p>
+              Estamos comprometidos em ajudar cada estudante a alcançar seus
+              objetivos linguísticos e a se comunicar com confiança,
+              independente de qualquer situação.
             </p>
           </div>
           <img src={Cat} alt="" className="about__mission-image" />
         </div>
         <h3 className="about__info-headline">
-          Lorem ipsum, dolor sit amet consectetur
+          Temos Orgulho do que Fazemos e dos Resultados que Entregamos
         </h3>
         <div className="about__info-wrapper">
           <div className="about__info">
