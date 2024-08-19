@@ -154,7 +154,7 @@ const ContactPageForm = () => {
           <div className="contactPage-form__contact">
             <div>
               <span>Fale Conosco</span>
-              <span>Lorem ipsum dolor sit amet consectetur.</span>
+              <span>Entre em contato através dos links abaixo.</span>
               <div>
                 <FaWhatsapp />
                 <span>Converse no WhatsApp</span>
@@ -170,7 +170,7 @@ const ContactPageForm = () => {
             </div>
             <div>
               <span>Ligue</span>
-              <span>Lorem ipsum dolor sit amet consectetur.</span>
+              <span>Horário de atendimendo 08h00 às 17h00 (Seg-Sex).</span>
               <div>
                 <FiPhoneCall />
                 <span>(00) 00000-0000</span>
