@@ -11,11 +11,11 @@ const Header = () => {
   const isAboutPage = () => {
     return location.pathname === "/about";
   };
-  const isWorkPage = () => {
-    return location.pathname === "/blog";
-  };
   const isCoursesPage = () => {
     return location.pathname === "/courses";
+  };
+  const isBlogPage = () => {
+    return location.pathname.startsWith("/blog");
   };
   const isContactPage = () => {
     return location.pathname === "/contact";
@@ -87,7 +87,7 @@ const Header = () => {
               <Link
                 to="/blog"
                 className={`${
-                  isWorkPage() ? "active-page" : ""
+                  isBlogPage() ? "active-page" : ""
                 } header__navbar-link`}
                 onClick={scrollToTop}
               >

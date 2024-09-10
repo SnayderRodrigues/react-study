@@ -1,15 +1,10 @@
 import { Link } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import { IoMdArrowForward } from "react-icons/io";
-import { MdArrowOutward } from "react-icons/md";
 
 const BlogPost = ({ image, category, readTime, date, title, slug }) => (
   <div className="blog__post">
-    <img
-      src={image}
-      alt={`Imagem de ${title}`}
-      className="blog__post-image"
-    />
+    <img src={image} alt={`Imagem de ${title}`} className="blog__post-image" />
     <div className="blog__post-text">
       <span>{category}</span>
       <span>{title}</span>
@@ -18,7 +13,7 @@ const BlogPost = ({ image, category, readTime, date, title, slug }) => (
         <span>•</span>
         <span>{readTime}</span>
       </div>
-      <Link to={`/blog/${slug}`} className="button">
+      <Link to={`/blog/${slug}`} state={{ from: "/" }} className="button">
         Ler artigo <IoMdArrowForward />
       </Link>
     </div>
