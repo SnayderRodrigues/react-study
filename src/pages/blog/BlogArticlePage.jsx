@@ -1,6 +1,10 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+import { IoMdArrowBack } from "react-icons/io";
+import { IoMdPerson } from "react-icons/io";
+import { MdDateRange } from "react-icons/md";
+import { MdAccessTime } from "react-icons/md";
 
 const articles = [
   {
@@ -47,13 +51,31 @@ const BlogArticlePage = () => {
   return (
     <section className="blogArticlePage">
       <div className="wrapper blogArticlePage__wrapper">
-        <Link to="/blog">Voltar</Link>
-        <span>{article.category}</span>
-        <h1>{article.title}</h1>
-        <span>{article.author}</span>
-        <span>{article.date}</span>
-        <span>{article.readTime}</span>
-        <img src={article.image} alt={article.title} />
+        <Link to="/blog" className="button blogArticlePage__button">
+          <IoMdArrowBack />
+          Voltar
+        </Link>
+        <span className="blogArticlePage__category">{article.category}</span>
+        <h1 className="blogArticlePage__title">{article.title}</h1>
+        <div className="blogArticlePage__details">
+          <span className="link blogArticlePage__author">
+            <IoMdPerson />
+            {article.author}
+          </span>
+          <span className="link blogArticlePage__date">
+            <MdDateRange />
+            {article.date}
+          </span>
+          <span className="link blogArticlePage__read-time">
+            <MdAccessTime />
+            {article.readTime}
+          </span>
+        </div>
+        <img
+          src={article.image}
+          alt={article.title}
+          className="blogArticlePage__image"
+        />
         <p>{article.content}</p>
       </div>
     </section>
