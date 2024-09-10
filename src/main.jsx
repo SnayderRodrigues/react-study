@@ -10,6 +10,7 @@ import BlogPage from "./pages/blog/BlogPage.jsx";
 import CoursesPage from "./pages/courses/CoursesPage.jsx";
 import ContactPage from "./pages/contact/ContactPage.jsx";
 import ErrorPage from "./pages/error/ErrorPage.jsx";
+import BlogArticlePage from "./pages/blog/BlogArticlePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <BlogPage />,
+      },
+      {
+        path: "/blog/:slug",
+        element: <BlogArticlePage />,
       },
       {
         path: "contact",
