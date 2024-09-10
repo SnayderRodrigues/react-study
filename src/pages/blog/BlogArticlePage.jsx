@@ -8,7 +8,9 @@ const articles = [
     title: "5 Dicas Essenciais para Melhorar Sua Pronúncia em Inglês",
     content: "Conteúdo do artigo sobre pronúncia.",
     image: Cat,
+    author: "Nome do Autor",
     date: "01/01/2024",
+    readTime: "05 min de leitura",
     category: "Categoria",
   },
   {
@@ -16,7 +18,9 @@ const articles = [
     title: "Por Que Aprender Inglês Desde a Infância Faz Toda a Diferença?",
     content: "Conteúdo do artigo sobre aprender inglês na infância.",
     image: Cat,
+    author: "Nome do Autor",
     date: "01/01/2024",
+    readTime: "05 min de leitura",
     category: "Categoria",
   },
   {
@@ -25,7 +29,9 @@ const articles = [
       "Inglês para Adolescentes: Como Conectar o Ensino com o Mundo Digital",
     content: "Conteúdo do artigo sobre adolescentes e o ensino digital.",
     image: Cat,
+    author: "Nome do Autor",
     date: "01/01/2024",
+    readTime: "05 min de leitura",
     category: "Categoria",
   },
 ];
@@ -39,13 +45,17 @@ const BlogArticlePage = () => {
   }
 
   return (
-    <section className="wrapper">
-      <img src={article.image} alt={article.title} />
-      <h1>{article.title}</h1>
-      <p>{article.content}</p>
-      <span>{article.category}</span>
-      <span>{article.date}</span>
-      <Link to="/blog">Voltar</Link>
+    <section className="blogArticlePage">
+      <div className="wrapper blogArticlePage__wrapper">
+        <Link to="/blog">Voltar</Link>
+        <span>{article.category}</span>
+        <h1>{article.title}</h1>
+        <span>{article.author}</span>
+        <span>{article.date}</span>
+        <span>{article.readTime}</span>
+        <img src={article.image} alt={article.title} />
+        <p>{article.content}</p>
+      </div>
     </section>
   );
 };
