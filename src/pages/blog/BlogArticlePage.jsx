@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, useParams, useNavigate, useLocation } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import { IoMdArrowBack } from "react-icons/io";
 import { IoMdPerson } from "react-icons/io";
 import { MdDateRange } from "react-icons/md";
 import { MdAccessTime } from "react-icons/md";
+import BlogArticleNotFound from "./BlogArticleNotFound";
 
 const articles = [
   {
@@ -56,17 +57,7 @@ const BlogArticlePage = () => {
   };
 
   if (!article) {
-    return (
-      <section>
-        <div className="wrapper">
-          <Link to="/blog" className="button">
-            <IoMdArrowBack />
-            Retornar ao Blog
-          </Link>
-          <h2>Artigo não encontrado</h2>
-        </div>
-      </section>
-    );
+    return <BlogArticleNotFound />;
   }
 
   return (
