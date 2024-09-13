@@ -11,7 +11,6 @@ const CoursesPageHero = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quas
             obcaecati ipsam deserunt.
           </p>
-          <a href="" className="button">Saiba mais</a>
         </div>
         <img src={Cat} alt="" className="coursesPage-hero__image" />
       </div>

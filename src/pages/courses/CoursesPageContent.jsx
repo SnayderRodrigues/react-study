@@ -4,7 +4,7 @@ import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import { Link } from "react-router-dom";
 import { IoMdArrowForward } from "react-icons/io";
 
-const Course = ({ title, text, imageFirst }) => (
+const Course = ({ title, text, imageFirst, slug }) => (
   <div className="coursesPage-content__card">
     {imageFirst ? (
       <>
@@ -14,7 +14,7 @@ const Course = ({ title, text, imageFirst }) => (
         <div className="coursesPage-content__text-wrapper">
           <h3>{title}</h3>
           <p>{text}</p>
-          <Link to="" className="button link">
+          <Link to={`/courses/${slug}`} className="button link">
             Saiba mais
             <IoMdArrowForward />
           </Link>
@@ -25,7 +25,7 @@ const Course = ({ title, text, imageFirst }) => (
         <div className="coursesPage-content__text-wrapper">
           <h3>{title}</h3>
           <p>{text}</p>
-          <Link to="" className="button link">
+          <Link to={`/courses/${slug}`} className="button link">
             Saiba mais
             <IoMdArrowForward />
           </Link>
@@ -54,21 +54,25 @@ const CoursesPageContent = () => {
       title: "Título do Curso 1",
       text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, velit delectus! Dolorem esse aut pariatur debitis distinctio, ipsam quidem in et est repudiandae, animi culpa deleniti itaque provident perspiciatis perferendis.",
       imageFirst: true,
+      slug: "curso-1",
     },
     {
       title: "Título do Curso 2",
       text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nam sunt consequuntur exercitationem quos consectetur! Debitis voluptate architecto unde culpa sequi odit doloremque ipsam velit incidunt earum fuga, dignissimos assumenda!",
       imageFirst: false,
+      slug: "curso-2",
     },
     {
       title: "Título do Curso 3",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim, debitis iure dignissimos expedita obcaecati iusto quidem soluta? Dicta nam nisi ea nobis natus expedita consequuntur quas dolor assumenda saepe.",
       imageFirst: true,
+      slug: "curso-3",
     },
     {
       title: "Título do Curso 4",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat quis officiis ipsam necessitatibus. Vitae porro quibusdam cupiditate voluptatem asperiores saepe quae accusantium maiores, delectus accusamus nisi corporis ullam molestias.",
       imageFirst: false,
+      slug: "curso-4",
     },
   ];
 
@@ -121,6 +125,7 @@ const CoursesPageContent = () => {
               title={course.title}
               text={course.text}
               imageFirst={course.imageFirst}
+              slug={course.slug}
             />
           ))}
         </div>
