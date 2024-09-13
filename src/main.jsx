@@ -6,11 +6,12 @@ import "./styles/style.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/home/HomePage.jsx";
 import AboutPage from "./pages/about/AboutPage.jsx";
-import BlogPage from "./pages/blog/BlogPage.jsx";
 import CoursesPage from "./pages/courses/CoursesPage.jsx";
+import CoursesArticlePage from "./pages/courses/CoursesArticlePage.jsx";
+import BlogPage from "./pages/blog/BlogPage.jsx";
+import BlogArticlePage from "./pages/blog/BlogArticlePage.jsx";
 import ContactPage from "./pages/contact/ContactPage.jsx";
 import ErrorPage from "./pages/error/ErrorPage.jsx";
-import BlogArticlePage from "./pages/blog/BlogArticlePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "courses",
         element: <CoursesPage />,
+      },
+      {
+        path: "/courses/:slug",
+        element: <CoursesArticlePage />,
       },
       {
         path: "blog",

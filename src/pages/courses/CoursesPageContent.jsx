@@ -51,28 +51,28 @@ Course.defaultProps = {
 const CoursesPageContent = () => {
   const courses = [
     {
-      title: "Título do Curso 1",
+      title: "Talkative Complete",
       text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, velit delectus! Dolorem esse aut pariatur debitis distinctio, ipsam quidem in et est repudiandae, animi culpa deleniti itaque provident perspiciatis perferendis.",
       imageFirst: true,
-      slug: "curso-1",
+      slug: "talkative-complete",
     },
     {
-      title: "Título do Curso 2",
+      title: "Talkative Kids",
       text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, nam sunt consequuntur exercitationem quos consectetur! Debitis voluptate architecto unde culpa sequi odit doloremque ipsam velit incidunt earum fuga, dignissimos assumenda!",
       imageFirst: false,
-      slug: "curso-2",
+      slug: "talkative-kids",
     },
     {
-      title: "Título do Curso 3",
+      title: "Talkative Teens",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim, debitis iure dignissimos expedita obcaecati iusto quidem soluta? Dicta nam nisi ea nobis natus expedita consequuntur quas dolor assumenda saepe.",
       imageFirst: true,
-      slug: "curso-3",
+      slug: "talkative-teens",
     },
     {
-      title: "Título do Curso 4",
+      title: "Talkative Express",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quaerat quis officiis ipsam necessitatibus. Vitae porro quibusdam cupiditate voluptatem asperiores saepe quae accusantium maiores, delectus accusamus nisi corporis ullam molestias.",
       imageFirst: false,
-      slug: "curso-4",
+      slug: "talkative-express",
     },
   ];
 

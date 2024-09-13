@@ -12,7 +12,7 @@ const Header = () => {
     return location.pathname === "/about";
   };
   const isCoursesPage = () => {
-    return location.pathname === "/courses";
+    return location.pathname.startsWith("/courses");
   };
   const isBlogPage = () => {
     return location.pathname.startsWith("/blog");
