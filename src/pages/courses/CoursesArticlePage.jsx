@@ -26,9 +26,9 @@ const CoursesArticlePage = () => {
 
 
   return (
-    <section className="CoursesArticlePage">
-      <div >
-        <h1>{course.title}</h1>
+    <section className="coursesArticlePage">
+      <div className="wrapper coursesArticlePage">
+        <h1 className="coursesArticlePage__headline">{course.title}</h1>
       </div>
     </section>
   );
