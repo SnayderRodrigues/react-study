@@ -7,11 +7,62 @@ import { MdDateRange } from "react-icons/md";
 import { MdAccessTime } from "react-icons/md";
 import BlogArticleNotFound from "./BlogArticleNotFound";
 
+const FirstArticle = () => (
+  <div>
+    <h3>Título 01</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+      laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
+      quidem quia qui illo commodi consequatur sapiente soluta. Rem, voluptatum!
+    </p>
+  </div>
+);
+
+const SecondArticle = () => (
+  <div>
+    <h3>Título 01</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+      laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
+      quidem quia qui illo commodi consequatur sapiente soluta. Rem, voluptatum!
+    </p>
+    <h3>Título 02</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+      laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
+      quidem quia qui illo commodi consequatur sapiente soluta. Rem, voluptatum!
+    </p>
+  </div>
+);
+
+const ThirdArticle = () => (
+  <div>
+    <h3>Título 01</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+      laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
+      quidem quia qui illo commodi consequatur sapiente soluta. Rem, voluptatum!
+    </p>
+    <h3>Título 02</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+      laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
+      quidem quia qui illo commodi consequatur sapiente soluta. Rem, voluptatum!
+    </p>
+    <h3>Título 03</h3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+      laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
+      quidem quia qui illo commodi consequatur sapiente soluta. Rem, voluptatum!
+    </p>
+  </div>
+);
+
 const articles = [
   {
     slug: "5-dicas-para-melhorar-pronuncia",
     title: "5 Dicas Essenciais para Melhorar Sua Pronúncia em Inglês",
-    content: "Conteúdo do artigo sobre pronúncia.",
+    content: FirstArticle,
     image: Cat,
     author: "Nome do Autor",
     date: "01/01/2024",
@@ -21,7 +72,7 @@ const articles = [
   {
     slug: "aprender-ingles-desde-infancia",
     title: "Por Que Aprender Inglês Desde a Infância Faz Toda a Diferença?",
-    content: "Conteúdo do artigo sobre aprender inglês na infância.",
+    content: SecondArticle,
     image: Cat,
     author: "Nome do Autor",
     date: "01/01/2024",
@@ -32,7 +83,7 @@ const articles = [
     slug: "ingles-para-adolescentes",
     title:
       "Inglês para Adolescentes: Como Conectar o Ensino com o Mundo Digital",
-    content: "Conteúdo do artigo sobre adolescentes e o ensino digital.",
+    content: ThirdArticle,
     image: Cat,
     author: "Nome do Autor",
     date: "01/01/2024",
@@ -59,6 +110,8 @@ const BlogArticlePage = () => {
   if (!article) {
     return <BlogArticleNotFound />;
   }
+
+  const ArticleContent = article.content;
 
   return (
     <section className="blogArticlePage">
@@ -91,7 +144,7 @@ const BlogArticlePage = () => {
           alt={article.title}
           className="blogArticlePage__image"
         />
-        <p>{article.content}</p>
+        <ArticleContent />
       </div>
     </section>
   );
