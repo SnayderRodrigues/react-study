@@ -1,11 +1,14 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
+
 import { IoMdArrowBack } from "react-icons/io";
 
 const CourseOne = () => (
   <div>
-    <h2>Curso 01</h2>
+    <h2 className="coursesArticlePage__headline">Talkative Complete</h2>
+    <img src={Cat} alt="" className="coursesArticlePage__image" />
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
       laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
@@ -16,7 +19,8 @@ const CourseOne = () => (
 
 const CourseTwo = () => (
   <div>
-    <h2>Curso 02</h2>
+    <h2 className="coursesArticlePage__headline">Talkative Kids</h2>
+    <img src={Cat} alt="" className="coursesArticlePage__image" />
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
       laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
@@ -27,7 +31,8 @@ const CourseTwo = () => (
 
 const CourseThree = () => (
   <div>
-    <h2>Curso 03</h2>
+    <h2 className="coursesArticlePage__headline">Talkative Teens</h2>
+    <img src={Cat} alt="" className="coursesArticlePage__image" />
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
       laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
@@ -38,7 +43,8 @@ const CourseThree = () => (
 
 const CourseFour = () => (
   <div>
-    <h2>Curso 04</h2>
+    <h2 className="coursesArticlePage__headline">Talkative Express</h2>
+    <img src={Cat} alt="" className="coursesArticlePage__image" />
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
       laudantium totam minus labore ut, magni vel rerum, ipsam facere vitae
@@ -93,7 +99,6 @@ const CoursesArticlePage = () => {
             {course.title}
           </Link>
         </div>
-        <h1 className="coursesArticlePage__headline">{course.title}</h1>
         <CourseContent />
       </div>
     </section>
