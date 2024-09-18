@@ -13,7 +13,7 @@ const BlogPost = ({ image, category, readTime, date, title, slug }) => (
         <span>•</span>
         <span>{readTime}</span>
       </div>
-      <Link to={`/blog/${slug}`} state={{ from: "/" }} className="button">
+      <Link to={`/blog/${slug}`} className="button">
         Ler artigo <IoMdArrowForward />
       </Link>
     </div>

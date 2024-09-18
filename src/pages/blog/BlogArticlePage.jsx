@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import Cat from "../../img/IMG_20200407_163224926_HDR-01.jpeg";
 import { IoMdArrowBack } from "react-icons/io";
 import { IoMdPerson } from "react-icons/io";
@@ -96,17 +96,6 @@ const BlogArticlePage = () => {
   const { slug } = useParams();
   const article = articles.find((article) => article.slug === slug);
 
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const handleGoBack = () => {
-    if (location.state && location.state.from === "/") {
-      navigate("/");
-    } else {
-      navigate("/blog");
-    }
-  };
-
   if (!article) {
     return <BlogArticleNotFound />;
   }
@@ -116,13 +105,20 @@ const BlogArticlePage = () => {
   return (
     <section className="blogArticlePage">
       <div className="wrapper blogArticlePage__wrapper">
-        <button
-          onClick={handleGoBack}
-          className="button blogArticlePage__button"
-        >
-          <IoMdArrowBack />
-          Voltar
-        </button>
+        <div className="blogArticlePage__breadcrumbs">
+          <Link to="/" className="link">
+            <IoMdArrowBack />
+            Início
+          </Link>
+          <Link to="/blog" className="link">
+            <IoMdArrowBack />
+            Blog
+          </Link>
+          <Link to={`/blog/${slug}`} className="link">
+            <IoMdArrowBack />
+            {article.title}
+          </Link>
+        </div>
         <span className="blogArticlePage__category">{article.category}</span>
         <h1 className="blogArticlePage__title">{article.title}</h1>
         <div className="blogArticlePage__details">
