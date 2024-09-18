@@ -4,5 +4,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12rem 0 8rem;
+  padding: 8rem 0 8rem;
+
+  &__breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    a {
+      font-weight: 500;
+      color: inherit;
+      transition: color 500ms cubic-bezier(0.23, 1, 0.32, 1);;
+    }
+    a:hover {
+      color: var(--accent-color);
+    }
+    a:last-of-type {
+      color: var(--text-color-4);
+    }
+  }
 }

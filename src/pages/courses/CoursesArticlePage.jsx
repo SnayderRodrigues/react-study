@@ -1,5 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { IoMdArrowBack } from "react-icons/io";
 
 const CourseOne = () => (
   <div>
@@ -71,12 +73,26 @@ const courses = [
 const CoursesArticlePage = () => {
   const { slug } = useParams();
   const course = courses.find((course) => course.slug === slug);
-  
+
   const CourseContent = course.content;
 
   return (
     <section className="coursesArticlePage">
-      <div className="wrapper coursesArticlePage">
+      <div className="wrapper coursesArticlePage__wrapper">
+        <div className="coursesArticlePage__breadcrumbs">
+          <Link to="/" className="link">
+            <IoMdArrowBack />
+            Início
+          </Link>
+          <Link to="/courses" className="link">
+            <IoMdArrowBack />
+            Cursos
+          </Link>
+          <Link to={`/courses/${slug}`} className="link">
+            <IoMdArrowBack />
+            {course.title}
+          </Link>
+        </div>
         <h1 className="coursesArticlePage__headline">{course.title}</h1>
         <CourseContent />
       </div>
