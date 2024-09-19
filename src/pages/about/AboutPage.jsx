@@ -6,7 +6,6 @@ import AboutPageInfo from "./AboutPageInfo";
 import AboutPageTestimonials from "./AboutPageTestimonials";
 import AboutPageExpertise from "./AboutPageExpertise";
 import Faq from "../home/Faq";
-import AboutPageCta from "./AboutPageCta";
 
 const AboutPage = () => {
   return (
@@ -18,7 +17,6 @@ const AboutPage = () => {
       <AboutPageExpertise />
       <AboutPageTestimonials />
       <Faq />
-      <AboutPageCta />
     </main>
   );
 };

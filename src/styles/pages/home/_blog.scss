@@ -1,7 +1,7 @@
 @use "../../../styles/util/" as u;
 
 .blog {
-  padding: 8rem 0 0;
+  padding: 8rem 0;
 
   &__wrapper {
     display: flex;
@@ -16,7 +16,6 @@
     display: flex;
     align-items: flex-start;
     gap: 2rem;
-    margin-bottom: 2rem;
   }
   &__post {
     flex: 1;

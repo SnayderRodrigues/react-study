@@ -7,7 +7,6 @@ import Testimonials from "./Testimonials";
 import Cta from "./Cta";
 import Faq from "./Faq";
 import Blog from "./Blog";
-import CtaToAboutPage from "./CtaToAboutPage";
 
 const HomePage = () => {
   return (
@@ -20,7 +19,6 @@ const HomePage = () => {
       <Cta />
       <Faq />
       <Blog />
-      <CtaToAboutPage />
     </main>
   );
 };
