@@ -6,8 +6,7 @@
   top: 0;
   z-index: 999;
   padding: 16px 0;
-  transition-property: background-color;
-  transition: 500ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: background-color 500ms cubic-bezier(0.23, 1, 0.32, 1);
 
   a {
     color: var(--text-color);
@@ -22,6 +21,7 @@
     overflow: hidden;
     transition: color 500ms cubic-bezier(0.23, 1, 0.32, 1);
     position: relative;
+    z-index: 99;
 
     &:hover {
       color: var(--accent-color);
@@ -37,15 +37,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1rem;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    // background-color: var(--white);
     padding: 8px;
-    border-radius: 999px;
+
+    @include u.breakpoint-down(small) {
+      flex-direction: column;
+      gap: 2rem;
+      width: 100vw;
+      height: 100vh;
+      background-color: var(--bg-color);
+      top: 50%;
+      left: 50%;
+      transform: translate(150%, -50%);
+      transition: transform 500ms linear;
+    }
   }
-  &__navbar-li:not(:last-child) {
-    margin-right: 1rem;
+  &__navbar-ul.open {
+    transform: translate(-50%, -50%);
+  }
+  &__navbar-li:last-child {
+    display: none;
+
+    @include u.breakpoint-down(small) {
+      display: block;
+    }
   }
   &__navbar-link {
     font-weight: 600;
@@ -70,6 +88,10 @@
     &:hover {
       background-color: var(--accent-color);
     }
+
+    @include u.breakpoint-down(small) {
+      display: none;
+    }
   }
   &__navbar > &__navbar-link {
     border: 0;
@@ -82,6 +104,49 @@
   .header__navbar-link.button.active-page {
     border: 0;
     background-color: var(--accent-color);
+  }
+  &__menu {
+    display: none;
+
+    @include u.breakpoint-down(small) {
+      width: 2rem;
+      height: 2.25rem;
+      display: block;
+      position: relative;
+      z-index: 99;
+      padding: 0.25rem;
+      cursor: pointer;
+    }
+
+    span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: var(--black);
+      border-radius: 999px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 200ms linear;
+    }
+    span:first-of-type {
+      transform: translate(-50%, calc(-50% - 0.5rem));
+    }
+    span:nth-of-type(3) {
+      transform: translate(-50%, calc(-50% + 0.5rem));
+    }
+  }
+  &__menu.open {
+    span:first-of-type {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    span:nth-of-type(2) {
+      opacity: 0;
+    }
+    span:nth-of-type(3) {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
   }
 }
 

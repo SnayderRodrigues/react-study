@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const location = useLocation();
   const headerRef = useRef(null);
+  const [openMenu, setOpenMenu] = useState(false);
 
   const isHomePage = () => {
     return location.pathname === "/";
@@ -41,14 +42,19 @@ const Header = () => {
     };
   }, []);
 
+  const handleOpenMenu = () => {
+    setOpenMenu((prevState) => !prevState);
+  };
+
+
   return (
     <header ref={headerRef} id="header" className="header">
-      <div className="wrapper">
+      <div className="wrapper header__wrapper">
         <nav className="header__navbar">
           <a href="/" className="header__logo" onClick={scrollToTop}>
             <span>Talkative</span>
           </a>
-          <ul className="header__navbar-ul">
+          <ul className={`header__navbar-ul ${openMenu ? "open" : ""}`}>
             <li className="header__navbar-li">
               <Link
                 to="/"
@@ -94,6 +100,17 @@ const Header = () => {
                 Blog
               </Link>
             </li>
+            <li className="header__navbar-li">
+              <Link
+                to="/contact"
+                className={`${
+                  isContactPage() ? "active-page" : ""
+                } header__navbar-link`}
+                onClick={scrollToTop}
+              >
+                Contato
+              </Link>
+            </li>
           </ul>
           <Link
             to="contact"
@@ -104,6 +121,14 @@ const Header = () => {
           >
             Contato
           </Link>
+          <div
+            className={`header__menu ${openMenu ? "open" : ""}`}
+            onClick={handleOpenMenu}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
       </div>
     </header>
