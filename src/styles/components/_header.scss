@@ -58,6 +58,9 @@
   &__navbar-ul.open {
     transform: translate(-50%, -50%);
   }
+  &__navbar-ul.no-transition {
+    transition: none;
+  }
   &__navbar-li:last-child {
     display: none;
 

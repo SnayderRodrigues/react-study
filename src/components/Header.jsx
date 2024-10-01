@@ -6,6 +6,7 @@ const Header = () => {
   const headerRef = useRef(null);
   const navbarRef = useRef(null);
   const [openMenu, setOpenMenu] = useState(false);
+  let resizeTimeout;
 
   const isHomePage = () => location.pathname === "/";
   const isAboutPage = () => location.pathname === "/about";
@@ -33,10 +34,16 @@ const Header = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
-        if (navbarRef.current) {
-          navbarRef.current.style.transition = "none";
+      if (navbarRef.current) {
+        navbarRef.current.style.transition = "none";
+
+        if (resizeTimeout) {
+          clearTimeout(resizeTimeout);
         }
+
+        resizeTimeout = setTimeout(() => {
+          navbarRef.current.style.transition = "";
+        }, 100);
       }
     };
 
@@ -44,6 +51,9 @@ const Header = () => {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      if (resizeTimeout) {
+        clearTimeout(resizeTimeout);
+      }
     };
   }, []);
 
